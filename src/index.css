@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&display=swap');
+@import 'tailwindcss';
+@import 'leaflet/dist/leaflet.css';
+
+@theme {
+  --font-sans:
+    'Bricolage Grotesque', 'Inter', system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Modern Leaflet custom marker & popup overrides */
+.leaflet-container {
+  font-family: inherit;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1;
+}
+
+.leaflet-popup-content-wrapper {
+  padding: 0 !important;
+  border-radius: 20px !important;
+  box-shadow:
+    0 25px 35px -10px rgba(15, 23, 42, 0.2),
+    0 12px 16px -6px rgba(15, 23, 42, 0.1) !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(226, 232, 240, 0.95) !important;
+  background: #ffffff !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: inherit !important;
+}
+
+.leaflet-popup-tip-container {
+  overflow: visible !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(226, 232, 240, 0.7) !important;
+  border-top: none !important;
+  border-left: none !important;
+}
+
+/* Premium circular close button */
+.leaflet-container a.leaflet-popup-close-button {
+  top: 12px !important;
+  right: 12px !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 9999px !important;
+  background: #f1f5f9 !important;
+  color: #64748b !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+  transform: scale(1.06) !important;
+}
+
+/* On mobile, pinch-to-zoom is native; hide intrusive leaflet zoom buttons to keep screen clean and prevent overlay collisions */
+@media (max-width: 639px) {
+  .leaflet-control-zoom {
+    display: none !important;
+  }
+}
+
+.custom-marker-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-user-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family:
+      'Bricolage Grotesque',
+      'Inter',
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #def2e5;
+    background-image:
+      radial-gradient(
+        at 10% 12%,
+        rgba(16, 185, 129, 0.25) 0px,
+        transparent 55%
+      ),
+      radial-gradient(
+        at 90% 16%,
+        rgba(52, 211, 153, 0.22) 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 50% 85%,
+        rgba(13, 148, 136, 0.18) 0px,
+        transparent 55%
+      ),
+      radial-gradient(
+        at 50% 35%,
+        rgba(34, 197, 94, 0.14) 0px,
+        transparent 65%
+      );
+    background-attachment: fixed;
+  }
+}
+
+/* Buttery Smooth GPU-Accelerated Eco Highway on Station Cards */
+@keyframes evSmoothGlide {
+  0% {
+    transform: translate3d(-110%, 0, 0);
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0;
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-110%, 0, 0);
+  }
+}
+
+@keyframes roadDashScroll {
+  from { background-position: 0 0; }
+  to { background-position: -20px 0; }
+}
+
+.animate-ev-glide {
+  will-change: transform, opacity;
+  animation: evSmoothGlide 4.8s linear infinite;
+}
+.group:hover .animate-ev-glide {
+  animation-duration: 2.6s;
+}
+.animate-road-flow {
+  will-change: background-position;
+  animation: roadDashScroll 0.8s linear infinite;
+}
+.group:hover .animate-road-flow {
+  animation-duration: 0.4s;
+}

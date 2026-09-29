@@ -1,0 +1,36 @@
+{
+  "name": "ev-station",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "author": "Sophanith Mey",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msophanith/ev-station.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "clean": "yarn cache clean && rm -rf node_modules && rm -rf dist && yarn install"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@types/leaflet": "^1.9.22",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}
