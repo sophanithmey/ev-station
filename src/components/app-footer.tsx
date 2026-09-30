@@ -8,7 +8,7 @@ type Props = {
 
 const DEFAULT_DATASET_URL =
   'https://data.mef.gov.kh/datasets/pd_67b6d073cb47dc00012464a6';
-const DEFAULT_TELEGRAM_URL = 'https://t.me/msophanith';
+const DEFAULT_TELEGRAM_URL = 'https://t.me/sophanithmey';
 
 export default function AppFooter({
   datasetUrl = DEFAULT_DATASET_URL,
