@@ -114,6 +114,42 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    11.53200152466867, 
+                    104.89871508004939
+                ]
+            },
+            "properties": {
+                "Location Name": "ECO Green EV Station",
+                "Location": "11\u00b034'27.0\"N 104\u00b053'08.0\"E",
+                "Latitude": 11.53200152466867,
+                "Longitude": 104.89871508004939,
+                "Plug Types": "GB-T/CCS2",
+                "Operation Time": "24/7"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.531308226671735, 
+                    104.89765017954478
+                ]
+            },
+            "properties": {
+                "Location Name": "MEV Station",
+                "Location": "11\u00b034'27.0\"N 104\u00b053'08.0\"E",
+                "Latitude": 11.531308226671735,
+                "Longitude": 104.89765017954478,
+                "Plug Types": "GB-T/CCS2",
+                "Operation Time": "24/7"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     104.81611111111111,
                     11.487499999999999
                 ]
@@ -1692,6 +1728,25 @@
                 "Plug Types": "GB-T/CCS2",
                 "Operation Time": "24/7"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.68677843196362,
+                    11.131143282458686
+                ]
+            },
+            "properties": {
+                "Location Name": "Vireak Buntham EV Station Takeo",
+                "Location": "11\u00b007'52.1\"N 104\u00b041'12.4\"E",
+                "Latitude": 11.131143282458686,
+                "Longitude": 104.68677843196362,
+                "Plug Types": "Unknown",
+                "Operation Time": "24/7"
+            }
+            
         },
         {
             "type": "Feature",

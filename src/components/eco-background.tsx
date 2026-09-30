@@ -2,23 +2,23 @@ export default function EcoBackground() {
   return (
     <div
       aria-hidden='true'
-      className='fixed inset-0 pointer-events-none -z-10 overflow-hidden bg-linear-to-b from-emerald-100/40 via-transparent to-teal-100/30'
+      className='fixed inset-0 pointer-events-none -z-10 overflow-hidden bg-linear-to-b from-slate-50 via-slate-50/80 to-slate-100/70'
     >
-      {/* 1. Atmospheric clean energy glowing orbs */}
+      {/* 1. Ultra-subtle ambient energy glowing orbs */}
       <div
-        className='absolute -top-28 -left-28 w-md h-112 rounded-full bg-linear-to-br from-emerald-300/35 via-teal-200/25 to-transparent blur-3xl'
+        className='absolute -top-28 -left-28 w-md h-112 rounded-full bg-linear-to-br from-emerald-200/12 via-teal-100/8 to-transparent blur-3xl'
         style={{
           animation: 'pulse 8s ease-in-out infinite alternate',
         }}
       />
       <div
-        className='absolute top-1/4 -right-24 w-120 h-120 rounded-full bg-linear-to-bl from-teal-300/30 via-emerald-200/30 to-transparent blur-3xl'
+        className='absolute top-1/4 -right-24 w-120 h-120 rounded-full bg-linear-to-bl from-teal-200/10 via-slate-100/10 to-transparent blur-3xl'
         style={{
           animation: 'pulse 10s ease-in-out infinite alternate-reverse',
         }}
       />
       <div
-        className='absolute -bottom-28 left-1/4 w-136 h-136 rounded-full bg-linear-to-tr from-emerald-300/30 via-teal-200/25 to-transparent blur-3xl'
+        className='absolute -bottom-28 left-1/4 w-136 h-136 rounded-full bg-linear-to-tr from-emerald-100/10 via-teal-50/8 to-transparent blur-3xl'
         style={{
           animation: 'pulse 12s ease-in-out infinite alternate',
         }}
@@ -26,7 +26,7 @@ export default function EcoBackground() {
 
       {/* 2. Delicate renewable energy topographic waves & wind flow SVG */}
       <svg
-        className='absolute inset-0 w-full h-full opacity-[0.22] text-emerald-600/30'
+        className='absolute inset-0 w-full h-full opacity-[0.06] text-slate-400/30'
         xmlns='http://www.w3.org/2000/svg'
         width='100%'
         height='100%'
@@ -54,9 +54,9 @@ export default function EcoBackground() {
             x2='100%'
             y2='100%'
           >
-            <stop offset='0%' stopColor='#059669' stopOpacity='0.4' />
-            <stop offset='50%' stopColor='#0d9488' stopOpacity='0.25' />
-            <stop offset='100%' stopColor='#0284c7' stopOpacity='0.15' />
+            <stop offset='0%' stopColor='#059669' stopOpacity='0.15' />
+            <stop offset='50%' stopColor='#0d9488' stopOpacity='0.10' />
+            <stop offset='100%' stopColor='#64748b' stopOpacity='0.06' />
           </linearGradient>
         </defs>
 
@@ -93,13 +93,13 @@ export default function EcoBackground() {
       </svg>
 
       {/* 3. Floating Eco Leaf & Clean Energy Motifs */}
-      <div className='absolute top-16 left-[8%] opacity-30 text-emerald-600 animate-bounce duration-1000'>
+      <div className='absolute top-16 left-[8%] opacity-[0.08] text-emerald-800'>
         <svg className='w-6 h-6' viewBox='0 0 24 24' fill='currentColor'>
           <path d='M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z' />
         </svg>
       </div>
 
-      <div className='absolute bottom-24 right-[6%] opacity-25 text-teal-600'>
+      <div className='absolute bottom-24 right-[6%] opacity-[0.08] text-slate-500'>
         <svg className='w-7 h-7' viewBox='0 0 24 24' fill='currentColor'>
           <path d='M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 14.5V18h-2v-1.5a4 4 0 01-2.5-3.7 1 1 0 012 0 2 2 0 004 0c0-1.1-.9-2-2-2a4 4 0 01-4-4c0-1.8 1.2-3.3 2.5-3.7V4h2v1.5a4 4 0 012.5 3.7 1 1 0 01-2 0 2 2 0 00-4 0c0 1.1.9 2 2 2a4 4 0 014 4c0 1.8-1.2 3.3-2.5 3.7z' />
         </svg>

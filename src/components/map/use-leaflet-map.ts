@@ -6,10 +6,7 @@ import {
   CAMBODIA_ZOOM,
   CAMBODIA_BOUNDS,
 } from './map-constants';
-import {
-  createStationMarker,
-  updateUserLocationMarker,
-} from './map-markers';
+import { createStationMarker, updateUserLocationMarker } from './map-markers';
 
 type UseLeafletMapProps = {
   mapContainerRef: React.RefObject<HTMLDivElement | null>;
@@ -38,32 +35,39 @@ export function useLeafletMap({
   const markerMapRef = useRef<Map<string, L.Marker>>(new Map());
   const prevSelectedStationRef = useRef<ChargingStation | null>(null);
 
-  // Fit all stations smoothly into view or reset to Cambodia center
   const handleFitBounds = useCallback(() => {
     const map = mapRef.current;
     if (!map) return;
-
-    map.closePopup();
-
-    if (stations.length > 0) {
-      const bounds = L.latLngBounds(
-        stations.map((s) => [s.latitude, s.longitude] as [number, number]),
-      );
-      map.fitBounds(bounds, {
-        padding: [50, 50],
-        maxZoom: 13,
-        animate: true,
-        duration: 1.0,
-      });
-    } else {
-      map.setView(CAMBODIA_CENTER, CAMBODIA_ZOOM, { animate: true });
+    try {
+      const container = map.getContainer();
+      if (
+        !container ||
+        container.offsetWidth === 0 ||
+        container.offsetHeight === 0
+      )
+        return;
+      map.closePopup();
+      if (stations.length > 0) {
+        const bounds = L.latLngBounds(
+          stations.map((s) => [s.latitude, s.longitude] as [number, number]),
+        );
+        map.fitBounds(bounds, {
+          padding: [50, 50],
+          maxZoom: 13,
+          animate: true,
+          duration: 1.0,
+        });
+      } else {
+        map.setView(CAMBODIA_CENTER, CAMBODIA_ZOOM, { animate: true });
+      }
+    } catch {
+      // Guard against zero-dimension Leaflet calls
     }
   }, [stations]);
 
   // 1. Initialize Leaflet Map once
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
-
     const map = L.map(mapContainerRef.current, {
       center: CAMBODIA_CENTER,
       zoom: CAMBODIA_ZOOM,
@@ -81,23 +85,14 @@ export function useLeafletMap({
     }).addTo(map);
 
     L.control.zoom({ position: 'topright' }).addTo(map);
-
-    const markersLayer = L.layerGroup().addTo(map);
-    const userLayer = L.layerGroup().addTo(map);
-
     mapRef.current = map;
-    markersLayerRef.current = markersLayer;
-    userMarkerRef.current = userLayer;
+    markersLayerRef.current = L.layerGroup().addTo(map);
+    userMarkerRef.current = L.layerGroup().addTo(map);
 
-    const resizeObserver = new ResizeObserver(() => {
-      map.invalidateSize();
-    });
-    if (mapContainerRef.current) {
+    const resizeObserver = new ResizeObserver(() => map.invalidateSize());
+    if (mapContainerRef.current)
       resizeObserver.observe(mapContainerRef.current);
-    }
-
-    setTimeout(() => map.invalidateSize(), 100);
-    setTimeout(() => map.invalidateSize(), 350);
+    setTimeout(() => map.invalidateSize(), 150);
 
     return () => {
       resizeObserver.disconnect();
@@ -110,8 +105,7 @@ export function useLeafletMap({
   useEffect(() => {
     if (mapRef.current) {
       mapRef.current.invalidateSize();
-      setTimeout(() => mapRef.current?.invalidateSize(), 150);
-      setTimeout(() => mapRef.current?.invalidateSize(), 400);
+      setTimeout(() => mapRef.current?.invalidateSize(), 200);
     }
   }, [mobileView]);
 
@@ -121,56 +115,72 @@ export function useLeafletMap({
     const layer = markersLayerRef.current;
     if (!map || !layer) return;
 
-    layer.clearLayers();
-    markerMapRef.current.clear();
-
-    stations.forEach((station) => {
-      const isSelected = selectedStation?.id === station.id;
-      const marker = createStationMarker(
-        station,
-        isSelected,
-        distances[station.id],
-        onSelectStation,
-        onDeselectStation,
-        handleFitBounds,
-      );
-
-      marker.addTo(layer);
-      markerMapRef.current.set(station.id, marker);
-    });
-  }, [stations, selectedStation, distances, onSelectStation, onDeselectStation, handleFitBounds]);
+    try {
+      layer.clearLayers();
+      markerMapRef.current.clear();
+      stations.forEach((station) => {
+        const isSelected = selectedStation?.id === station.id;
+        const marker = createStationMarker(
+          station,
+          isSelected,
+          distances[station.id],
+          onSelectStation,
+          onDeselectStation,
+          handleFitBounds,
+        );
+        marker.addTo(layer);
+        markerMapRef.current.set(station.id, marker);
+      });
+    } catch {
+      // Guard against leaflet render issues during view switch
+    }
+  }, [
+    stations,
+    selectedStation,
+    distances,
+    onSelectStation,
+    onDeselectStation,
+    handleFitBounds,
+  ]);
 
   // 3. Pan and open popup when selectedStation changes
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
-
-    if (selectedStation) {
-      map.flyTo([selectedStation.latitude, selectedStation.longitude], 15, {
-        duration: 0.8,
-      });
-      const marker = markerMapRef.current.get(selectedStation.id);
-      if (marker) {
-        setTimeout(() => marker.openPopup(), 400);
+    try {
+      const container = map.getContainer();
+      if (
+        !container ||
+        container.offsetWidth === 0 ||
+        container.offsetHeight === 0
+      ) {
+        prevSelectedStationRef.current = selectedStation;
+        return;
       }
-    } else if (prevSelectedStationRef.current && !selectedStation) {
-      handleFitBounds();
+      if (selectedStation) {
+        map.flyTo([selectedStation.latitude, selectedStation.longitude], 15, {
+          duration: 0.8,
+        });
+        const marker = markerMapRef.current.get(selectedStation.id);
+        if (marker) setTimeout(() => marker.openPopup(), 400);
+      } else if (prevSelectedStationRef.current && !selectedStation) {
+        handleFitBounds();
+      }
+    } catch {
+      // Guard against zero-dimension Leaflet calls
     }
-
     prevSelectedStationRef.current = selectedStation;
   }, [selectedStation, handleFitBounds]);
 
-  // 4. Update User Location Marker
+  // 4. Update User Location Marker (only fly if map view is active)
   useEffect(() => {
     const map = mapRef.current;
     const userLayer = userMarkerRef.current;
     if (!map || !userLayer) return;
 
-    updateUserLocationMarker(map, userLayer, userLocation);
-  }, [userLocation]);
+    const shouldFly = mobileView === 'map';
+    updateUserLocationMarker(map, userLayer, userLocation, shouldFly);
+  }, [userLocation, mobileView]);
 
-  return {
-    mapRef,
-    handleFitBounds,
-  };
+  return { mapRef, handleFitBounds };
 }

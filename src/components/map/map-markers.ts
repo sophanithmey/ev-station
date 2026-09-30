@@ -59,11 +59,24 @@ export function updateUserLocationMarker(
   map: L.Map,
   userLayer: L.LayerGroup,
   userLocation: { lat: number; lng: number } | null,
+  shouldFly = true,
 ) {
   userLayer.clearLayers();
   if (!userLocation) return;
 
-  map.flyTo([userLocation.lat, userLocation.lng], 14, { duration: 1.2 });
+  const container = map.getContainer();
+  const hasDimensions =
+    Boolean(container) &&
+    container.offsetWidth > 0 &&
+    container.offsetHeight > 0;
+
+  if (shouldFly && hasDimensions) {
+    try {
+      map.flyTo([userLocation.lat, userLocation.lng], 14, { duration: 1.2 });
+    } catch {
+      // Prevent Leaflet unmount crash if map container is hidden or 0x0
+    }
+  }
 
   const userMarker = L.marker([userLocation.lat, userLocation.lng], {
     icon: createUserDotIcon(),

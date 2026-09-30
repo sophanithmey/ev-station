@@ -42,6 +42,7 @@ function resolveProvince(feature: GeoJsonFeature): string {
   if (name.includes("sihanouk") || name.includes("prey nob") || (!name.includes("kirirom") && lat < 10.8 && lng < 103.8)) return "Preah Sihanouk";
   if (name.includes("kampot")) return "Kampot";
   if (name.includes("kep")) return "Kep";
+  if (name.includes("takeo") || name.includes("tnorl boat") || name.includes("tnol boat")) return "Takeo";
   if (name.includes("battambang")) return "Battambang";
   if (name.includes("poi pet") || name.includes("poipet") || name.includes("serey sophon")) return "Banteay Meanchey";
   if (name.includes("pusat") || name.includes("pursat")) return "Pursat";
@@ -69,6 +70,7 @@ function resolveProvince(feature: GeoJsonFeature): string {
   if (lat >= 10.7 && lat <= 11.9 && lng >= 102.8 && lng <= 103.8) return "Koh Kong";
   if (lat >= 10.4 && lat <= 10.9 && lng >= 103.4 && lng <= 103.8) return "Preah Sihanouk";
   if (lat >= 10.4 && lat <= 10.8 && lng >= 104.0 && lng <= 104.4) return "Kampot";
+  if (lat >= 10.7 && lat <= 11.25 && lng >= 104.5 && lng <= 105.1) return "Takeo";
   if (lat >= 10.4 && lat <= 10.55 && lng >= 104.25 && lng <= 104.35) return "Kep";
 
   return "Phnom Penh";
