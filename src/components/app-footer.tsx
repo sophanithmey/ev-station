@@ -1,3 +1,5 @@
+import { useVisitorCount } from '../hooks/use-visitor-count';
+
 type Props = {
   datasetUrl?: string;
   telegramUrl?: string;
@@ -6,13 +8,15 @@ type Props = {
 
 const DEFAULT_DATASET_URL =
   'https://data.mef.gov.kh/datasets/pd_67b6d073cb47dc00012464a6';
-const DEFAULT_TELEGRAM_URL = 'https://t.me/sophanithmey';
+const DEFAULT_TELEGRAM_URL = 'https://t.me/msophanith';
 
 export default function AppFooter({
   datasetUrl = DEFAULT_DATASET_URL,
   telegramUrl = DEFAULT_TELEGRAM_URL,
   className = '',
 }: Props) {
+  const { count, status } = useVisitorCount();
+
   return (
     <footer
       className={`shrink-0 border-t border-slate-200/80 bg-white/95 backdrop-blur-sm py-2 px-3 sm:px-4 text-xs text-slate-500 ${className}`}
@@ -45,11 +49,42 @@ export default function AppFooter({
           . Station info may not be up-to-date. Please verify before traveling.
         </p>
 
-        <div className='flex items-center justify-between sm:justify-end gap-2.5 w-full sm:w-auto shrink-0 pt-1 sm:pt-0 border-t sm:border-t-0 border-slate-200/60'>
-          <span className='text-[10px] text-slate-400'>
-            Cambodia EV Directory
-          </span>
+        <div className='flex items-center justify-between sm:justify-end gap-2 w-full sm:w-auto shrink-0 pt-1 sm:pt-0 border-t sm:border-t-0 border-slate-200/60'>
+          {/* Visitor counter */}
+          <div className='flex items-center gap-1 text-[10px] text-slate-400'>
+            <svg
+              className='w-3 h-3 text-emerald-500 shrink-0'
+              viewBox='0 0 24 24'
+              fill='none'
+              stroke='currentColor'
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M15 12a3 3 0 11-6 0 3 3 0 016 0z'
+              />
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z'
+              />
+            </svg>
+            {status === 'loading' && (
+              <span className='text-slate-300 animate-pulse'>…</span>
+            )}
+            {status === 'success' && count !== null && (
+              <span className='font-semibold text-slate-500'>{count}</span>
+            )}
+            {(status === 'error' || (status === 'success' && count === null)) && (
+              <span className='text-slate-300'>—</span>
+            )}
+            <span>visitors</span>
+          </div>
+
           <span className='h-3 w-px bg-slate-200' />
+
+          {/* Contact */}
           <a
             href={telegramUrl}
             target='_blank'

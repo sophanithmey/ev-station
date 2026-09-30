@@ -1,3 +1,5 @@
+import { useLayoutEffect, useRef, useState } from 'react';
+
 type Props = {
   mobileView: 'map' | 'list';
   filteredCount: number;
@@ -18,27 +20,51 @@ export default function MobileViewSwitcher({
   const isMap = mobileView === 'map';
   const isList = mobileView === 'list';
 
+  const mapBtnRef = useRef<HTMLButtonElement>(null);
+  const listBtnRef = useRef<HTMLButtonElement>(null);
+  const [indicatorTop, setIndicatorTop] = useState(0);
+  const [indicatorH, setIndicatorH] = useState(0);
+
+  useLayoutEffect(() => {
+    const btn = isMap ? mapBtnRef.current : listBtnRef.current;
+    if (!btn) return;
+    setIndicatorTop(btn.offsetTop);
+    setIndicatorH(btn.offsetHeight);
+  }, [isMap]);
+
   return (
-    <div
-      role='tablist'
-      aria-label='Mobile view mode switcher'
-      className='fixed bottom-20 sm:bottom-6 left-1/2 -translate-x-1/2 z-30 lg:hidden flex items-center p-1 bg-slate-900/95 backdrop-blur-xl border border-slate-700/80 rounded-full shadow-2xl shadow-slate-950/50 select-none'
-    >
+    <div className='fixed right-3 top-1/2 -translate-y-1/2 z-30 lg:hidden'>
+      <div
+        role='tablist'
+        aria-label='Mobile view mode switcher'
+        className='relative flex flex-col items-center p-1.5 gap-0.5 bg-white/25 backdrop-blur-3xl border border-white/50 rounded-2xl shadow-2xl shadow-black/20 select-none'
+        style={{ WebkitBackdropFilter: 'blur(40px)' }}
+      >
+        {/* Sliding active pill — slides between Map and List */}
+        <span
+          aria-hidden='true'
+          className='absolute left-1.5 right-1.5 rounded-xl bg-emerald-500/90 shadow-md shadow-emerald-600/30 pointer-events-none'
+          style={{
+            top: indicatorTop,
+            height: indicatorH,
+            transition: 'top 320ms cubic-bezier(0.34,1.4,0.64,1), height 200ms ease',
+          }}
+        />
+
       {/* Map Tab */}
       <button
+        ref={mapBtnRef}
         type='button'
         role='tab'
         aria-selected={isMap}
         onClick={() => onSelectView('map')}
-        className={`h-8 px-3.5 rounded-full text-xs font-semibold flex items-center justify-center gap-1.5 whitespace-nowrap shrink-0 transition-all duration-150 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${
-          isMap
-            ? 'bg-emerald-600 text-white shadow-sm shadow-emerald-950/40'
-            : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+        className={`relative z-10 w-11 py-3 rounded-xl text-[10px] font-semibold flex flex-col items-center justify-center gap-1.5 shrink-0 active:scale-[0.93] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 transition-colors duration-200 ${
+          isMap ? 'text-white' : 'text-slate-700 hover:text-slate-900'
         }`}
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
-          className='w-3.5 h-3.5 shrink-0'
+          className='w-4 h-4 shrink-0'
           fill='none'
           viewBox='0 0 24 24'
           stroke='currentColor'
@@ -53,21 +79,23 @@ export default function MobileViewSwitcher({
         <span>Map</span>
       </button>
 
+      {/* Divider */}
+      <span className='relative z-10 w-6 h-px bg-white/50 shrink-0' />
+
       {/* List Tab */}
       <button
+        ref={listBtnRef}
         type='button'
         role='tab'
         aria-selected={isList}
         onClick={() => onSelectView('list')}
-        className={`h-8 px-3.5 rounded-full text-xs font-semibold flex items-center justify-center gap-1.5 whitespace-nowrap shrink-0 transition-all duration-150 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${
-          isList
-            ? 'bg-emerald-600 text-white shadow-sm shadow-emerald-950/40'
-            : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+        className={`relative z-10 w-11 py-3 rounded-xl text-[10px] font-semibold flex flex-col items-center justify-center gap-1.5 shrink-0 active:scale-[0.93] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 transition-colors duration-200 ${
+          isList ? 'text-white' : 'text-slate-700 hover:text-slate-900'
         }`}
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
-          className='w-3.5 h-3.5 shrink-0'
+          className='w-4 h-4 shrink-0'
           fill='none'
           viewBox='0 0 24 24'
           stroke='currentColor'
@@ -81,82 +109,58 @@ export default function MobileViewSwitcher({
         </svg>
         <span>List</span>
         <span
-          className={`ml-0.5 px-1.5 py-0.5 rounded-full text-[10px] font-bold leading-none shrink-0 ${
+          className={`px-1.5 py-0.5 rounded-full text-[9px] font-bold leading-none shrink-0 transition-colors duration-200 ${
             isList
-              ? 'bg-emerald-700/90 text-white'
-              : 'bg-slate-800 text-slate-300 border border-slate-700'
+              ? 'bg-white/30 text-white border border-white/40'
+              : 'bg-black/10 text-slate-600 border border-white/30'
           }`}
         >
           {filteredCount}
         </span>
       </button>
 
-      {/* Near Me Quick Action in Floating Switcher (when on list view) */}
+      {/* Near Me — shown below list tab when in list view */}
       {isList && onToggleNearMe && (
         <>
-          <span className='h-4 w-px bg-slate-700/80 mx-0.5 shrink-0' />
+          <span className='relative z-10 w-6 h-px bg-white/50 shrink-0' />
           <button
             type='button'
             onClick={onToggleNearMe}
             disabled={isLocating}
-            className={`h-8 px-3 rounded-full text-xs font-semibold flex items-center justify-center gap-1.5 whitespace-nowrap shrink-0 transition-all duration-150 active:scale-95 disabled:opacity-60 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${
+            className={`relative z-10 w-11 py-3 rounded-xl text-[10px] font-semibold flex flex-col items-center justify-center gap-1.5 shrink-0 active:scale-[0.93] disabled:opacity-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 transition-all duration-200 ${
               onlyNearMe
-                ? 'bg-emerald-500 text-white shadow-sm shadow-emerald-950/40'
-                : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                ? 'bg-emerald-500/90 text-white shadow-md shadow-emerald-600/30'
+                : 'text-slate-700 hover:text-slate-900 hover:bg-white/30'
             }`}
           >
             {isLocating ? (
               <svg
-                className='animate-spin w-3 h-3 text-current shrink-0'
+                className='animate-spin w-4 h-4 text-current shrink-0'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
               >
-                <circle
-                  className='opacity-25'
-                  cx='12'
-                  cy='12'
-                  r='10'
-                  stroke='currentColor'
-                  strokeWidth='4'
-                />
-                <path
-                  className='opacity-75'
-                  fill='currentColor'
-                  d='M4 12a8 8 0 018-8v8H4z'
-                />
+                <circle className='opacity-25' cx='12' cy='12' r='10' stroke='currentColor' strokeWidth='4' />
+                <path className='opacity-75' fill='currentColor' d='M4 12a8 8 0 018-8v8H4z' />
               </svg>
             ) : (
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='w-3.5 h-3.5 shrink-0'
+                className='w-4 h-4 shrink-0'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
                 strokeWidth={2}
               >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
-                />
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
-                />
+                <path strokeLinecap='round' strokeLinejoin='round' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z' />
+                <path strokeLinecap='round' strokeLinejoin='round' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z' />
               </svg>
             )}
-            <span>
-              {isLocating
-                ? 'Locating...'
-                : onlyNearMe
-                  ? 'Nearest ✓'
-                  : 'Near Me'}
-            </span>
+            <span>{isLocating ? 'Locating' : onlyNearMe ? 'Nearest' : 'Near Me'}</span>
           </button>
         </>
       )}
+      </div>
     </div>
   );
 }
