@@ -8,14 +8,13 @@
     BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* Modern Leaflet custom marker & popup overrides */
+/* Leaflet popup and marker overrides */
 .leaflet-container {
   font-family: inherit;
   width: 100% !important;
   height: 100% !important;
   z-index: 1;
 }
-
 .leaflet-popup-content-wrapper {
   padding: 0 !important;
   border-radius: 20px !important;
@@ -26,16 +25,13 @@
   border: 1px solid rgba(226, 232, 240, 0.95) !important;
   background: #ffffff !important;
 }
-
 .leaflet-popup-content {
   margin: 0 !important;
   line-height: inherit !important;
 }
-
 .leaflet-popup-tip-container {
   overflow: visible !important;
 }
-
 .leaflet-popup-tip {
   background: #ffffff !important;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
@@ -43,8 +39,6 @@
   border-top: none !important;
   border-left: none !important;
 }
-
-/* Premium circular close button */
 .leaflet-container a.leaflet-popup-close-button {
   top: 12px !important;
   right: 12px !important;
@@ -65,27 +59,18 @@
   line-height: 1 !important;
   border: 1px solid #e2e8f0 !important;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
 }
-
 .leaflet-container a.leaflet-popup-close-button:hover {
   background: #e2e8f0 !important;
   color: #0f172a !important;
   transform: scale(1.06) !important;
 }
-
-/* On mobile, pinch-to-zoom is native; hide intrusive leaflet zoom buttons to keep screen clean and prevent overlay collisions */
 @media (max-width: 639px) {
   .leaflet-control-zoom {
     display: none !important;
   }
 }
-
-.custom-marker-icon {
-  background: transparent !important;
-  border: none !important;
-}
-
+.custom-marker-icon,
 .custom-user-marker {
   background: transparent !important;
   border: none !important;
@@ -118,28 +103,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #def2e5;
-    background-image:
-      radial-gradient(
-        at 10% 12%,
-        rgba(16, 185, 129, 0.25) 0px,
-        transparent 55%
-      ),
-      radial-gradient(
-        at 90% 16%,
-        rgba(52, 211, 153, 0.22) 0px,
-        transparent 50%
-      ),
-      radial-gradient(
-        at 50% 85%,
-        rgba(13, 148, 136, 0.18) 0px,
-        transparent 55%
-      ),
-      radial-gradient(
-        at 50% 35%,
-        rgba(34, 197, 94, 0.14) 0px,
-        transparent 65%
-      );
-    background-attachment: fixed;
   }
 }
 
@@ -166,8 +129,12 @@
 }
 
 @keyframes roadDashScroll {
-  from { background-position: 0 0; }
-  to { background-position: -20px 0; }
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -20px 0;
+  }
 }
 
 .animate-ev-glide {
@@ -183,4 +150,52 @@
 }
 .group:hover .animate-road-flow {
   animation-duration: 0.4s;
+}
+
+/* Realistic Animated River Currents & Sea Waves */
+@keyframes riverWaterFlow {
+  from {
+    stroke-dashoffset: 40;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes seaWaveRoll {
+  0% {
+    stroke-dashoffset: 60;
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.55;
+  }
+}
+@keyframes seaSurfGlow {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translateY(-1.5px);
+  }
+}
+
+.animate-river-flow {
+  will-change: stroke-dashoffset;
+  stroke-dasharray: 8 6;
+  animation: riverWaterFlow 2s linear infinite;
+}
+.animate-sea-wave {
+  will-change: stroke-dashoffset, opacity;
+  animation: seaWaveRoll 4s ease-in-out infinite;
+}
+.animate-sea-surf {
+  will-change: transform, opacity;
+  animation: seaSurfGlow 3.2s ease-in-out infinite alternate;
 }

@@ -1,28 +1,15 @@
-export default function EcoBackground() {
+import { memo } from 'react';
+
+function EcoBackground() {
   return (
     <div
       aria-hidden='true'
-      className='fixed inset-0 pointer-events-none -z-10 overflow-hidden bg-linear-to-b from-slate-50 via-slate-50/80 to-slate-100/70'
+      className='fixed inset-0 pointer-events-none -z-10 overflow-hidden bg-linear-to-b from-slate-50 via-slate-50/80 to-slate-100/70 [contain:strict]'
     >
       {/* 1. Ultra-subtle ambient energy glowing orbs */}
-      <div
-        className='absolute -top-28 -left-28 w-md h-112 rounded-full bg-linear-to-br from-emerald-200/12 via-teal-100/8 to-transparent blur-3xl'
-        style={{
-          animation: 'pulse 8s ease-in-out infinite alternate',
-        }}
-      />
-      <div
-        className='absolute top-1/4 -right-24 w-120 h-120 rounded-full bg-linear-to-bl from-teal-200/10 via-slate-100/10 to-transparent blur-3xl'
-        style={{
-          animation: 'pulse 10s ease-in-out infinite alternate-reverse',
-        }}
-      />
-      <div
-        className='absolute -bottom-28 left-1/4 w-136 h-136 rounded-full bg-linear-to-tr from-emerald-100/10 via-teal-50/8 to-transparent blur-3xl'
-        style={{
-          animation: 'pulse 12s ease-in-out infinite alternate',
-        }}
-      />
+      <div className='absolute -top-28 -left-28 w-md h-112 rounded-full bg-linear-to-br from-emerald-200/15 via-teal-100/10 to-transparent blur-3xl opacity-80' />
+      <div className='absolute top-1/4 -right-24 w-120 h-120 rounded-full bg-linear-to-bl from-teal-200/12 via-slate-100/10 to-transparent blur-3xl opacity-70' />
+      <div className='absolute -bottom-28 left-1/4 w-136 h-136 rounded-full bg-linear-to-tr from-emerald-100/12 via-teal-50/10 to-transparent blur-3xl opacity-80' />
 
       {/* 2. Delicate renewable energy topographic waves & wind flow SVG */}
       <svg
@@ -107,3 +94,5 @@ export default function EcoBackground() {
     </div>
   );
 }
+
+export default memo(EcoBackground);

@@ -1,20 +1,62 @@
+import { useState, useEffect, useCallback } from 'react';
 import { chargingStations } from './data/charging-stations';
 import { useUserLocation } from './hooks/use-user-location';
 import { useStationFilters } from './hooks/use-station-filters';
 import { useMobileNavigation } from './hooks/use-mobile-navigation';
 import Header from './components/header';
-import LocationErrorAlert from './components/location-error-alert';
-import StationFilters from './components/station-filters';
-import StationListHeader from './components/station-list-header';
-import StationList from './components/station-list';
-import OpenMap from './components/open-map';
-import ErrorBoundary from './components/error-boundary';
+import StationExplorerView from './components/station-explorer-view';
+import EacStatsPage from './components/eac-stats/eac-stats-page';
 import MobileStationDrawer from './components/mobile-station-drawer';
 import AppFooter from './components/app-footer';
 import MobileViewSwitcher from './components/mobile-view-switcher';
 import EcoBackground from './components/eco-background';
 
+type AppPage = 'explorer' | 'eac-stats';
+
+const ACTIVE_TAB_STORAGE_KEY = 'cambodia_ev_active_tab';
+
+const getInitialPage = (): AppPage => {
+  if (typeof window !== 'undefined') {
+    const hash = window.location.hash.replace(/^#/, '');
+    if (hash === 'eac-stats' || hash === 'explorer') {
+      return hash as AppPage;
+    }
+    try {
+      const saved = localStorage.getItem(ACTIVE_TAB_STORAGE_KEY);
+      if (saved === 'eac-stats' || saved === 'explorer') {
+        return saved as AppPage;
+      }
+    } catch {
+      // localStorage may be restricted in private browsing
+    }
+  }
+  return 'explorer';
+};
+
 const App = () => {
+  const [activePage, setActivePage] = useState<AppPage>(getInitialPage);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace(/^#/, '');
+      if (hash === 'eac-stats' || hash === 'explorer') {
+        setActivePage(hash as AppPage);
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const handlePageChange = useCallback((page: AppPage) => {
+    setActivePage(page);
+    try {
+      localStorage.setItem(ACTIVE_TAB_STORAGE_KEY, page);
+      window.location.hash = page;
+    } catch {
+      // ignore storage errors
+    }
+  }, []);
+
   const {
     mobileView,
     selectedStation,
@@ -55,7 +97,9 @@ const App = () => {
   return (
     <div
       className={`min-h-screen ${
-        mobileView === 'map' ? 'h-dvh max-h-dvh overflow-hidden' : ''
+        activePage === 'explorer' && mobileView === 'map'
+          ? 'h-dvh max-h-dvh overflow-hidden'
+          : ''
       } lg:h-screen lg:max-h-screen lg:overflow-hidden bg-transparent text-slate-800 flex flex-col relative`}
     >
       <EcoBackground />
@@ -63,88 +107,50 @@ const App = () => {
       <Header
         totalCount={totalCount}
         filteredCount={filteredStations.length}
+        activePage={activePage}
+        onPageChange={handlePageChange}
       />
 
       <main
         className={`flex-1 min-h-0 max-w-7xl w-full mx-auto px-2.5 sm:px-4 py-2 sm:py-2.5 flex flex-col gap-2 sm:gap-2.5 ${
-          mobileView === 'map' ? 'overflow-hidden' : ''
+          activePage === 'explorer' && mobileView === 'map'
+            ? 'overflow-hidden'
+            : ''
         } lg:overflow-hidden`}
       >
-        <LocationErrorAlert
-          error={locationError}
-          onClear={clearLocationError}
-        />
-
-        <div className='shrink-0'>
-          <StationFilters
+        {activePage === 'explorer' ? (
+          <StationExplorerView
+            stations={chargingStations}
+            filteredStations={filteredStations}
+            selectedStation={selectedStation}
+            mobileView={mobileView}
+            userLocation={userLocation}
+            isLocating={isLocating}
+            locationError={locationError}
+            distances={distances}
             search={search}
             connector={connector}
             only24Hours={only24Hours}
             onlyNearMe={onlyNearMe}
-            isLocating={isLocating}
             hasActiveFilters={hasActiveFilters}
-            stations={chargingStations}
             onSearchChange={setSearch}
             onConnectorChange={setConnector}
             onToggle24Hours={toggle24Hours}
             onToggleNearMe={handleToggleNearMe}
             onClearFilters={handleClearFilters}
+            onClearLocationError={clearLocationError}
+            onSelectStation={handleSelectStation}
+            onDeselectStation={handleDeselectStation}
+            onRequestUserLocation={requestUserLocation}
           />
-        </div>
-
-        <div className='flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-stretch'>
-          <section
-            aria-label='Stations list'
-            className={`lg:col-span-5 h-full min-h-0 flex flex-col gap-1.5 ${
-              mobileView === 'map' ? 'hidden lg:flex' : 'flex'
-            }`}
-          >
-            <StationListHeader
-              filteredCount={filteredStations.length}
-              hasActiveFilters={hasActiveFilters}
-              onlyNearMe={onlyNearMe}
-              isLocating={isLocating}
-              onToggleNearMe={handleToggleNearMe}
-            />
-
-            <div className='flex-1 min-h-0 overflow-y-auto space-y-2.5 scrollbar-thin pr-1 pb-32 lg:pb-0'>
-              <StationList
-                stations={filteredStations}
-                groupByProvince={false}
-                selectedStationId={selectedStation?.id}
-                distances={distances}
-                onSelectStation={handleSelectStation}
-                onReset={handleClearFilters}
-              />
-            </div>
-          </section>
-
-          <section
-            aria-label='Interactive map'
-            className={`lg:col-span-7 flex-1 h-full min-h-0 w-full ${
-              mobileView === 'list' ? 'hidden lg:block' : 'flex flex-col'
-            }`}
-          >
-            <ErrorBoundary>
-              <OpenMap
-                stations={filteredStations}
-                selectedStation={selectedStation}
-                userLocation={userLocation}
-                onSelectStation={handleSelectStation}
-                onDeselectStation={handleDeselectStation}
-                onRequestUserLocation={requestUserLocation}
-                isLocating={isLocating}
-                distances={distances}
-                mobileView={mobileView}
-              />
-            </ErrorBoundary>
-          </section>
-        </div>
+        ) : (
+          <EacStatsPage />
+        )}
       </main>
 
       <AppFooter />
 
-      {mobileView === 'map' && selectedStation && (
+      {activePage === 'explorer' && mobileView === 'map' && selectedStation && (
         <MobileStationDrawer
           station={selectedStation}
           distance={distances[selectedStation.id]}
@@ -153,16 +159,17 @@ const App = () => {
         />
       )}
 
-      {(!selectedStation || mobileView === 'list') && (
-        <MobileViewSwitcher
-          mobileView={mobileView}
-          filteredCount={filteredStations.length}
-          onSelectView={handleSelectView}
-          onlyNearMe={onlyNearMe}
-          isLocating={isLocating}
-          onToggleNearMe={handleToggleNearMe}
-        />
-      )}
+      {activePage === 'explorer' &&
+        (!selectedStation || mobileView === 'list') && (
+          <MobileViewSwitcher
+            mobileView={mobileView}
+            filteredCount={filteredStations.length}
+            onSelectView={handleSelectView}
+            onlyNearMe={onlyNearMe}
+            isLocating={isLocating}
+            onToggleNearMe={handleToggleNearMe}
+          />
+        )}
     </div>
   );
 };

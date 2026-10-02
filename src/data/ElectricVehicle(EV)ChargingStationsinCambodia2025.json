@@ -1,6 +1,318 @@
 {
     "type": "FeatureCollection",
     "features": [
+
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.967974, 12.528926]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 1",
+      "Latitude": 12.528926,
+      "Longitude": 103.967974,
+      "QR Number": 1,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.914448, 12.534678]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 2",
+      "Latitude": 12.534678,
+      "Longitude": 103.914448,
+      "QR Number": 2,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.928085, 12.535642]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 3",
+      "Latitude": 12.535642,
+      "Longitude": 103.928085,
+      "QR Number": 3,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.910545, 12.537627]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 4",
+      "Latitude": 12.537627,
+      "Longitude": 103.910545,
+      "QR Number": 4,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.90157, 12.540776]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 5",
+      "Latitude": 12.540776,
+      "Longitude": 103.90157,
+      "QR Number": 5,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.915281, 12.547478]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 6",
+      "Latitude": 12.547478,
+      "Longitude": 103.915281,
+      "QR Number": 6,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.913842, 12.555086]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 7",
+      "Latitude": 12.555086,
+      "Longitude": 103.913842,
+      "QR Number": 7,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.9157562, 12.5343561]
+    },
+    "properties": {
+      "Location Name": "EVET EV Hub Pursat",
+      "Latitude": 12.5343561,
+      "Longitude": 103.9157562,
+      "QR Number": 8,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.9157562, 12.5343561]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 9",
+      "Latitude": 12.5343561,
+      "Longitude": 103.9157562,
+      "QR Number": 9,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.98264964, 12.52745385]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 10",
+      "Latitude": 12.52745385,
+      "Longitude": 103.98264964,
+      "QR Number": 10,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.9154739, 12.554018]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 11",
+      "Latitude": 12.554018,
+      "Longitude": 103.9154739,
+      "QR Number": 11,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [104.2089092, 12.5326545]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 12",
+      "Latitude": 12.5326545,
+      "Longitude": 104.2089092,
+      "QR Number": 12,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [104.266199, 12.5169]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 13",
+      "Latitude": 12.5169,
+      "Longitude": 104.266199,
+      "QR Number": 13,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [104.189022, 12.528482]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 14",
+      "Latitude": 12.528482,
+      "Longitude": 104.189022,
+      "QR Number": 14,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [104.21426, 12.531948]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 15",
+      "Latitude": 12.531948,
+      "Longitude": 104.21426,
+      "QR Number": 15,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [104.171524, 12.529222]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 16",
+      "Latitude": 12.529222,
+      "Longitude": 104.171524,
+      "QR Number": 16,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.736828, 12.352233]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 17",
+      "Latitude": 12.352233,
+      "Longitude": 103.736828,
+      "QR Number": 17,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.7283402, 12.634688]
+    },
+    "properties": {
+      "Location Name": "Coffee Pokis",
+      "Latitude": 12.634688,
+      "Longitude": 103.7283402,
+      "QR Number": 18,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.7787628, 12.3600111]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 19",
+      "Latitude": 12.3600111,
+      "Longitude": 103.7787628,
+      "QR Number": 19,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.1786346, 12.0802803]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 20",
+      "Latitude": 12.0802803,
+      "Longitude": 103.1786346,
+      "QR Number": 20,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.033553, 12.281809]
+    },
+    "properties": {
+      "Location Name": "EAC DATA 21",
+      "Latitude": 12.281809,
+      "Longitude": 103.033553,
+      "QR Number": 21,
+      "Source": "EAC QR Code"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [103.1786346, 12.0802803]
+    },
+    "properties": {
+      "Location Name": "Velea Escape",
+      "Latitude": 12.0802803,
+      "Longitude": 103.1786346,
+      "QR Number": 22,
+      "Source": "EAC QR Code"
+    }
+  }
+,
+
+
         {
             "type": "Feature",
             "geometry": {
@@ -1930,3 +2242,4 @@
         }
     ]
 }
+
