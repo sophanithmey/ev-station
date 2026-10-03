@@ -1,2245 +1,3059 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.967974, 12.528926]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.914448,
+          12.534678
+        ]
+      },
+      "properties": {
+        "Location Name": "Sala Khum Pursat & Chan Muler Electric Motor Pursat",
+        "Location Name (Khmer)": "សាលាឃុំ ពោធិ៍សាត់ & ច័ន្ទមូឡឺម៉ូតូអគ្គិសនីខេត្តពោធិ៍សាត់",
+        "Location Name (English)": "Sala Khum Pursat",
+        "Latitude": 12.534678,
+        "Longitude": 103.914448,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ចំណតរថយន្ត ក្រុមហ៊ុន វ៉ៃ-ប៉ុកថៅ ភូមិសាលាគំរូ ឃុំព្រៃញី ក្រុងពោធិ៍សាត់",
+        "Chargers Count": 7,
+        "Phone": "085 555 588, 010 535 436",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 1
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 1",
-      "Latitude": 12.528926,
-      "Longitude": 103.967974,
-      "QR Number": 1,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.914448, 12.534678]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.928085,
+          12.535642
+        ]
+      },
+      "properties": {
+        "Location Name": "Prey Nhi",
+        "Location Name (Khmer)": "ព្រៃញី",
+        "Location Name (English)": "Prey Nhi",
+        "Latitude": 12.535642,
+        "Longitude": 103.928085,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "អតីតមន្ទីរពេទ្យព្រៃញី ភូមិបាក់រទេះ សង្កាត់ព្រៃញី ក្រុងពោធិ៍សាត់",
+        "Chargers Count": 1,
+        "Phone": "099 990 999",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 3
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 2",
-      "Latitude": 12.534678,
-      "Longitude": 103.914448,
-      "QR Number": 2,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.928085, 12.535642]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.910545,
+          12.537627
+        ]
+      },
+      "properties": {
+        "Location Name": "The Sky Steung Sophoan",
+        "Location Name (Khmer)": "ឌី ស្កាយ ស្ទឹងសុពណ៌",
+        "Location Name (English)": "The Sky Steung Sophoan",
+        "Latitude": 12.537627,
+        "Longitude": 103.910545,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ហាងកាហ្វេអាហារដ្ឋាន The Sky ភូមិ១ សង្កាត់ផ្ទះព្រៃ ក្រុងពោធិ៍សាត់",
+        "Chargers Count": 1,
+        "Phone": "086 522 268",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 4
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 3",
-      "Latitude": 12.535642,
-      "Longitude": 103.928085,
-      "QR Number": 3,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.910545, 12.537627]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91242,
+          12.53985
+        ]
+      },
+      "properties": {
+        "Location Name": "Heng Kinay Happy Night",
+        "Location Name (Khmer)": "ហេងគីណាយ",
+        "Location Name (English)": "Heng Kinay Happy Night",
+        "Latitude": 12.53985,
+        "Longitude": 103.91242,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ចាក់ប្រេង Happy Night ភូមិបេងស្នោ សង្កាត់ផ្ទះព្រៃ ក្រុងពោធិ៍សាត់",
+        "Chargers Count": 1,
+        "Phone": "096 663 3345",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 5
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 4",
-      "Latitude": 12.537627,
-      "Longitude": 103.910545,
-      "QR Number": 4,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.90157, 12.540776]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90157,
+          12.540776
+        ]
+      },
+      "properties": {
+        "Location Name": "Pka Vidya Cafe",
+        "Location Name (Khmer)": "ផ្កាវិទ្យាកាហ្វេ",
+        "Location Name (English)": "Pka Vidya Cafe",
+        "Latitude": 12.540776,
+        "Longitude": 103.90157,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ហាងកាហ្វេផ្កាវិទ្យា ភូមិចំការចេកខាងជើង សង្កាត់ផ្ទះព្រៃ ក្រុងពោធិ៍សាត់",
+        "Chargers Count": 1,
+        "Phone": "086 655 569",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 6
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 5",
-      "Latitude": 12.540776,
-      "Longitude": 103.90157,
-      "QR Number": 5,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.915281, 12.547478]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.915281,
+          12.547478
+        ]
+      },
+      "properties": {
+        "Location Name": "Kolboth Restaurant",
+        "Location Name (Khmer)": "ភោជនីយដ្ឋាន កុលបុត្រ",
+        "Location Name (English)": "Kolboth Restaurant",
+        "Latitude": 12.547478,
+        "Longitude": 103.915281,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ភោជនីយដ្ឋាន កុលបុត្រ ភូមិមជ្ឈិម សង្កាត់ផ្ទះព្រៃ ក្រុងពោធិ៍សាត់",
+        "Chargers Count": 1,
+        "Phone": "068 930 049",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 7
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 6",
-      "Latitude": 12.547478,
-      "Longitude": 103.915281,
-      "QR Number": 6,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.913842, 12.555086]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.913842,
+          12.555086
+        ]
+      },
+      "properties": {
+        "Location Name": "EVET EV Hub Pursat & Pursat Center Hotel",
+        "Location Name (Khmer)": "EVET EV Hub Pursat & ពោធិ៍សាត់ សេនធើ",
+        "Location Name (English)": "EVET EV Hub Pursat",
+        "Latitude": 12.555086,
+        "Longitude": 103.913842,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ចំណតរថយន្ត EV Hub ភូមិក្បាលហុង សង្កាត់បន្ទាយដី ក្រុងពោធិ៍សាត់",
+        "Chargers Count": 3,
+        "Phone": "096 606 696, 012 952 252",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 8
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 7",
-      "Latitude": 12.555086,
-      "Longitude": 103.913842,
-      "QR Number": 7,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.9157562, 12.5343561]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9157562,
+          12.5343561
+        ]
+      },
+      "properties": {
+        "Location Name": "Lim Long Vattey & Tela Pursat Town",
+        "Location Name (Khmer)": "លឹម ហុង វត្តី & តេឡាក្រុងពោធិ៍សាត់",
+        "Location Name (English)": "Lim Long Vattey",
+        "Latitude": 12.5343561,
+        "Longitude": 103.9157562,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ លឹម ហុង ភូមិស្រែប្រង់ សង្កាត់ព្រៃញី ក្រុងពោធិ៍សាត់",
+        "Chargers Count": 4,
+        "Phone": "068 968 668, 085 445 445",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 10
+      }
     },
-    "properties": {
-      "Location Name": "EVET EV Hub Pursat",
-      "Latitude": 12.5343561,
-      "Longitude": 103.9157562,
-      "QR Number": 8,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.9157562, 12.5343561]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91845,
+          12.53852
+        ]
+      },
+      "properties": {
+        "Location Name": "Monorom EV Guesthouse",
+        "Location Name (Khmer)": "មនោរម្យ អ៊ីវី",
+        "Location Name (English)": "Monorom EV Guesthouse",
+        "Latitude": 12.53852,
+        "Longitude": 103.91845,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ផ្ទះសំណាក់ មនោរម្យ ភូមិរលួស សង្កាត់ផ្ទះព្រៃ ក្រុងពោធិ៍សាត់",
+        "Chargers Count": 1,
+        "Phone": "070 821 772",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 11
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 9",
-      "Latitude": 12.5343561,
-      "Longitude": 103.9157562,
-      "QR Number": 9,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.98264964, 12.52745385]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.98264964,
+          12.52745385
+        ]
+      },
+      "properties": {
+        "Location Name": "Tela Trapeang Chong",
+        "Location Name (Khmer)": "តេឡាត្រពាំងជង",
+        "Location Name (English)": "Tela Trapeang Chong",
+        "Latitude": 12.52745385,
+        "Longitude": 103.98264964,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ តេឡាត្រពាំងជង ភូមិត្រពាំងជង ឃុំត្រពាំងជង ស្រុកបាកាន",
+        "Chargers Count": 2,
+        "Phone": "099 990 999",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 13
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 10",
-      "Latitude": 12.52745385,
-      "Longitude": 103.98264964,
-      "QR Number": 10,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.9154739, 12.554018]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9154739,
+          12.554018
+        ]
+      },
+      "properties": {
+        "Location Name": "Phnom Kach Chrok",
+        "Location Name (Khmer)": "ភ្នំកាច់ច្រក",
+        "Location Name (English)": "Phnom Kach Chrok",
+        "Latitude": 12.554018,
+        "Longitude": 103.9154739,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ ភ្នំកាច់ច្រក ភូមិបឹងរាំង ឃុំអន្លង់ត្នោត ស្រុកក្រគរ",
+        "Chargers Count": 2,
+        "Phone": "099 990 999",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 14
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 11",
-      "Latitude": 12.554018,
-      "Longitude": 103.9154739,
-      "QR Number": 11,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [104.2089092, 12.5326545]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.171524,
+          12.529222
+        ]
+      },
+      "properties": {
+        "Location Name": "Prey Kos & VLA EV Cafe",
+        "Location Name (Khmer)": "ព្រៃកស & វិលលេអ អ៊ីវី",
+        "Location Name (English)": "Prey Kos",
+        "Latitude": 12.529222,
+        "Longitude": 104.171524,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ស្ថានីយព្រៃកស ផ្លូវជាតិលេខ៥ ភូមិទទឹង ឃុំអន្លង់ត្នោត ស្រុកក្រគរ",
+        "Chargers Count": 2,
+        "Phone": "012 994 733, 067 423 277",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 15
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 12",
-      "Latitude": 12.5326545,
-      "Longitude": 104.2089092,
-      "QR Number": 12,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [104.266199, 12.5169]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.2089092,
+          12.5326545
+        ]
+      },
+      "properties": {
+        "Location Name": "Citycon Pursat Town",
+        "Location Name (Khmer)": "ស៊ីធីខន ក្រុង ពោធិ៍សាត់",
+        "Location Name (English)": "Citycon Pursat Town",
+        "Latitude": 12.5326545,
+        "Longitude": 104.2089092,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ស្ថានីយ ស៊ីធីខន ភូមិស្វាយ ឃុំស្វាយលួង ស្រុកកណ្តៀង",
+        "Chargers Count": 2,
+        "Phone": "096 788 378 4",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 17
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 13",
-      "Latitude": 12.5169,
-      "Longitude": 104.266199,
-      "QR Number": 13,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [104.189022, 12.528482]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.7283402,
+          12.634688
+        ]
+      },
+      "properties": {
+        "Location Name": "Coffee Pokis",
+        "Location Name (Khmer)": "កាហ្វេ ប៉ូគីស (Coffee Pokis)",
+        "Location Name (English)": "Coffee Pokis",
+        "Latitude": 12.634688,
+        "Longitude": 103.7283402,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ហាងតែ ប៉ូគីស ភូមិបឹងខ្នារ ឃុំបឹងខ្នារ ស្រុកបាកាន",
+        "Chargers Count": 1,
+        "Phone": "081 446 644",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 18
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 14",
-      "Latitude": 12.528482,
-      "Longitude": 104.189022,
-      "QR Number": 14,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [104.21426, 12.531948]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.78492,
+          12.335418
+        ]
+      },
+      "properties": {
+        "Location Name": "Orange Roundabout Community Market",
+        "Location Name (Khmer)": "រង្វង់មូលក្រូច",
+        "Location Name (English)": "Orange Roundabout Community Market",
+        "Latitude": 12.335418,
+        "Longitude": 103.78492,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ផ្សារសហគមន៍ រង្វង់មូលក្រូច ភូមិព្រែក១ ឃុំសំរោង ស្រុកភ្នំក្រវាញ",
+        "Chargers Count": 1,
+        "Phone": "010 535 436",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 19
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 15",
-      "Latitude": 12.531948,
-      "Longitude": 104.21426,
-      "QR Number": 15,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [104.171524, 12.529222]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.736828,
+          12.352233
+        ]
+      },
+      "properties": {
+        "Location Name": "S-Box Phnom Kravanh",
+        "Location Name (Khmer)": "អេសបក ភ្នំក្រវាញ",
+        "Location Name (English)": "S-Box Phnom Kravanh",
+        "Latitude": 12.352233,
+        "Longitude": 103.736828,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "ស្ថានីយ អេសបក ភ្នំក្រវាញ ភូមិគាច ឃុំលាច ស្រុកភ្នំក្រវាញ",
+        "Chargers Count": 1,
+        "Phone": "012 535 154",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 20
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 16",
-      "Latitude": 12.529222,
-      "Longitude": 104.171524,
-      "QR Number": 16,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.736828, 12.352233]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.7787628,
+          12.3600111
+        ]
+      },
+      "properties": {
+        "Location Name": "Eco Village Resort",
+        "Location Name (Khmer)": "អេកូវីលេស",
+        "Location Name (English)": "Eco Village Resort",
+        "Latitude": 12.3600111,
+        "Longitude": 103.7787628,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "រីសត អេកូវូ ភូមិកណ្តាល ឃុំអន្លង់រាប ស្រុកវាលវែង",
+        "Chargers Count": 1,
+        "Phone": "099 990 999",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 21
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 17",
-      "Latitude": 12.352233,
-      "Longitude": 103.736828,
-      "QR Number": 17,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.7283402, 12.634688]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.033553,
+          12.281809
+        ]
+      },
+      "properties": {
+        "Location Name": "Velea Escape Resort",
+        "Location Name (Khmer)": "Veiea Escape",
+        "Location Name (English)": "Velea Escape Resort",
+        "Latitude": 12.281809,
+        "Longitude": 103.033553,
+        "Province": "Pursat",
+        "Province (Khmer)": "ពោធិ៍សាត់",
+        "Address": "រីសត វល្លា អេសខេប ភូមិឆាយលូក ឃុំអូរសោម ស្រុកវាលវែង",
+        "Chargers Count": 1,
+        "Phone": "070 821 772",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 22
+      }
     },
-    "properties": {
-      "Location Name": "Coffee Pokis",
-      "Latitude": 12.634688,
-      "Longitude": 103.7283402,
-      "QR Number": 18,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.7787628, 12.3600111]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.851355,
+          13.366775
+        ]
+      },
+      "properties": {
+        "Location Name": "Tela Slor Kram & Tela Svay Dangkum",
+        "Location Name (Khmer)": "តេឡា ស្វាយក្រម & តេឡា ស្វាយដង្គុំ",
+        "Location Name (English)": "Tela Slor Kram",
+        "Latitude": 13.366775,
+        "Longitude": 103.851355,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ ភូមិបន្ទាយចាស់ សង្កាត់ស្លក្រាម ក្រុងសៀមរាប",
+        "Chargers Count": 4,
+        "Phone": "077 320 411",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 1
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 19",
-      "Latitude": 12.3600111,
-      "Longitude": 103.7787628,
-      "QR Number": 19,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.1786346, 12.0802803]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.825171,
+          13.38254
+        ]
+      },
+      "properties": {
+        "Location Name": "Tela Srange",
+        "Location Name (Khmer)": "តេឡា ស្រង៉ែ",
+        "Location Name (English)": "Tela Srange",
+        "Latitude": 13.38254,
+        "Longitude": 103.825171,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ ភូមិកសិកម្ម សង្កាត់ស្រង៉ែ ក្រុងសៀមរាប",
+        "Chargers Count": 2,
+        "Phone": "077 320 411",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 3
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 20",
-      "Latitude": 12.0802803,
-      "Longitude": 103.1786346,
-      "QR Number": 20,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.033553, 12.281809]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8487091,
+          13.3663073
+        ]
+      },
+      "properties": {
+        "Location Name": "Sokha Angkor Resort",
+        "Location Name (Khmer)": "សុខាអង្គរ",
+        "Location Name (English)": "Sokha Angkor Resort",
+        "Latitude": 13.3663073,
+        "Longitude": 103.8487091,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "សណ្ឋាគារ ភូមិសាលាកន្សែង សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 2,
+        "Phone": "010 381 314",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 4
+      }
     },
-    "properties": {
-      "Location Name": "EAC DATA 21",
-      "Latitude": 12.281809,
-      "Longitude": 103.033553,
-      "QR Number": 21,
-      "Source": "EAC QR Code"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [103.1786346, 12.0802803]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.864,
+          13.3575
+        ]
+      },
+      "properties": {
+        "Location Name": "Dvar Kandal Parking",
+        "Location Name (Khmer)": "ទ្វារកណ្តាល",
+        "Location Name (English)": "Dvar Kandal Parking",
+        "Latitude": 13.3575,
+        "Longitude": 103.864,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ចំណតរថយន្ត ភូមិវត្តបូ សង្កាត់សាលាកំរើក ក្រុងសៀមរាប",
+        "Chargers Count": 1,
+        "Phone": "085 555 588",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 5
+      }
     },
-    "properties": {
-      "Location Name": "Velea Escape",
-      "Latitude": 12.0802803,
-      "Longitude": 103.1786346,
-      "QR Number": 22,
-      "Source": "EAC QR Code"
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.882,
+          13.3512
+        ]
+      },
+      "properties": {
+        "Location Name": "Chong Kousou Hub",
+        "Location Name (Khmer)": "ចុងកៅស៊ូ",
+        "Location Name (English)": "Chong Kousou Hub",
+        "Latitude": 13.3512,
+        "Longitude": 103.882,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ចំណតរថយន្ត ភូមិចុងកៅស៊ូ សង្កាត់ស្លក្រាម ក្រុងសៀមរាប",
+        "Chargers Count": 6,
+        "Phone": "085 555 588",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.886873,
+          13.358788
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Station Angkor",
+        "Location Name (Khmer)": "ភីធីធី អង្គរ",
+        "Location Name (English)": "PTT Station Angkor",
+        "Latitude": 13.358788,
+        "Longitude": 103.886873,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ ភូមិសាលាកន្សែង សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 1,
+        "Phone": "011 368 025",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.842,
+          13.349
+        ]
+      },
+      "properties": {
+        "Location Name": "Huy Leng Market",
+        "Location Name (Khmer)": "ផ្សារហ៊ុយឡេង",
+        "Location Name (English)": "Huy Leng Market",
+        "Latitude": 13.349,
+        "Longitude": 103.842,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ផ្សារ ភូមិតាគង់ សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 1,
+        "Phone": "099 990 999",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.846786,
+          13.3694721
+        ]
+      },
+      "properties": {
+        "Location Name": "CTV Thnal Siem Reap 1",
+        "Location Name (Khmer)": "ស៊ីធីវី ថ្នល់ សៀមរាប ១",
+        "Location Name (English)": "CTV Thnal Siem Reap 1",
+        "Latitude": 13.3694721,
+        "Longitude": 103.846786,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ ភូមិក្រសាំង សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 1,
+        "Phone": "096 788 3784",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85808472766223,
+          13.362394130190022
+        ]
+      },
+      "properties": {
+        "Location Name": "J7 Hotel Siem Reap",
+        "Location Name (Khmer)": "J7 Hotel",
+        "Location Name (English)": "J7 Hotel Siem Reap",
+        "Latitude": 13.362394130190022,
+        "Longitude": 103.85808472766223,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "សណ្ឋាគារ ភូមិមណ្ឌល២ សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 1,
+        "Phone": "011 967 597",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85624083819933,
+          13.361040804095873
+        ]
+      },
+      "properties": {
+        "Location Name": "Prince D Angkor Hotel & Spa",
+        "Location Name (Khmer)": "Prince Angkor Hotel",
+        "Location Name (English)": "Prince D Angkor Hotel & Spa",
+        "Latitude": 13.361040804095873,
+        "Longitude": 103.85624083819933,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "សណ្ឋាគារ ភូមិមណ្ឌល២ សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 1,
+        "Phone": "011 967 597",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8548,
+          13.3551
+        ]
+      },
+      "properties": {
+        "Location Name": "Asia Market Pub Street",
+        "Location Name (Khmer)": "Asia Market Pub Street",
+        "Location Name (English)": "Asia Market Pub Street",
+        "Latitude": 13.3551,
+        "Longitude": 103.8548,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ផ្សារទំនើប ភូមិមណ្ឌល១ សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 1,
+        "Phone": "011 967 597",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8576854,
+          13.36222845
+        ]
+      },
+      "properties": {
+        "Location Name": "Platinum Entertainment Center",
+        "Location Name (Khmer)": "Platinum Entertainment Center",
+        "Location Name (English)": "Platinum Entertainment Center",
+        "Latitude": 13.36222845,
+        "Longitude": 103.8576854,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ក្លឹបកម្សាន្ត ភូមិសាលាកន្សែង សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 1,
+        "Phone": "011 967 597",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85885725537563,
+          13.367838468386873
+        ]
+      },
+      "properties": {
+        "Location Name": "CartEV Siem Reap",
+        "Location Name (Khmer)": "CartEV",
+        "Location Name (English)": "CartEV Siem Reap",
+        "Latitude": 13.367838468386873,
+        "Longitude": 103.85885725537563,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ចំណតរថយន្ត ភូមិសាលាកន្សែង សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 3,
+        "Phone": "012 519 996",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.845892,
+          13.353042
+        ]
+      },
+      "properties": {
+        "Location Name": "Tela Sala Krao",
+        "Location Name (Khmer)": "តេឡា សាលាក្រៅ",
+        "Location Name (English)": "Tela Sala Krao",
+        "Latitude": 13.353042,
+        "Longitude": 103.845892,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ ភូមិក្រសាំង សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 2,
+        "Phone": "012 978 766",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8420334,
+          13.3538551
+        ]
+      },
+      "properties": {
+        "Location Name": "V Coffee Station",
+        "Location Name (Khmer)": "V Coffee Station",
+        "Location Name (English)": "V Coffee Station",
+        "Latitude": 13.3538551,
+        "Longitude": 103.8420334,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ហាងកាហ្វេ ភូមិស្វាយដង្គុំ សង្កាត់ស្វាយដង្គុំ ក្រុងសៀមរាប",
+        "Chargers Count": 2,
+        "Phone": "092 515 551",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.805432,
+          13.338215
+        ]
+      },
+      "properties": {
+        "Location Name": "Efficient Energy Apollo EV",
+        "Location Name (Khmer)": "Efficient Energy Apollo EV",
+        "Location Name (English)": "Efficient Energy Apollo EV",
+        "Latitude": 13.338215,
+        "Longitude": 103.805432,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ចំណតរថយន្ត ភូមិដកពរ សង្កាត់ក្របីរៀល ក្រុងសៀមរាប",
+        "Chargers Count": 2,
+        "Phone": "011 823 333",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.935421,
+          13.375218
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Prasat Bakong",
+        "Location Name (Khmer)": "ភីធីធី ស្លក្រាម",
+        "Location Name (English)": "PTT Prasat Bakong",
+        "Latitude": 13.375218,
+        "Longitude": 103.935421,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ ភូមិព្រៃធំ ឃុំអំពិល ស្រុកប្រាសាទបាគង",
+        "Chargers Count": 2,
+        "Phone": "099 990 999",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 18
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.902238,
+          13.35723
+        ]
+      },
+      "properties": {
+        "Location Name": "Citycon Thnal Siem Reap 5",
+        "Location Name (Khmer)": "ស៊ីធីខន ថ្នល់ សៀមរាប ៥",
+        "Location Name (English)": "Citycon Thnal Siem Reap 5",
+        "Latitude": 13.35723,
+        "Longitude": 103.902238,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ ភូមិត្រពាំង ឃុំកណ្តែក ស្រុកប្រាសាទបាគង",
+        "Chargers Count": 2,
+        "Phone": "096 788 3784",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.925482,
+          13.342158
+        ]
+      },
+      "properties": {
+        "Location Name": "Bolt EV Prasat Bakong",
+        "Location Name (Khmer)": "ប៊ូល អ៊ីវី (Bolt EV)",
+        "Location Name (English)": "Bolt EV Prasat Bakong",
+        "Latitude": 13.342158,
+        "Longitude": 103.925482,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ស្ថានីយប្រេងឥន្ធនៈ ភូមិគោកចាន់ ឃុំកណ្តែក ស្រុកប្រាសាទបាគង",
+        "Chargers Count": 3,
+        "Phone": "077 596 979",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 20
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.741745,
+          13.4351387
+        ]
+      },
+      "properties": {
+        "Location Name": "Efficient Energy Pouk EV",
+        "Location Name (Khmer)": "Efficient Energy Pouk EV",
+        "Location Name (English)": "Efficient Energy Pouk EV",
+        "Latitude": 13.4351387,
+        "Longitude": 103.741745,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ចំណតរថយន្ត ភូមិប្រយុទ្ធ ឃុំពួក ស្រុកពួក",
+        "Chargers Count": 2,
+        "Phone": "010 653 333",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.695015,
+          13.4612808
+        ]
+      },
+      "properties": {
+        "Location Name": "Efficient Energy Duontro EV",
+        "Location Name (Khmer)": "Efficient Energy Duontro EV",
+        "Location Name (English)": "Efficient Energy Duontro EV",
+        "Latitude": 13.4612808,
+        "Longitude": 103.695015,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ចំណតរថយន្ត ភូមិដូនត្រោ ឃុំពួក ស្រុកពួក",
+        "Chargers Count": 1,
+        "Phone": "010 653 333",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 22
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.46104,
+          13.568884
+        ]
+      },
+      "properties": {
+        "Location Name": "Coffee 361 Kralanh",
+        "Location Name (Khmer)": "កាហ្វេ 361",
+        "Location Name (English)": "Coffee 361 Kralanh",
+        "Latitude": 13.568884,
+        "Longitude": 103.46104,
+        "Province": "Siem Reap",
+        "Province (Khmer)": "សៀមរាប",
+        "Address": "ហាងកាហ្វេ ភូមិសាលាក្រៅ ឃុំស្រណាល ស្រុកក្រឡាញ់",
+        "Chargers Count": 2,
+        "Phone": "092 340 802",
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Source": "Electricity Authority of Cambodia (EAC)",
+        "QR Number": 23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.92333333333333,
+          11.551944444444445
+        ]
+      },
+      "properties": {
+        "Location Name": "EV Energy Tech Charging Station",
+        "Latitude": 11.551944444444445,
+        "Longitude": 104.92333333333333,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°33'07.0\"N 104°55'24.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.91638888888889,
+          11.645833333333332
+        ]
+      },
+      "properties": {
+        "Location Name": "EV Energy Tech Charging Station",
+        "Latitude": 11.645833333333332,
+        "Longitude": 104.91638888888889,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°38'45.0\"N 104°54'59.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.88166666666666,
+          11.590277777777779
+        ]
+      },
+      "properties": {
+        "Location Name": "YW Auto Service",
+        "Latitude": 11.590277777777779,
+        "Longitude": 104.88166666666666,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°35'25.0\"N 104°52'54.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.9538888888889,
+          11.53277777777778
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Chbar Ompov ",
+        "Latitude": 11.53277777777778,
+        "Longitude": 104.9538888888889,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°31'58.0\"N 104°57'14.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.8863888888889,
+          11.620277777777778
+        ]
+      },
+      "properties": {
+        "Location Name": "Ministry of Public Works and Transport",
+        "Latitude": 11.620277777777778,
+        "Longitude": 104.8863888888889,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "8am-6pm",
+        "Location": "11°37'13.0\"N 104°53'11.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.88555555555556,
+          11.574166666666667
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Phnom Penh Tmei",
+        "Latitude": 11.574166666666667,
+        "Longitude": 104.88555555555556,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "5am-9pm",
+        "Location": "11°34'27.0\"N 104°53'08.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.53200152466867,
+          104.89871508004939
+        ]
+      },
+      "properties": {
+        "Location Name": "ECO Green EV Station",
+        "Latitude": 104.89871508004939,
+        "Longitude": 11.53200152466867,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°34'27.0\"N 104°53'08.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.531308226671735,
+          104.89765017954478
+        ]
+      },
+      "properties": {
+        "Location Name": "MEV Station",
+        "Latitude": 104.89765017954478,
+        "Longitude": 11.531308226671735,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°34'27.0\"N 104°53'08.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.81611111111111,
+          11.487499999999999
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Gas Station Prey Kei",
+        "Latitude": 11.487499999999999,
+        "Longitude": 104.81611111111111,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°29'15.0\"N 104°48'58.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.85055555555554,
+          11.679444444444444
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Gas Station | Prek Pnov",
+        "Latitude": 11.679444444444444,
+        "Longitude": 104.85055555555554,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°40'46.0\"N 104°51'02.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.95333333333333,
+          11.5325
+        ]
+      },
+      "properties": {
+        "Location Name": "Asia Supermarket ",
+        "Latitude": 11.5325,
+        "Longitude": 104.95333333333333,
+        "Plug Types": "CCS/SAE",
+        "Operation Time": "24hrs",
+        "Location": "11°31'57.0\"N 104°57'12.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.91611111111112,
+          11.545555555555556
+        ]
+      },
+      "properties": {
+        "Location Name": "Barista Coffee Toul TomPong ",
+        "Latitude": 11.545555555555556,
+        "Longitude": 104.91611111111112,
+        "Plug Types": "CCS2",
+        "Operation Time": "7am - 7pm",
+        "Location": "11°32'44.0\"N 104°54'58.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.92208333333333,
+          11.550527777777779
+        ]
+      },
+      "properties": {
+        "Location Name": "BYD KHIEV Auto Monivong Branch",
+        "Latitude": 11.550527777777779,
+        "Longitude": 104.92208333333333,
+        "Plug Types": "Unknown",
+        "Operation Time": "8:30am - 6:30pm",
+        "Location": "11°33'01.9\"N 104°55'19.5\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.92052777777778,
+          11.573972222222222
+        ]
+      },
+      "properties": {
+        "Location Name": "Exchange Sqaure",
+        "Latitude": 11.573972222222222,
+        "Longitude": 104.92052777777778,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°34'26.3\"N 104°55'13.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.91980555555556,
+          11.565583333333334
+        ]
+      },
+      "properties": {
+        "Location Name": "Sing-Specialists Medical Centre",
+        "Latitude": 11.565583333333334,
+        "Longitude": 104.91980555555556,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°33'56.1\"N 104°55'11.3\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.90130555555557,
+          11.557944444444445
+        ]
+      },
+      "properties": {
+        "Location Name": "No1 EV Garage",
+        "Latitude": 11.557944444444445,
+        "Longitude": 104.90130555555557,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°33'28.6\"N 104°54'04.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.92416666666666,
+          11.554722222222223
+        ]
+      },
+      "properties": {
+        "Location Name": "Baitong Hotel & Resort Phnom Penh",
+        "Latitude": 11.554722222222223,
+        "Longitude": 104.92416666666666,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°33'17.0\"N 104°55'27.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.86149999999999,
+          11.549416666666666
+        ]
+      },
+      "properties": {
+        "Location Name": "St2004",
+        "Latitude": 11.549416666666666,
+        "Longitude": 104.86149999999999,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°32'57.9\"N 104°51'41.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.86430555555555,
+          11.549666666666667
+        ]
+      },
+      "properties": {
+        "Location Name": "Axis Residence ",
+        "Latitude": 11.549666666666667,
+        "Longitude": 104.86430555555555,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°32'58.8\"N 104°51'51.5\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.93225000000001,
+          11.588527777777779
+        ]
+      },
+      "properties": {
+        "Location Name": "Liberty Carz",
+        "Latitude": 11.588527777777779,
+        "Longitude": 104.93225000000001,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°35'18.7\"N 104°55'56.1\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.88961111111112,
+          11.588166666666668
+        ]
+      },
+      "properties": {
+        "Location Name": "Begonia Tower",
+        "Latitude": 11.588166666666668,
+        "Longitude": 104.88961111111112,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°35'17.4\"N 104°53'22.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.90047222222223,
+          11.582722222222221
+        ]
+      },
+      "properties": {
+        "Location Name": "TK Central ",
+        "Latitude": 11.582722222222221,
+        "Longitude": 104.90047222222223,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°34'57.8\"N 104°54'01.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.97469444444445,
+          11.534972222222223
+        ]
+      },
+      "properties": {
+        "Location Name": "LMG Car Care",
+        "Latitude": 11.534972222222223,
+        "Longitude": 104.97469444444445,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°32'05.9\"N 104°58'28.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.90063888888889,
+          11.595666666666668
+        ]
+      },
+      "properties": {
+        "Location Name": "Ly Penglim Car 178",
+        "Latitude": 11.595666666666668,
+        "Longitude": 104.90063888888889,
+        "Plug Types": "GB-T",
+        "Operation Time": "7:30am - 6:00pm",
+        "Location": "11°35'44.4\"N 104°54'02.3\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.87616666666666,
+          11.562861111111111
+        ]
+      },
+      "properties": {
+        "Location Name": "Dong Feng",
+        "Latitude": 11.562861111111111,
+        "Longitude": 104.87616666666666,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°33'46.3\"N 104°52'34.2\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.85866666666666,
+          11.574194444444444
+        ]
+      },
+      "properties": {
+        "Location Name": "Munen Coffee & SR Quick",
+        "Latitude": 11.574194444444444,
+        "Longitude": 104.85866666666666,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°34'27.1\"N 104°51'31.2\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.93108333333333,
+          11.52425
+        ]
+      },
+      "properties": {
+        "Location Name": "Urban Village Condominiums",
+        "Latitude": 11.52425,
+        "Longitude": 104.93108333333333,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°31'27.3\"N 104°55'51.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.87427777777778,
+          11.511083333333334
+        ]
+      },
+      "properties": {
+        "Location Name": "Midnight Premier Club",
+        "Latitude": 11.511083333333334,
+        "Longitude": 104.87427777777778,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°30'39.9\"N 104°52'27.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.90133333333334,
+          11.561527777777778
+        ]
+      },
+      "properties": {
+        "Location Name": "City Tower",
+        "Latitude": 11.561527777777778,
+        "Longitude": 104.90133333333334,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "6am - 10pm",
+        "Location": "11°33'41.5\"N 104°54'04.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.93127777777778,
+          11.56063888888889
+        ]
+      },
+      "properties": {
+        "Location Name": "Le botum hotel",
+        "Latitude": 11.56063888888889,
+        "Longitude": 104.93127777777778,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°33'38.3\"N 104°55'52.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.88486111111112,
+          11.630777777777778
+        ]
+      },
+      "properties": {
+        "Location Name": "Domrey Park 598",
+        "Latitude": 11.630777777777778,
+        "Longitude": 104.88486111111112,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°37'50.8\"N 104°53'05.5\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.92244444444445,
+          11.542277777777779
+        ]
+      },
+      "properties": {
+        "Location Name": "ZEEKR Showroom",
+        "Latitude": 11.542277777777779,
+        "Longitude": 104.92244444444445,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "8am-7pm",
+        "Location": "11°32'32.2\"N 104°55'20.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.93458333333334,
+          11.55188888888889
+        ]
+      },
+      "properties": {
+        "Location Name": "SOHO Mall",
+        "Latitude": 11.55188888888889,
+        "Longitude": 104.93458333333334,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°33'06.8\"N 104°56'04.5\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.86136111111111,
+          11.53188888888889
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Gas Station | Veng Sreng",
+        "Latitude": 11.53188888888889,
+        "Longitude": 104.86136111111111,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°31'54.8\"N 104°51'40.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.92247222222223,
+          11.546
+        ]
+      },
+      "properties": {
+        "Location Name": "True Go Hotel BKK",
+        "Latitude": 11.546,
+        "Longitude": 104.92247222222223,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°32'45.6\"N 104°55'20.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.94288888888889,
+          11.552527777777778
+        ]
+      },
+      "properties": {
+        "Location Name": "Connextion Koh Pich Island",
+        "Latitude": 11.552527777777778,
+        "Longitude": 104.94288888888889,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°33'09.1\"N 104°56'34.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.89172222222223,
+          11.575388888888888
+        ]
+      },
+      "properties": {
+        "Location Name": "Lim Long Gastation",
+        "Latitude": 11.575388888888888,
+        "Longitude": 104.89172222222223,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°34'31.4\"N 104°53'30.2\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.92663888888889,
+          11.536083333333334
+        ]
+      },
+      "properties": {
+        "Location Name": "Skylar by Maridian",
+        "Latitude": 11.536083333333334,
+        "Longitude": 104.92663888888889,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°32'09.9\"N 104°55'35.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.92230555555555,
+          11.560527777777779
+        ]
+      },
+      "properties": {
+        "Location Name": "Courtyard by Marriott",
+        "Latitude": 11.560527777777779,
+        "Longitude": 104.92230555555555,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°33'37.9\"N 104°55'20.3\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.89133333333334,
+          11.525277777777779
+        ]
+      },
+      "properties": {
+        "Location Name": "WOW NOW",
+        "Latitude": 11.525277777777779,
+        "Longitude": 104.89133333333334,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°31'31.0\"N 104°53'28.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.90555555555557,
+          11.57075
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Gas Station | Neakvoan",
+        "Latitude": 11.57075,
+        "Longitude": 104.90555555555557,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°34'14.7\"N 104°54'20.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.93008333333334,
+          11.603916666666667
+        ]
+      },
+      "properties": {
+        "Location Name": "Bayon Market-Chroy Changvar",
+        "Latitude": 11.603916666666667,
+        "Longitude": 104.93008333333334,
+        "Plug Types": "GB-T",
+        "Operation Time": "6:30am - 9:00pm",
+        "Location": "11°36'14.1\"N 104°55'48.3\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.74244444444444,
+          10.7945
+        ]
+      },
+      "properties": {
+        "Location Name": "Rest Area Prey Nob",
+        "Latitude": 10.7945,
+        "Longitude": 103.74244444444444,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°47'40.2\"N 103°44'32.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.31055555555555,
+          11.31761111111111
+        ]
+      },
+      "properties": {
+        "Location Name": "Total Engeries Clean",
+        "Latitude": 11.31761111111111,
+        "Longitude": 104.31055555555555,
+        "Plug Types": "GB-T",
+        "Operation Time": "5am - 12am",
+        "Location": "11°19'03.4\"N 104°18'38.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85397222222221,
+          13.35761111111111
+        ]
+      },
+      "properties": {
+        "Location Name": "Asia Mart",
+        "Latitude": 13.35761111111111,
+        "Longitude": 103.85397222222221,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°21'27.4\"N 103°51'14.3\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86094444444444,
+          13.363722222222222
+        ]
+      },
+      "properties": {
+        "Location Name": "Electric Vehicle Charging Station",
+        "Latitude": 13.363722222222222,
+        "Longitude": 103.86094444444444,
+        "Plug Types": "CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°21'49.4\"N 103°51'39.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8543611111111,
+          13.363027777777777
+        ]
+      },
+      "properties": {
+        "Location Name": "Paris Angkor Hotel",
+        "Latitude": 13.363027777777777,
+        "Longitude": 103.8543611111111,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "13°21'46.9\"N 103°51'15.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.878,
+          13.360166666666666
+        ]
+      },
+      "properties": {
+        "Location Name": "AIQR Showroom",
+        "Latitude": 13.360166666666666,
+        "Longitude": 103.878,
+        "Plug Types": "GB-T",
+        "Operation Time": "8am - 5pm",
+        "Location": "13°21'36.6\"N 103°52'40.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84955555555555,
+          13.359916666666667
+        ]
+      },
+      "properties": {
+        "Location Name": "Electric Vehicle Charging Station",
+        "Latitude": 13.359916666666667,
+        "Longitude": 103.84955555555555,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°21'35.7\"N 103°50'58.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84683333333332,
+          13.369444444444445
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Gas Station (Kamroeuk Hall)",
+        "Latitude": 13.369444444444445,
+        "Longitude": 103.84683333333332,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°22'10.0\"N 103°50'48.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85322222222221,
+          13.367944444444445
+        ]
+      },
+      "properties": {
+        "Location Name": "Platinum KTV",
+        "Latitude": 13.367944444444445,
+        "Longitude": 103.85322222222221,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°22'04.6\"N 103°51'11.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84830555555556,
+          13.360861111111111
+        ]
+      },
+      "properties": {
+        "Location Name": "The Pub house",
+        "Latitude": 13.360861111111111,
+        "Longitude": 103.84830555555556,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°21'39.1\"N 103°50'53.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86080555555554,
+          13.361166666666666
+        ]
+      },
+      "properties": {
+        "Location Name": "Sokimex Noir Coffee",
+        "Latitude": 13.361166666666666,
+        "Longitude": 103.86080555555554,
+        "Plug Types": "GB-T",
+        "Operation Time": "7am -12am",
+        "Location": "13°21'40.2\"N 103°51'38.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85233333333333,
+          13.358694444444444
+        ]
+      },
+      "properties": {
+        "Location Name": "Amara Home",
+        "Latitude": 13.358694444444444,
+        "Longitude": 103.85233333333333,
+        "Plug Types": "GB-T",
+        "Operation Time": "8am - 10pm",
+        "Location": "13°21'31.3\"N 103°51'08.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85769444444443,
+          13.362222222222222
+        ]
+      },
+      "properties": {
+        "Location Name": " J7 Angkor Hotel",
+        "Latitude": 13.362222222222222,
+        "Longitude": 103.85769444444443,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°21'44.0\"N 103°51'27.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91811111111112,
+          12.533583333333333
+        ]
+      },
+      "properties": {
+        "Location Name": "Zara Coffee at Pusat",
+        "Latitude": 12.533583333333333,
+        "Longitude": 103.91811111111112,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "12°32'00.9\"N 103°55'05.2\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.03352777777778,
+          12.28175
+        ]
+      },
+      "properties": {
+        "Location Name": "A1 Boutique",
+        "Latitude": 12.28175,
+        "Longitude": 103.03352777777778,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "12°16'54.3\"N 103°02'00.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.79622222222223,
+          11.046055555555556
+        ]
+      },
+      "properties": {
+        "Location Name": "Stella Depo Tela Gasoline Srae Ambel",
+        "Latitude": 11.046055555555556,
+        "Longitude": 103.79622222222223,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°02'45.8\"N 103°47'46.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.96711111111111,
+          13.59275
+        ]
+      },
+      "properties": {
+        "Location Name": "Serey Sophon",
+        "Latitude": 13.59275,
+        "Longitude": 102.96711111111111,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°35'33.9\"N 102°58'01.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.56969444444444,
+          13.645416666666666
+        ]
+      },
+      "properties": {
+        "Location Name": "Poi Pet Resort ",
+        "Latitude": 13.645416666666666,
+        "Longitude": 102.56969444444444,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "13°38'43.5\"N 102°34'10.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.97238888888889,
+          13.590805555555557
+        ]
+      },
+      "properties": {
+        "Location Name": "Total Energies",
+        "Latitude": 13.590805555555557,
+        "Longitude": 102.97238888888889,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°35'26.9\"N 102°58'20.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.6623888888889,
+          12.175722222222221
+        ]
+      },
+      "properties": {
+        "Location Name": "Lim Long",
+        "Latitude": 12.175722222222221,
+        "Longitude": 104.6623888888889,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°10'32.6\"N 104°39'44.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.894,
+          12.731333333333334
+        ]
+      },
+      "properties": {
+        "Location Name": "Krong Stueng Saen",
+        "Latitude": 12.731333333333334,
+        "Longitude": 104.894,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°43'52.8\"N 104°53'38.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.04841666666667,
+          12.569805555555556
+        ]
+      },
+      "properties": {
+        "Location Name": "We want Coffee ",
+        "Latitude": 12.569805555555556,
+        "Longitude": 105.04841666666667,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "12°34'11.3\"N 105°02'54.3\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.90116666666667,
+          12.681444444444445
+        ]
+      },
+      "properties": {
+        "Location Name": "Total Energies",
+        "Latitude": 12.681444444444445,
+        "Longitude": 104.90116666666667,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°40'53.2\"N 104°54'04.2\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.96705555555556,
+          12.254
+        ]
+      },
+      "properties": {
+        "Location Name": "Just's Coffee & Ice Cream",
+        "Latitude": 12.254,
+        "Longitude": 105.96705555555556,
+        "Plug Types": "GB-T",
+        "Operation Time": "6am - 7pm ",
+        "Location": "12°15'14.4\"N 105°58'01.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.03066666666666,
+          12.451083333333333
+        ]
+      },
+      "properties": {
+        "Location Name": "EV Station",
+        "Latitude": 12.451083333333333,
+        "Longitude": 106.03066666666666,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°27'03.9\"N 106°01'50.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.47211111111112,
+          12.043972222222223
+        ]
+      },
+      "properties": {
+        "Location Name": "Lim Long",
+        "Latitude": 12.043972222222223,
+        "Longitude": 106.47211111111112,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "12°02'38.3\"N 106°28'19.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.01741666666666,
+          12.495194444444444
+        ]
+      },
+      "properties": {
+        "Location Name": "Krong Kracheh",
+        "Latitude": 12.495194444444444,
+        "Longitude": 106.01741666666666,
+        "Plug Types": "GB-T",
+        "Operation Time": "7am - 7pm",
+        "Location": "12°29'42.7\"N 106°01'02.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.0171388888889,
+          12.495583333333332
+        ]
+      },
+      "properties": {
+        "Location Name": "Cam ev charging",
+        "Latitude": 12.495583333333332,
+        "Longitude": 106.0171388888889,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°29'44.1\"N 106°01'01.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.50372222222222,
+          10.611888888888888
+        ]
+      },
+      "properties": {
+        "Location Name": "Riva Hotel",
+        "Latitude": 10.611888888888888,
+        "Longitude": 103.50372222222222,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°36'42.8\"N 103°30'13.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.53891666666667,
+          10.622027777777777
+        ]
+      },
+      "properties": {
+        "Location Name": "Food Supermarket",
+        "Latitude": 10.622027777777777,
+        "Longitude": 103.53891666666667,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°37'19.3\"N 103°32'20.1\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.50583333333333,
+          10.630611111111111
+        ]
+      },
+      "properties": {
+        "Location Name": "Furi Mall",
+        "Latitude": 10.630611111111111,
+        "Longitude": 103.50583333333333,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "8am - 6pm",
+        "Location": "10°37'50.2\"N 103°30'21.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.54447222222223,
+          10.634416666666667
+        ]
+      },
+      "properties": {
+        "Location Name": "PTT Charging Station",
+        "Latitude": 10.634416666666667,
+        "Longitude": 103.54447222222223,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°38'03.9\"N 103°32'40.1\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.55758333333333,
+          10.570833333333333
+        ]
+      },
+      "properties": {
+        "Location Name": "Phat Power Hotel",
+        "Latitude": 10.570833333333333,
+        "Longitude": 103.55758333333333,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°34'15.0\"N 103°33'27.3\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.50297222222223,
+          10.61075
+        ]
+      },
+      "properties": {
+        "Location Name": "Novotel Hotel",
+        "Latitude": 10.61075,
+        "Longitude": 103.50297222222223,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°36'38.7\"N 103°30'10.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.5375,
+          10.620138888888889
+        ]
+      },
+      "properties": {
+        "Location Name": "Fairy Hotel and Restaurant",
+        "Latitude": 10.620138888888889,
+        "Longitude": 103.5375,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°37'12.5\"N 103°32'15.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.59863888888889,
+          10.549277777777778
+        ]
+      },
+      "properties": {
+        "Location Name": "Summer Bay Beach",
+        "Latitude": 10.549277777777778,
+        "Longitude": 103.59863888888889,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°32'57.4\"N 103°35'55.1\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.21105555555556,
+          11.276666666666667
+        ]
+      },
+      "properties": {
+        "Location Name": "Traeng Trayueng",
+        "Latitude": 11.276666666666667,
+        "Longitude": 104.21105555555556,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°16'36.0\"N 104°12'39.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.58644444444444,
+          11.475944444444444
+        ]
+      },
+      "properties": {
+        "Location Name": "Lim Long Gastation",
+        "Latitude": 11.475944444444444,
+        "Longitude": 104.58644444444444,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°28'33.4\"N 104°35'11.2\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.17222222222223,
+          10.61336111111111
+        ]
+      },
+      "properties": {
+        "Location Name": "The B Resort & Restaurant",
+        "Latitude": 10.61336111111111,
+        "Longitude": 104.17222222222223,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°36'48.1\"N 104°10'20.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.17994444444444,
+          10.647361111111111
+        ]
+      },
+      "properties": {
+        "Location Name": "Good time Relax Resort",
+        "Latitude": 10.647361111111111,
+        "Longitude": 104.17994444444444,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°38'50.5\"N 104°10'47.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.00783333333334,
+          10.571861111111112
+        ]
+      },
+      "properties": {
+        "Location Name": "Venture Kampot",
+        "Latitude": 10.571861111111112,
+        "Longitude": 104.00783333333334,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°34'18.7\"N 104°00'28.2\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.17702777777778,
+          10.595055555555556
+        ]
+      },
+      "properties": {
+        "Location Name": "Kampot",
+        "Latitude": 10.595055555555556,
+        "Longitude": 104.17702777777778,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°35'42.2\"N 104°10'37.3\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.18072222222223,
+          10.610333333333333
+        ]
+      },
+      "properties": {
+        "Location Name": "Sokimex Krong Kompot ",
+        "Latitude": 10.610333333333333,
+        "Longitude": 104.18072222222223,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°36'37.2\"N 104°10'50.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.18333333333334,
+          12.458305555555555
+        ]
+      },
+      "properties": {
+        "Location Name": "Pa Pa Gasoline Station",
+        "Latitude": 12.458305555555555,
+        "Longitude": 107.18333333333334,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°27'29.9\"N 107°10'60.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.174,
+          12.3755
+        ]
+      },
+      "properties": {
+        "Location Name": "NOVA Resort Mondulkiri",
+        "Latitude": 12.3755,
+        "Longitude": 107.174,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°22'31.8\"N 107°10'26.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.96719444444444,
+          13.727972222222222
+        ]
+      },
+      "properties": {
+        "Location Name": "Cars Care 168 & Mountain coffee",
+        "Latitude": 13.727972222222222,
+        "Longitude": 106.96719444444444,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "13°43'40.7\"N 106°58'01.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.99088888888889,
+          13.795
+        ]
+      },
+      "properties": {
+        "Location Name": "Radio FM 104.5, Preah Vihear",
+        "Latitude": 13.795,
+        "Longitude": 104.99088888888889,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "13°47'42.0\"N 104°59'27.2\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.20841666666666,
+          13.092666666666668
+        ]
+      },
+      "properties": {
+        "Location Name": "Zara Coffee Battambang",
+        "Latitude": 13.092666666666668,
+        "Longitude": 103.20841666666666,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "6:30am - 9:00pm",
+        "Location": "13°05'33.6\"N 103°12'30.3\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.19975000000001,
+          13.10225
+        ]
+      },
+      "properties": {
+        "Location Name": "EV Charging Station Battambang",
+        "Latitude": 13.10225,
+        "Longitude": 103.19975000000001,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "8:00am - 6:00pm",
+        "Location": "13°06'08.1\"N 103°11'59.1\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.03044444444444,
+          11.381222222222222
+        ]
+      },
+      "properties": {
+        "Location Name": "Romdoul Kirirom Resort",
+        "Latitude": 11.381222222222222,
+        "Longitude": 104.03044444444444,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°22'52.4\"N 104°01'49.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.02763888888889,
+          12.048444444444444
+        ]
+      },
+      "properties": {
+        "Location Name": "EV Charging - Clean Energy Skun",
+        "Latitude": 12.048444444444444,
+        "Longitude": 105.02763888888889,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°02'54.4\"N 105°01'39.5\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.45188888888889,
+          11.992638888888887
+        ]
+      },
+      "properties": {
+        "Location Name": "2002 Café (NR7)",
+        "Latitude": 11.992638888888887,
+        "Longitude": 105.45188888888889,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°59'33.5\"N 105°27'06.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.18252777777778,
+          11.82413888888889
+        ]
+      },
+      "properties": {
+        "Location Name": "KMK Garage Station",
+        "Latitude": 11.82413888888889,
+        "Longitude": 106.18252777777778,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°49'26.9\"N 106°10'57.1\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.68677843196362,
+          11.131143282458686
+        ]
+      },
+      "properties": {
+        "Location Name": "Vireak Buntham EV Station Takeo",
+        "Latitude": 11.131143282458686,
+        "Longitude": 104.68677843196362,
+        "Plug Types": "Unknown",
+        "Operation Time": "24/7",
+        "Location": "11°07'52.1\"N 104°41'12.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.06266666666666,
+          12.054194444444445
+        ]
+      },
+      "properties": {
+        "Location Name": "Sek Meas Restaurant",
+        "Latitude": 12.054194444444445,
+        "Longitude": 105.06266666666666,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°03'15.1\"N 105°03'45.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.60908333333333,
+          12.859499999999999
+        ]
+      },
+      "properties": {
+        "Location Name": "Coffee 95 Pailin ",
+        "Latitude": 12.859499999999999,
+        "Longitude": 102.60908333333333,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "12°51'34.2\"N 102°36'32.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.30380555555556,
+          10.477333333333334
+        ]
+      },
+      "properties": {
+        "Location Name": "Riviera Hotel & Resort Kep",
+        "Latitude": 10.477333333333334,
+        "Longitude": 104.30380555555556,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°28'38.4\"N 104°18'13.7\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.28986111111111,
+          10.493583333333332
+        ]
+      },
+      "properties": {
+        "Location Name": "The Wave Kep West",
+        "Latitude": 10.493583333333332,
+        "Longitude": 104.28986111111111,
+        "Plug Types": "CCS2",
+        "Operation Time": "7am - 11pm",
+        "Location": "10°29'36.9\"N 104°17'23.5\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.098,
+          10.938944444444445
+        ]
+      },
+      "properties": {
+        "Location Name": "VET Parking Lot Koh Sdach Port",
+        "Latitude": 10.938944444444445,
+        "Longitude": 103.098,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°56'20.2\"N 103°05'52.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.20911111111111,
+          12.5325
+        ]
+      },
+      "properties": {
+        "Location Name": "Paris Guest House",
+        "Latitude": 12.5325,
+        "Longitude": 104.20911111111111,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "12°31'57.0\"N 104°12'32.8\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.08441666666666,
+          12.546222222222221
+        ]
+      },
+      "properties": {
+        "Location Name": "Tela and Coffee Koum Meas Kampong Thom",
+        "Latitude": 12.546222222222221,
+        "Longitude": 105.08441666666666,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "6:00am - 8:00pm",
+        "Location": "12°32'46.4\"N 105°05'03.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.51572222222222,
+          10.639138888888889
+        ]
+      },
+      "properties": {
+        "Location Name": "Sovandolla Guesthouse",
+        "Latitude": 10.639138888888889,
+        "Longitude": 103.51572222222222,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°38'20.9\"N 103°30'56.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.54330555555555,
+          10.634583333333333
+        ]
+      },
+      "properties": {
+        "Location Name": "EV Energy Klang Ler Sihanoukville",
+        "Latitude": 10.634583333333333,
+        "Longitude": 103.54330555555555,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "10°38'04.5\"N 103°32'35.9\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.87405555555554,
+          11.506166666666667
+        ]
+      },
+      "properties": {
+        "Location Name": "Penh Em Reaksmey Sign",
+        "Latitude": 11.506166666666667,
+        "Longitude": 104.87405555555554,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°30'22.2\"N 104°52'26.6\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
     }
-  }
-,
-
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.92333333333333,
-                    11.551944444444445
-                ]
-            },
-            "properties": {
-                "Location Name": "EV Energy Tech Charging Station",
-                "Location": "11\u00b033'07.0\"N 104\u00b055'24.0\"E",
-                "Latitude": 11.551944444444445,
-                "Longitude": 104.92333333333333,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.91638888888889,
-                    11.645833333333332
-                ]
-            },
-            "properties": {
-                "Location Name": "EV Energy Tech Charging Station",
-                "Location": "11\u00b038'45.0\"N 104\u00b054'59.0\"E",
-                "Latitude": 11.645833333333332,
-                "Longitude": 104.91638888888889,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.88166666666666,
-                    11.590277777777779
-                ]
-            },
-            "properties": {
-                "Location Name": "YW Auto Service",
-                "Location": "11\u00b035'25.0\"N 104\u00b052'54.0\"E",
-                "Latitude": 11.590277777777779,
-                "Longitude": 104.88166666666666,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.9538888888889,
-                    11.53277777777778
-                ]
-            },
-            "properties": {
-                "Location Name": "PTT Chbar Ompov ",
-                "Location": "11\u00b031'58.0\"N 104\u00b057'14.0\"E",
-                "Latitude": 11.53277777777778,
-                "Longitude": 104.9538888888889,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.8863888888889,
-                    11.620277777777778
-                ]
-            },
-            "properties": {
-                "Location Name": "Ministry of Public Works and Transport",
-                "Location": "11\u00b037'13.0\"N 104\u00b053'11.0\"E",
-                "Latitude": 11.620277777777778,
-                "Longitude": 104.8863888888889,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "8am-6pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.88555555555556,
-                    11.574166666666667
-                ]
-            },
-            "properties": {
-                "Location Name": "PTT Phnom Penh Tmei",
-                "Location": "11\u00b034'27.0\"N 104\u00b053'08.0\"E",
-                "Latitude": 11.574166666666667,
-                "Longitude": 104.88555555555556,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "5am-9pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    11.53200152466867, 
-                    104.89871508004939
-                ]
-            },
-            "properties": {
-                "Location Name": "ECO Green EV Station",
-                "Location": "11\u00b034'27.0\"N 104\u00b053'08.0\"E",
-                "Latitude": 11.53200152466867,
-                "Longitude": 104.89871508004939,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    11.531308226671735, 
-                    104.89765017954478
-                ]
-            },
-            "properties": {
-                "Location Name": "MEV Station",
-                "Location": "11\u00b034'27.0\"N 104\u00b053'08.0\"E",
-                "Latitude": 11.531308226671735,
-                "Longitude": 104.89765017954478,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.81611111111111,
-                    11.487499999999999
-                ]
-            },
-            "properties": {
-                "Location Name": "PTT Gas Station Prey Kei",
-                "Location": "11\u00b029'15.0\"N 104\u00b048'58.0\"E",
-                "Latitude": 11.487499999999999,
-                "Longitude": 104.81611111111111,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.85055555555554,
-                    11.679444444444444
-                ]
-            },
-            "properties": {
-                "Location Name": "PTT Gas Station | Prek Pnov",
-                "Location": "11\u00b040'46.0\"N 104\u00b051'02.0\"E",
-                "Latitude": 11.679444444444444,
-                "Longitude": 104.85055555555554,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.95333333333333,
-                    11.5325
-                ]
-            },
-            "properties": {
-                "Location Name": "Asia Supermarket ",
-                "Location": "11\u00b031'57.0\"N 104\u00b057'12.0\"E",
-                "Latitude": 11.5325,
-                "Longitude": 104.95333333333333,
-                "Plug Types": "CCS/SAE",
-                "Operation Time": "24hrs"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.91611111111112,
-                    11.545555555555556
-                ]
-            },
-            "properties": {
-                "Location Name": "Barista Coffee Toul TomPong ",
-                "Location": "11\u00b032'44.0\"N 104\u00b054'58.0\"E",
-                "Latitude": 11.545555555555556,
-                "Longitude": 104.91611111111112,
-                "Plug Types": "CCS2",
-                "Operation Time": "7am - 7pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.92208333333333,
-                    11.550527777777779
-                ]
-            },
-            "properties": {
-                "Location Name": "BYD KHIEV Auto Monivong Branch",
-                "Location": "11\u00b033'01.9\"N 104\u00b055'19.5\"E",
-                "Latitude": 11.550527777777779,
-                "Longitude": 104.92208333333333,
-                "Plug Types": "Unknown",
-                "Operation Time": "8:30am - 6:30pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.92052777777778,
-                    11.573972222222222
-                ]
-            },
-            "properties": {
-                "Location Name": "Exchange Sqaure",
-                "Location": "11\u00b034'26.3\"N 104\u00b055'13.9\"E",
-                "Latitude": 11.573972222222222,
-                "Longitude": 104.92052777777778,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.91980555555556,
-                    11.565583333333334
-                ]
-            },
-            "properties": {
-                "Location Name": "Sing-Specialists Medical Centre",
-                "Location": "11\u00b033'56.1\"N 104\u00b055'11.3\"E",
-                "Latitude": 11.565583333333334,
-                "Longitude": 104.91980555555556,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.90130555555557,
-                    11.557944444444445
-                ]
-            },
-            "properties": {
-                "Location Name": "No1 EV Garage",
-                "Location": "11\u00b033'28.6\"N 104\u00b054'04.7\"E",
-                "Latitude": 11.557944444444445,
-                "Longitude": 104.90130555555557,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.92416666666666,
-                    11.554722222222223
-                ]
-            },
-            "properties": {
-                "Location Name": "Baitong Hotel & Resort Phnom Penh",
-                "Location": "11\u00b033'17.0\"N 104\u00b055'27.0\"E",
-                "Latitude": 11.554722222222223,
-                "Longitude": 104.92416666666666,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.86149999999999,
-                    11.549416666666666
-                ]
-            },
-            "properties": {
-                "Location Name": "St2004",
-                "Location": "11\u00b032'57.9\"N 104\u00b051'41.4\"E",
-                "Latitude": 11.549416666666666,
-                "Longitude": 104.86149999999999,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.86430555555555,
-                    11.549666666666667
-                ]
-            },
-            "properties": {
-                "Location Name": "Axis Residence ",
-                "Location": "11\u00b032'58.8\"N 104\u00b051'51.5\"E",
-                "Latitude": 11.549666666666667,
-                "Longitude": 104.86430555555555,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.93225000000001,
-                    11.588527777777779
-                ]
-            },
-            "properties": {
-                "Location Name": "Liberty Carz",
-                "Location": "11\u00b035'18.7\"N 104\u00b055'56.1\"E",
-                "Latitude": 11.588527777777779,
-                "Longitude": 104.93225000000001,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.88961111111112,
-                    11.588166666666668
-                ]
-            },
-            "properties": {
-                "Location Name": "Begonia Tower",
-                "Location": "11\u00b035'17.4\"N 104\u00b053'22.6\"E",
-                "Latitude": 11.588166666666668,
-                "Longitude": 104.88961111111112,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.90047222222223,
-                    11.582722222222221
-                ]
-            },
-            "properties": {
-                "Location Name": "TK Central ",
-                "Location": "11\u00b034'57.8\"N 104\u00b054'01.7\"E",
-                "Latitude": 11.582722222222221,
-                "Longitude": 104.90047222222223,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.97469444444445,
-                    11.534972222222223
-                ]
-            },
-            "properties": {
-                "Location Name": "LMG Car Care",
-                "Location": "11\u00b032'05.9\"N 104\u00b058'28.9\"E",
-                "Latitude": 11.534972222222223,
-                "Longitude": 104.97469444444445,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.90063888888889,
-                    11.595666666666668
-                ]
-            },
-            "properties": {
-                "Location Name": "Ly Penglim Car 178",
-                "Location": "11\u00b035'44.4\"N 104\u00b054'02.3\"E",
-                "Latitude": 11.595666666666668,
-                "Longitude": 104.90063888888889,
-                "Plug Types": "GB-T",
-                "Operation Time": "7:30am - 6:00pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.87616666666666,
-                    11.562861111111111
-                ]
-            },
-            "properties": {
-                "Location Name": "Dong Feng",
-                "Location": "11\u00b033'46.3\"N 104\u00b052'34.2\"E",
-                "Latitude": 11.562861111111111,
-                "Longitude": 104.87616666666666,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.85866666666666,
-                    11.574194444444444
-                ]
-            },
-            "properties": {
-                "Location Name": "Munen Coffee & SR Quick",
-                "Location": "11\u00b034'27.1\"N 104\u00b051'31.2\"E",
-                "Latitude": 11.574194444444444,
-                "Longitude": 104.85866666666666,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.93108333333333,
-                    11.52425
-                ]
-            },
-            "properties": {
-                "Location Name": "Urban Village Condominiums",
-                "Location": "11\u00b031'27.3\"N 104\u00b055'51.9\"E",
-                "Latitude": 11.52425,
-                "Longitude": 104.93108333333333,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.87427777777778,
-                    11.511083333333334
-                ]
-            },
-            "properties": {
-                "Location Name": "Midnight Premier Club",
-                "Location": "11\u00b030'39.9\"N 104\u00b052'27.4\"E",
-                "Latitude": 11.511083333333334,
-                "Longitude": 104.87427777777778,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.90133333333334,
-                    11.561527777777778
-                ]
-            },
-            "properties": {
-                "Location Name": "City Tower",
-                "Location": "11\u00b033'41.5\"N 104\u00b054'04.8\"E",
-                "Latitude": 11.561527777777778,
-                "Longitude": 104.90133333333334,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "6am - 10pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.93127777777778,
-                    11.56063888888889
-                ]
-            },
-            "properties": {
-                "Location Name": "Le botum hotel",
-                "Location": "11\u00b033'38.3\"N 104\u00b055'52.6\"E",
-                "Latitude": 11.56063888888889,
-                "Longitude": 104.93127777777778,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.88486111111112,
-                    11.630777777777778
-                ]
-            },
-            "properties": {
-                "Location Name": "Domrey Park 598",
-                "Location": "11\u00b037'50.8\"N 104\u00b053'05.5\"E",
-                "Latitude": 11.630777777777778,
-                "Longitude": 104.88486111111112,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.92244444444445,
-                    11.542277777777779
-                ]
-            },
-            "properties": {
-                "Location Name": "ZEEKR Showroom",
-                "Location": "11\u00b032'32.2\"N 104\u00b055'20.8\"E",
-                "Latitude": 11.542277777777779,
-                "Longitude": 104.92244444444445,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "8am-7pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.93458333333334,
-                    11.55188888888889
-                ]
-            },
-            "properties": {
-                "Location Name": "SOHO Mall",
-                "Location": "11\u00b033'06.8\"N 104\u00b056'04.5\"E",
-                "Latitude": 11.55188888888889,
-                "Longitude": 104.93458333333334,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.86136111111111,
-                    11.53188888888889
-                ]
-            },
-            "properties": {
-                "Location Name": "PTT Gas Station | Veng Sreng",
-                "Location": "11\u00b031'54.8\"N 104\u00b051'40.9\"E",
-                "Latitude": 11.53188888888889,
-                "Longitude": 104.86136111111111,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.92247222222223,
-                    11.546
-                ]
-            },
-            "properties": {
-                "Location Name": "True Go Hotel BKK",
-                "Location": "11\u00b032'45.6\"N 104\u00b055'20.9\"E",
-                "Latitude": 11.546,
-                "Longitude": 104.92247222222223,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.94288888888889,
-                    11.552527777777778
-                ]
-            },
-            "properties": {
-                "Location Name": "Connextion Koh Pich Island",
-                "Location": "11\u00b033'09.1\"N 104\u00b056'34.4\"E",
-                "Latitude": 11.552527777777778,
-                "Longitude": 104.94288888888889,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.89172222222223,
-                    11.575388888888888
-                ]
-            },
-            "properties": {
-                "Location Name": "Lim Long Gastation",
-                "Location": "11\u00b034'31.4\"N 104\u00b053'30.2\"E",
-                "Latitude": 11.575388888888888,
-                "Longitude": 104.89172222222223,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.92663888888889,
-                    11.536083333333334
-                ]
-            },
-            "properties": {
-                "Location Name": "Skylar by Maridian",
-                "Location": "11\u00b032'09.9\"N 104\u00b055'35.9\"E",
-                "Latitude": 11.536083333333334,
-                "Longitude": 104.92663888888889,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.92230555555555,
-                    11.560527777777779
-                ]
-            },
-            "properties": {
-                "Location Name": "Courtyard by Marriott",
-                "Location": "11\u00b033'37.9\"N 104\u00b055'20.3\"E",
-                "Latitude": 11.560527777777779,
-                "Longitude": 104.92230555555555,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.89133333333334,
-                    11.525277777777779
-                ]
-            },
-            "properties": {
-                "Location Name": "WOW NOW",
-                "Location": "11\u00b031'31.0\"N 104\u00b053'28.8\"E",
-                "Latitude": 11.525277777777779,
-                "Longitude": 104.89133333333334,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.90555555555557,
-                    11.57075
-                ]
-            },
-            "properties": {
-                "Location Name": "PTT Gas Station | Neakvoan",
-                "Location": "11\u00b034'14.7\"N 104\u00b054'20.0\"E",
-                "Latitude": 11.57075,
-                "Longitude": 104.90555555555557,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.93008333333334,
-                    11.603916666666667
-                ]
-            },
-            "properties": {
-                "Location Name": "Bayon Market-Chroy Changvar",
-                "Location": "11\u00b036'14.1\"N 104\u00b055'48.3\"E",
-                "Latitude": 11.603916666666667,
-                "Longitude": 104.93008333333334,
-                "Plug Types": "GB-T",
-                "Operation Time": "6:30am - 9:00pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.74244444444444,
-                    10.7945
-                ]
-            },
-            "properties": {
-                "Location Name": "Rest Area Prey Nob",
-                "Location": "10\u00b047'40.2\"N 103\u00b044'32.8\"E",
-                "Latitude": 10.7945,
-                "Longitude": 103.74244444444444,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.31055555555555,
-                    11.31761111111111
-                ]
-            },
-            "properties": {
-                "Location Name": "Total Engeries Clean",
-                "Location": "11\u00b019'03.4\"N 104\u00b018'38.0\"E",
-                "Latitude": 11.31761111111111,
-                "Longitude": 104.31055555555555,
-                "Plug Types": "GB-T",
-                "Operation Time": "5am - 12am"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.85397222222221,
-                    13.35761111111111
-                ]
-            },
-            "properties": {
-                "Location Name": "Asia Mart",
-                "Location": "13\u00b021'27.4\"N 103\u00b051'14.3\"E",
-                "Latitude": 13.35761111111111,
-                "Longitude": 103.85397222222221,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.86094444444444,
-                    13.363722222222222
-                ]
-            },
-            "properties": {
-                "Location Name": "Electric Vehicle Charging Station",
-                "Location": "13\u00b021'49.4\"N 103\u00b051'39.4\"E",
-                "Latitude": 13.363722222222222,
-                "Longitude": 103.86094444444444,
-                "Plug Types": "CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.8543611111111,
-                    13.363027777777777
-                ]
-            },
-            "properties": {
-                "Location Name": "Paris Angkor Hotel",
-                "Location": "13\u00b021'46.9\"N 103\u00b051'15.7\"E",
-                "Latitude": 13.363027777777777,
-                "Longitude": 103.8543611111111,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.878,
-                    13.360166666666666
-                ]
-            },
-            "properties": {
-                "Location Name": "AIQR Showroom",
-                "Location": "13\u00b021'36.6\"N 103\u00b052'40.8\"E",
-                "Latitude": 13.360166666666666,
-                "Longitude": 103.878,
-                "Plug Types": "GB-T",
-                "Operation Time": "8am - 5pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.84955555555555,
-                    13.359916666666667
-                ]
-            },
-            "properties": {
-                "Location Name": "Electric Vehicle Charging Station",
-                "Location": "13\u00b021'35.7\"N 103\u00b050'58.4\"E",
-                "Latitude": 13.359916666666667,
-                "Longitude": 103.84955555555555,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.84683333333332,
-                    13.369444444444445
-                ]
-            },
-            "properties": {
-                "Location Name": "PTT Gas Station (Kamroeuk Hall)",
-                "Location": "13\u00b022'10.0\"N 103\u00b050'48.6\"E",
-                "Latitude": 13.369444444444445,
-                "Longitude": 103.84683333333332,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.85322222222221,
-                    13.367944444444445
-                ]
-            },
-            "properties": {
-                "Location Name": "Platinum KTV",
-                "Location": "13\u00b022'04.6\"N 103\u00b051'11.6\"E",
-                "Latitude": 13.367944444444445,
-                "Longitude": 103.85322222222221,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.84830555555556,
-                    13.360861111111111
-                ]
-            },
-            "properties": {
-                "Location Name": "The Pub house",
-                "Location": "13\u00b021'39.1\"N 103\u00b050'53.9\"E",
-                "Latitude": 13.360861111111111,
-                "Longitude": 103.84830555555556,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.86080555555554,
-                    13.361166666666666
-                ]
-            },
-            "properties": {
-                "Location Name": "Sokimex Noir Coffee",
-                "Location": "13\u00b021'40.2\"N 103\u00b051'38.9\"E",
-                "Latitude": 13.361166666666666,
-                "Longitude": 103.86080555555554,
-                "Plug Types": "GB-T",
-                "Operation Time": "7am -12am"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.85233333333333,
-                    13.358694444444444
-                ]
-            },
-            "properties": {
-                "Location Name": "Amara Home",
-                "Location": "13\u00b021'31.3\"N 103\u00b051'08.4\"E",
-                "Latitude": 13.358694444444444,
-                "Longitude": 103.85233333333333,
-                "Plug Types": "GB-T",
-                "Operation Time": "8am - 10pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.85769444444443,
-                    13.362222222222222
-                ]
-            },
-            "properties": {
-                "Location Name": " J7 Angkor Hotel",
-                "Location": "13\u00b021'44.0\"N 103\u00b051'27.7\"E",
-                "Latitude": 13.362222222222222,
-                "Longitude": 103.85769444444443,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.91811111111112,
-                    12.533583333333333
-                ]
-            },
-            "properties": {
-                "Location Name": "Zara Coffee at Pusat",
-                "Location": "12\u00b032'00.9\"N 103\u00b055'05.2\"E",
-                "Latitude": 12.533583333333333,
-                "Longitude": 103.91811111111112,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.03352777777778,
-                    12.28175
-                ]
-            },
-            "properties": {
-                "Location Name": "A1 Boutique",
-                "Location": "12\u00b016'54.3\"N 103\u00b002'00.7\"E",
-                "Latitude": 12.28175,
-                "Longitude": 103.03352777777778,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.79622222222223,
-                    11.046055555555556
-                ]
-            },
-            "properties": {
-                "Location Name": "Stella Depo Tela Gasoline Srae Ambel",
-                "Location": "11\u00b002'45.8\"N 103\u00b047'46.4\"E",
-                "Latitude": 11.046055555555556,
-                "Longitude": 103.79622222222223,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    102.96711111111111,
-                    13.59275
-                ]
-            },
-            "properties": {
-                "Location Name": "Serey Sophon",
-                "Location": "13\u00b035'33.9\"N 102\u00b058'01.6\"E",
-                "Latitude": 13.59275,
-                "Longitude": 102.96711111111111,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    102.56969444444444,
-                    13.645416666666666
-                ]
-            },
-            "properties": {
-                "Location Name": "Poi Pet Resort ",
-                "Location": "13\u00b038'43.5\"N 102\u00b034'10.9\"E",
-                "Latitude": 13.645416666666666,
-                "Longitude": 102.56969444444444,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    102.97238888888889,
-                    13.590805555555557
-                ]
-            },
-            "properties": {
-                "Location Name": "Total Energies",
-                "Location": "13\u00b035'26.9\"N 102\u00b058'20.6\"E",
-                "Latitude": 13.590805555555557,
-                "Longitude": 102.97238888888889,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.6623888888889,
-                    12.175722222222221
-                ]
-            },
-            "properties": {
-                "Location Name": "Lim Long",
-                "Location": "12\u00b010'32.6\"N 104\u00b039'44.6\"E",
-                "Latitude": 12.175722222222221,
-                "Longitude": 104.6623888888889,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.894,
-                    12.731333333333334
-                ]
-            },
-            "properties": {
-                "Location Name": "Krong Stueng Saen",
-                "Location": "12\u00b043'52.8\"N 104\u00b053'38.4\"E",
-                "Latitude": 12.731333333333334,
-                "Longitude": 104.894,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    105.04841666666667,
-                    12.569805555555556
-                ]
-            },
-            "properties": {
-                "Location Name": "We want Coffee ",
-                "Location": "12\u00b034'11.3\"N 105\u00b002'54.3\"E",
-                "Latitude": 12.569805555555556,
-                "Longitude": 105.04841666666667,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.90116666666667,
-                    12.681444444444445
-                ]
-            },
-            "properties": {
-                "Location Name": "Total Energies",
-                "Location": "12\u00b040'53.2\"N 104\u00b054'04.2\"E",
-                "Latitude": 12.681444444444445,
-                "Longitude": 104.90116666666667,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    105.96705555555556,
-                    12.254
-                ]
-            },
-            "properties": {
-                "Location Name": "Just's Coffee & Ice Cream",
-                "Location": "12\u00b015'14.4\"N 105\u00b058'01.4\"E",
-                "Latitude": 12.254,
-                "Longitude": 105.96705555555556,
-                "Plug Types": "GB-T",
-                "Operation Time": "6am - 7pm "
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.03066666666666,
-                    12.451083333333333
-                ]
-            },
-            "properties": {
-                "Location Name": "EV Station",
-                "Location": "12\u00b027'03.9\"N 106\u00b001'50.4\"E",
-                "Latitude": 12.451083333333333,
-                "Longitude": 106.03066666666666,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.47211111111112,
-                    12.043972222222223
-                ]
-            },
-            "properties": {
-                "Location Name": "Lim Long",
-                "Location": "12\u00b002'38.3\"N 106\u00b028'19.6\"E",
-                "Latitude": 12.043972222222223,
-                "Longitude": 106.47211111111112,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.01741666666666,
-                    12.495194444444444
-                ]
-            },
-            "properties": {
-                "Location Name": "Krong Kracheh",
-                "Location": "12\u00b029'42.7\"N 106\u00b001'02.7\"E",
-                "Latitude": 12.495194444444444,
-                "Longitude": 106.01741666666666,
-                "Plug Types": "GB-T",
-                "Operation Time": "7am - 7pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.0171388888889,
-                    12.495583333333332
-                ]
-            },
-            "properties": {
-                "Location Name": "Cam ev charging",
-                "Location": "12\u00b029'44.1\"N 106\u00b001'01.7\"E",
-                "Latitude": 12.495583333333332,
-                "Longitude": 106.0171388888889,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.50372222222222,
-                    10.611888888888888
-                ]
-            },
-            "properties": {
-                "Location Name": "Riva Hotel",
-                "Location": "10\u00b036'42.8\"N 103\u00b030'13.4\"E",
-                "Latitude": 10.611888888888888,
-                "Longitude": 103.50372222222222,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.53891666666667,
-                    10.622027777777777
-                ]
-            },
-            "properties": {
-                "Location Name": "Food Supermarket",
-                "Location": "10\u00b037'19.3\"N 103\u00b032'20.1\"E",
-                "Latitude": 10.622027777777777,
-                "Longitude": 103.53891666666667,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.50583333333333,
-                    10.630611111111111
-                ]
-            },
-            "properties": {
-                "Location Name": "Furi Mall",
-                "Location": "10\u00b037'50.2\"N 103\u00b030'21.0\"E",
-                "Latitude": 10.630611111111111,
-                "Longitude": 103.50583333333333,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "8am - 6pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.54447222222223,
-                    10.634416666666667
-                ]
-            },
-            "properties": {
-                "Location Name": "PTT Charging Station",
-                "Location": "10\u00b038'03.9\"N 103\u00b032'40.1\"E",
-                "Latitude": 10.634416666666667,
-                "Longitude": 103.54447222222223,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.55758333333333,
-                    10.570833333333333
-                ]
-            },
-            "properties": {
-                "Location Name": "Phat Power Hotel",
-                "Location": "10\u00b034'15.0\"N 103\u00b033'27.3\"E",
-                "Latitude": 10.570833333333333,
-                "Longitude": 103.55758333333333,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.50297222222223,
-                    10.61075
-                ]
-            },
-            "properties": {
-                "Location Name": "Novotel Hotel",
-                "Location": "10\u00b036'38.7\"N 103\u00b030'10.7\"E",
-                "Latitude": 10.61075,
-                "Longitude": 103.50297222222223,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.5375,
-                    10.620138888888889
-                ]
-            },
-            "properties": {
-                "Location Name": "Fairy Hotel and Restaurant",
-                "Location": "10\u00b037'12.5\"N 103\u00b032'15.0\"E",
-                "Latitude": 10.620138888888889,
-                "Longitude": 103.5375,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.59863888888889,
-                    10.549277777777778
-                ]
-            },
-            "properties": {
-                "Location Name": "Summer Bay Beach",
-                "Location": "10\u00b032'57.4\"N 103\u00b035'55.1\"E",
-                "Latitude": 10.549277777777778,
-                "Longitude": 103.59863888888889,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.21105555555556,
-                    11.276666666666667
-                ]
-            },
-            "properties": {
-                "Location Name": "Traeng Trayueng",
-                "Location": "11\u00b016'36.0\"N 104\u00b012'39.8\"E",
-                "Latitude": 11.276666666666667,
-                "Longitude": 104.21105555555556,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.58644444444444,
-                    11.475944444444444
-                ]
-            },
-            "properties": {
-                "Location Name": "Lim Long Gastation",
-                "Location": "11\u00b028'33.4\"N 104\u00b035'11.2\"E",
-                "Latitude": 11.475944444444444,
-                "Longitude": 104.58644444444444,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.17222222222223,
-                    10.61336111111111
-                ]
-            },
-            "properties": {
-                "Location Name": "The B Resort & Restaurant",
-                "Location": "10\u00b036'48.1\"N 104\u00b010'20.0\"E",
-                "Latitude": 10.61336111111111,
-                "Longitude": 104.17222222222223,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.17994444444444,
-                    10.647361111111111
-                ]
-            },
-            "properties": {
-                "Location Name": "Good time Relax Resort",
-                "Location": "10\u00b038'50.5\"N 104\u00b010'47.8\"E",
-                "Latitude": 10.647361111111111,
-                "Longitude": 104.17994444444444,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.00783333333334,
-                    10.571861111111112
-                ]
-            },
-            "properties": {
-                "Location Name": "Venture Kampot",
-                "Location": "10\u00b034'18.7\"N 104\u00b000'28.2\"E",
-                "Latitude": 10.571861111111112,
-                "Longitude": 104.00783333333334,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.17702777777778,
-                    10.595055555555556
-                ]
-            },
-            "properties": {
-                "Location Name": "Kampot",
-                "Location": "10\u00b035'42.2\"N 104\u00b010'37.3\"E",
-                "Latitude": 10.595055555555556,
-                "Longitude": 104.17702777777778,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.18072222222223,
-                    10.610333333333333
-                ]
-            },
-            "properties": {
-                "Location Name": "Sokimex Krong Kompot ",
-                "Location": "10\u00b036'37.2\"N 104\u00b010'50.6\"E",
-                "Latitude": 10.610333333333333,
-                "Longitude": 104.18072222222223,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    107.18333333333334,
-                    12.458305555555555
-                ]
-            },
-            "properties": {
-                "Location Name": "Pa Pa Gasoline Station",
-                "Location": "12\u00b027'29.9\"N 107\u00b010'60.0\"E",
-                "Latitude": 12.458305555555555,
-                "Longitude": 107.18333333333334,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    107.174,
-                    12.3755
-                ]
-            },
-            "properties": {
-                "Location Name": "NOVA Resort Mondulkiri",
-                "Location": "12\u00b022'31.8\"N 107\u00b010'26.4\"E",
-                "Latitude": 12.3755,
-                "Longitude": 107.174,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.96719444444444,
-                    13.727972222222222
-                ]
-            },
-            "properties": {
-                "Location Name": "Cars Care 168 & Mountain coffee",
-                "Location": "13\u00b043'40.7\"N 106\u00b058'01.9\"E",
-                "Latitude": 13.727972222222222,
-                "Longitude": 106.96719444444444,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.99088888888889,
-                    13.795
-                ]
-            },
-            "properties": {
-                "Location Name": "Radio FM 104.5, Preah Vihear",
-                "Location": "13\u00b047'42.0\"N 104\u00b059'27.2\"E",
-                "Latitude": 13.795,
-                "Longitude": 104.99088888888889,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.20841666666666,
-                    13.092666666666668
-                ]
-            },
-            "properties": {
-                "Location Name": "Zara Coffee Battambang",
-                "Location": "13\u00b005'33.6\"N 103\u00b012'30.3\"E",
-                "Latitude": 13.092666666666668,
-                "Longitude": 103.20841666666666,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "6:30am - 9:00pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.19975000000001,
-                    13.10225
-                ]
-            },
-            "properties": {
-                "Location Name": "EV Charging Station Battambang",
-                "Location": "13\u00b006'08.1\"N 103\u00b011'59.1\"E",
-                "Latitude": 13.10225,
-                "Longitude": 103.19975000000001,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "8:00am - 6:00pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.894,
-                    12.731333333333334
-                ]
-            },
-            "properties": {
-                "Location Name": "EV Charging Station Krong Stueng Saen",
-                "Location": "12\u00b043'52.8\"N 104\u00b053'38.4\"E",
-                "Latitude": 12.731333333333334,
-                "Longitude": 104.894,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.03044444444444,
-                    11.381222222222222
-                ]
-            },
-            "properties": {
-                "Location Name": "Romdoul Kirirom Resort",
-                "Location": "11\u00b022'52.4\"N 104\u00b001'49.6\"E",
-                "Latitude": 11.381222222222222,
-                "Longitude": 104.03044444444444,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    105.02763888888889,
-                    12.048444444444444
-                ]
-            },
-            "properties": {
-                "Location Name": "EV Charging - Clean Energy Skun",
-                "Location": "12\u00b002'54.4\"N 105\u00b001'39.5\"E",
-                "Latitude": 12.048444444444444,
-                "Longitude": 105.02763888888889,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    105.45188888888889,
-                    11.992638888888887
-                ]
-            },
-            "properties": {
-                "Location Name": "2002 Caf\u00e9 (NR7)",
-                "Location": "11\u00b059'33.5\"N 105\u00b027'06.8\"E",
-                "Latitude": 11.992638888888887,
-                "Longitude": 105.45188888888889,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    106.18252777777778,
-                    11.82413888888889
-                ]
-            },
-            "properties": {
-                "Location Name": "KMK Garage Station",
-                "Location": "11\u00b049'26.9\"N 106\u00b010'57.1\"E",
-                "Latitude": 11.82413888888889,
-                "Longitude": 106.18252777777778,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.68677843196362,
-                    11.131143282458686
-                ]
-            },
-            "properties": {
-                "Location Name": "Vireak Buntham EV Station Takeo",
-                "Location": "11\u00b007'52.1\"N 104\u00b041'12.4\"E",
-                "Latitude": 11.131143282458686,
-                "Longitude": 104.68677843196362,
-                "Plug Types": "Unknown",
-                "Operation Time": "24/7"
-            }
-            
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    105.06266666666666,
-                    12.054194444444445
-                ]
-            },
-            "properties": {
-                "Location Name": "Sek Meas Restaurant",
-                "Location": "12\u00b003'15.1\"N 105\u00b003'45.6\"E",
-                "Latitude": 12.054194444444445,
-                "Longitude": 105.06266666666666,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    102.60908333333333,
-                    12.859499999999999
-                ]
-            },
-            "properties": {
-                "Location Name": "Coffee 95 Pailin ",
-                "Location": "12\u00b051'34.2\"N 102\u00b036'32.7\"E",
-                "Latitude": 12.859499999999999,
-                "Longitude": 102.60908333333333,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.30380555555556,
-                    10.477333333333334
-                ]
-            },
-            "properties": {
-                "Location Name": "Riviera Hotel & Resort Kep",
-                "Location": "10\u00b028'38.4\"N 104\u00b018'13.7\"E",
-                "Latitude": 10.477333333333334,
-                "Longitude": 104.30380555555556,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.28986111111111,
-                    10.493583333333332
-                ]
-            },
-            "properties": {
-                "Location Name": "The Wave Kep West",
-                "Location": "10\u00b029'36.9\"N 104\u00b017'23.5\"E",
-                "Latitude": 10.493583333333332,
-                "Longitude": 104.28986111111111,
-                "Plug Types": "CCS2",
-                "Operation Time": "7am - 11pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.098,
-                    10.938944444444445
-                ]
-            },
-            "properties": {
-                "Location Name": "VET Parking Lot Koh Sdach Port",
-                "Location": "10\u00b056'20.2\"N 103\u00b005'52.8\"E",
-                "Latitude": 10.938944444444445,
-                "Longitude": 103.098,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.20911111111111,
-                    12.5325
-                ]
-            },
-            "properties": {
-                "Location Name": "Paris Guest House",
-                "Location": "12\u00b031'57.0\"N 104\u00b012'32.8\"E",
-                "Latitude": 12.5325,
-                "Longitude": 104.20911111111111,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    105.08441666666666,
-                    12.546222222222221
-                ]
-            },
-            "properties": {
-                "Location Name": "Tela and Coffee Koum Meas Kampong Thom",
-                "Location": "12\u00b032'46.4\"N 105\u00b005'03.9\"E",
-                "Latitude": 12.546222222222221,
-                "Longitude": 105.08441666666666,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "6:00am - 8:00pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.51572222222222,
-                    10.639138888888889
-                ]
-            },
-            "properties": {
-                "Location Name": "Sovandolla Guesthouse",
-                "Location": "10\u00b038'20.9\"N 103\u00b030'56.6\"E",
-                "Latitude": 10.639138888888889,
-                "Longitude": 103.51572222222222,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.54330555555555,
-                    10.634583333333333
-                ]
-            },
-            "properties": {
-                "Location Name": "EV Energy Klang Ler Sihanoukville",
-                "Location": "10\u00b038'04.5\"N 103\u00b032'35.9\"E",
-                "Latitude": 10.634583333333333,
-                "Longitude": 103.54330555555555,
-                "Plug Types": "GB-T",
-                "Operation Time": "24/7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    104.87405555555554,
-                    11.506166666666667
-                ]
-            },
-            "properties": {
-                "Location Name": "Penh Em Reaksmey Sign",
-                "Location": "11\u00b030'22.2\"N 104\u00b052'26.6\"E",
-                "Latitude": 11.506166666666667,
-                "Longitude": 104.87405555555554,
-                "Plug Types": "GB-T/CCS2",
-                "Operation Time": "24/7"
-            }
-        }
-    ]
+  ]
 }
-

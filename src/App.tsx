@@ -6,28 +6,28 @@ import { useMobileNavigation } from './hooks/use-mobile-navigation';
 import Header from './components/header';
 import StationExplorerView from './components/station-explorer-view';
 import EacStatsPage from './components/eac-stats/eac-stats-page';
+import EacLocationsPage from './components/eac-locations/eac-locations-page';
 import MobileStationDrawer from './components/mobile-station-drawer';
 import AppFooter from './components/app-footer';
 import MobileViewSwitcher from './components/mobile-view-switcher';
 import EcoBackground from './components/eco-background';
 
-type AppPage = 'explorer' | 'eac-stats';
+type AppPage = 'explorer' | 'locations' | 'eac-stats';
 
 const ACTIVE_TAB_STORAGE_KEY = 'cambodia_ev_active_tab';
+
+const isValidPage = (val: string | null): val is AppPage =>
+  val === 'explorer' || val === 'locations' || val === 'eac-stats';
 
 const getInitialPage = (): AppPage => {
   if (typeof window !== 'undefined') {
     const hash = window.location.hash.replace(/^#/, '');
-    if (hash === 'eac-stats' || hash === 'explorer') {
-      return hash as AppPage;
-    }
+    if (isValidPage(hash)) return hash;
     try {
       const saved = localStorage.getItem(ACTIVE_TAB_STORAGE_KEY);
-      if (saved === 'eac-stats' || saved === 'explorer') {
-        return saved as AppPage;
-      }
+      if (isValidPage(saved)) return saved;
     } catch {
-      // localStorage may be restricted in private browsing
+      // localStorage may be restricted
     }
   }
   return 'explorer';
@@ -39,9 +39,7 @@ const App = () => {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace(/^#/, '');
-      if (hash === 'eac-stats' || hash === 'explorer') {
-        setActivePage(hash as AppPage);
-      }
+      if (isValidPage(hash)) setActivePage(hash);
     };
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
@@ -118,7 +116,7 @@ const App = () => {
             : ''
         } lg:overflow-hidden`}
       >
-        {activePage === 'explorer' ? (
+        {activePage === 'explorer' && (
           <StationExplorerView
             stations={chargingStations}
             filteredStations={filteredStations}
@@ -143,9 +141,9 @@ const App = () => {
             onDeselectStation={handleDeselectStation}
             onRequestUserLocation={requestUserLocation}
           />
-        ) : (
-          <EacStatsPage />
         )}
+        {activePage === 'locations' && <EacLocationsPage />}
+        {activePage === 'eac-stats' && <EacStatsPage />}
       </main>
 
       <AppFooter />

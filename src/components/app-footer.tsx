@@ -24,7 +24,7 @@ export default function AppFooter({
       <div className='max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-2 text-center sm:text-left'>
         <p className='text-[10px] sm:text-[11px] text-slate-600 leading-tight sm:leading-relaxed max-w-3xl line-clamp-1 sm:line-clamp-none'>
           <span className='font-semibold text-slate-800'>Disclaimer:</span> We
-          do not own this data. Sourced from the{' '}
+          do not own this data. Sourced from{' '}
           <a
             href={datasetUrl}
             target='_blank'
@@ -32,24 +32,34 @@ export default function AppFooter({
             className='text-emerald-700 hover:text-emerald-800 underline font-semibold inline-flex items-center gap-0.5'
           >
             MEF Open Data Portal
-            <svg
-              className='w-2.5 h-2.5 inline shrink-0'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-              />
-            </svg>
+          </a>{' '}
+          &amp;{' '}
+          <a
+            href='https://www.eac.gov.kh'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-blue-700 hover:text-blue-800 underline font-semibold inline-flex items-center gap-0.5'
+          >
+            EAC (Electricity Authority of Cambodia)
           </a>
           . Station info may not be up-to-date. Please verify before traveling.
         </p>
 
-        <div className='flex items-center justify-between sm:justify-end gap-2 w-full sm:w-auto shrink-0 pt-1 sm:pt-0 border-t sm:border-t-0 border-slate-200/60'>
+        <div className='flex items-center justify-between sm:justify-end gap-2 sm:gap-2.5 w-full sm:w-auto shrink-0 pt-1 sm:pt-0 border-t sm:border-t-0 border-slate-200/60'>
+          {/* Built with Heart */}
+          <div className='flex items-center gap-1 text-[10px] sm:text-[11px] font-medium text-slate-500 whitespace-nowrap'>
+            <span>Built with</span>
+            <span
+              role='img'
+              aria-label='love'
+              className='inline-flex items-center justify-center text-rose-500 animate-pulse text-xs transition-transform duration-200 hover:scale-125 select-none'
+            >
+              ❤️
+            </span>
+          </div>
+
+          <span className='h-3 w-px bg-slate-200' />
+
           {/* Visitor counter */}
           <div className='flex items-center gap-1 text-[10px] text-slate-400'>
             <svg

@@ -6,6 +6,8 @@ type Props = {
   datasetUrl: string;
 };
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 export default function DisclaimerModal({ isOpen, onClose, datasetUrl }: Props) {
   if (!isOpen) return null;
 
@@ -54,10 +56,10 @@ export default function DisclaimerModal({ isOpen, onClose, datasetUrl }: Props) 
               <span>Data Ownership &amp; Attribution</span>
             </div>
             <p>
-              <strong>We do not own or produce this data.</strong> All
-              electric vehicle charging station records, names, coordinates, and
-              plug specifications are retrieved from the open dataset published
-              by the Ministry of Economy and Finance (MEF).
+              <strong>We do not own or produce this data.</strong> Charging station
+              records, coordinates, and plug specifications are compiled from open public
+              datasets by the <strong>Ministry of Economy and Finance (MEF)</strong> and
+              the <strong>Electricity Authority of Cambodia (EAC)</strong>.
             </p>
           </div>
 
@@ -68,7 +70,7 @@ export default function DisclaimerModal({ isOpen, onClose, datasetUrl }: Props) 
               <span>Data Might Not Be Up to Date</span>
             </div>
             <p>
-              This directory reflects public records from 2025. Stations may
+              This directory reflects public records from {CURRENT_YEAR}. Stations may
               have been added, relocated, or permanently closed. Connector
               types, charging power, and operating hours may have changed since
               publication.
@@ -101,32 +103,31 @@ export default function DisclaimerModal({ isOpen, onClose, datasetUrl }: Props) 
             </p>
           </div>
 
-          {/* Source Link */}
-          <div className='pt-1'>
-            <span className='text-[11px] font-semibold text-slate-700 block mb-1.5'>
-              Official MEF Open Dataset:
+          {/* Official Sources Links */}
+          <div className='pt-1 space-y-1.5'>
+            <span className='text-[11px] font-semibold text-slate-700 block'>
+              Official Data Sources:
             </span>
-            <a
-              href={datasetUrl}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-emerald-700 hover:text-emerald-800 font-medium text-[11px] break-all inline-flex items-center justify-between gap-2 w-full transition-colors'
-            >
-              <span className='truncate'>{datasetUrl}</span>
-              <svg
-                className='w-4 h-4 shrink-0'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                strokeWidth={2}
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-1.5'>
+              <a
+                href={datasetUrl}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='p-2 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-emerald-700 hover:text-emerald-800 font-medium text-[11px] flex items-center justify-between gap-1.5 transition-colors'
               >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                />
-              </svg>
-            </a>
+                <span className='truncate'>🏛️ MEF Open Data Portal</span>
+                <span className='text-[10px]'>↗</span>
+              </a>
+              <a
+                href='https://www.eac.gov.kh'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='p-2 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-blue-700 hover:text-blue-800 font-medium text-[11px] flex items-center justify-between gap-1.5 transition-colors'
+              >
+                <span className='truncate'>⚡ EAC Cambodia</span>
+                <span className='text-[10px]'>↗</span>
+              </a>
+            </div>
           </div>
         </div>
 
