@@ -38,7 +38,7 @@ export default function EacLocationsPage() {
   }, []);
 
   return (
-    <div className='flex-1 min-h-0 w-full space-y-3 sm:space-y-4 pb-24 lg:pb-8 pr-0.5 scrollbar-thin lg:overflow-y-auto touch-pan-y'>
+    <div className='flex-1 w-full space-y-3 sm:space-y-4 pb-12 pr-0.5 touch-pan-y'>
       {/* 1. Sleek Province Selector Pills & Fast Search Toolbar */}
       <EacLocationsToolbar
         directory={directory}

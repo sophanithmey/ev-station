@@ -94,7 +94,7 @@ export default function StationExplorerView({
             onToggleNearMe={onToggleNearMe}
           />
 
-          <div className='flex-1 min-h-0 overflow-y-auto space-y-2.5 scrollbar-thin pr-1 pb-32 lg:pb-0'>
+          <div className='flex-1 min-h-0 overflow-y-auto space-y-2.5 scrollbar-thin scroll-smooth overscroll-contain touch-pan-y pr-1 pb-32 lg:pb-0'>
             <StationList
               stations={filteredStations}
               groupByProvince={false}

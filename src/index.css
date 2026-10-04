@@ -18,9 +18,7 @@
 .leaflet-popup-content-wrapper {
   padding: 0 !important;
   border-radius: 20px !important;
-  box-shadow:
-    0 25px 35px -10px rgba(15, 23, 42, 0.2),
-    0 12px 16px -6px rgba(15, 23, 42, 0.1) !important;
+  box-shadow: 0 25px 35px -10px rgba(15, 23, 42, 0.2), 0 12px 16px -6px rgba(15, 23, 42, 0.1) !important;
   overflow: hidden !important;
   border: 1px solid rgba(226, 232, 240, 0.95) !important;
   background: #ffffff !important;
@@ -50,13 +48,8 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-family:
-    system-ui,
-    -apple-system,
-    sans-serif !important;
   font-size: 14px !important;
   font-weight: 600 !important;
-  line-height: 1 !important;
   border: 1px solid #e2e8f0 !important;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
@@ -83,6 +76,11 @@
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
   html,
   body,
   #root {
@@ -103,99 +101,69 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #def2e5;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: none;
   }
 }
 
-/* Buttery Smooth GPU-Accelerated Eco Highway on Station Cards */
+/* Hardware-accelerated smooth scrolling across all scrollable containers */
+.overflow-y-auto,
+.overflow-x-auto,
+.overflow-auto,
+main {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
+}
+
+/* Smooth GPU-Accelerated Eco Highway Animation */
 @keyframes evSmoothGlide {
-  0% {
-    transform: translate3d(-110%, 0, 0);
-    opacity: 0;
-  }
-  3% {
-    opacity: 1;
-  }
-  92% {
-    opacity: 1;
-  }
-  98% {
-    opacity: 0;
-    transform: translate3d(0%, 0, 0);
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(-110%, 0, 0);
-  }
+  0% { transform: translate3d(-110%, 0, 0); opacity: 0; }
+  3% { opacity: 1; }
+  92% { opacity: 1; }
+  98% { opacity: 0; transform: translate3d(0%, 0, 0); }
+  100% { opacity: 0; transform: translate3d(-110%, 0, 0); }
 }
 
 @keyframes roadDashScroll {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -20px 0;
-  }
+  from { background-position: 0 0; }
+  to { background-position: -20px 0; }
 }
 
 .animate-ev-glide {
-  will-change: transform, opacity;
   animation: evSmoothGlide 4.8s linear infinite;
 }
 .group:hover .animate-ev-glide {
   animation-duration: 2.6s;
 }
 .animate-road-flow {
-  will-change: background-position;
   animation: roadDashScroll 0.8s linear infinite;
 }
 .group:hover .animate-road-flow {
   animation-duration: 0.4s;
 }
 
-/* Realistic Animated River Currents & Sea Waves */
+/* Animated River Currents & Sea Waves */
 @keyframes riverWaterFlow {
-  from {
-    stroke-dashoffset: 40;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+  from { stroke-dashoffset: 40; }
+  to { stroke-dashoffset: 0; }
 }
 @keyframes seaWaveRoll {
-  0% {
-    stroke-dashoffset: 60;
-    opacity: 0.55;
-  }
-  50% {
-    opacity: 0.95;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    opacity: 0.55;
-  }
+  0%, 100% { stroke-dashoffset: 60; opacity: 0.55; }
+  50% { opacity: 0.95; stroke-dashoffset: 30; }
 }
 @keyframes seaSurfGlow {
-  0%,
-  100% {
-    opacity: 0.45;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0.85;
-    transform: translateY(-1.5px);
-  }
+  0%, 100% { opacity: 0.45; transform: translateY(0); }
+  50% { opacity: 0.85; transform: translateY(-1.5px); }
 }
 
 .animate-river-flow {
-  will-change: stroke-dashoffset;
   stroke-dasharray: 8 6;
   animation: riverWaterFlow 2s linear infinite;
 }
 .animate-sea-wave {
-  will-change: stroke-dashoffset, opacity;
   animation: seaWaveRoll 4s ease-in-out infinite;
 }
 .animate-sea-surf {
-  will-change: transform, opacity;
   animation: seaSurfGlow 3.2s ease-in-out infinite alternate;
 }

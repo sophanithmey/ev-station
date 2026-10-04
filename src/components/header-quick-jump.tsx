@@ -60,7 +60,7 @@ export default function HeaderQuickJump({ onPageChange }: Props) {
           ⚡
         </span>
         <span className='hidden lg:inline font-["Kantumruy_Pro",sans-serif] text-slate-300 group-hover:text-white'>
-          រុករក
+          ស្វែងរក
         </span>
         <kbd className='inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono font-bold bg-slate-950 text-cyan-300 rounded-md border border-cyan-500/30 shadow-2xs'>
           ⌘K

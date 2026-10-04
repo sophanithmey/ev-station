@@ -1,4 +1,5 @@
-export type AppPage = 'explorer' | 'locations' | 'eac-stats';
+import type { AppPage } from '../hooks/use-app-navigation';
+export type { AppPage };
 
 type Props = {
   activePage: AppPage;

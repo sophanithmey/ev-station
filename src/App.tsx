@@ -1,59 +1,31 @@
-import { useState, useEffect, useCallback } from 'react';
 import { chargingStations } from './data/charging-stations';
 import { useUserLocation } from './hooks/use-user-location';
 import { useStationFilters } from './hooks/use-station-filters';
 import { useMobileNavigation } from './hooks/use-mobile-navigation';
-import Header from './components/header';
+import { useAppModals } from './hooks/use-app-modals';
+import { useAppNavigation } from './hooks/use-app-navigation';
+import StationAppShell from './components/station-app-shell';
 import StationExplorerView from './components/station-explorer-view';
 import EacStatsPage from './components/eac-stats/eac-stats-page';
 import EacLocationsPage from './components/eac-locations/eac-locations-page';
 import MobileStationDrawer from './components/mobile-station-drawer';
-import AppFooter from './components/app-footer';
 import MobileViewSwitcher from './components/mobile-view-switcher';
-import EcoBackground from './components/eco-background';
+import DisclaimerModal from './components/disclaimer-modal';
+import DonationModal from './components/donation/donation-modal';
 
-type AppPage = 'explorer' | 'locations' | 'eac-stats';
+const DATASET_URL =
+  'https://data.mef.gov.kh/datasets/pd_67b6d073cb47dc00012464a6';
 
-const ACTIVE_TAB_STORAGE_KEY = 'cambodia_ev_active_tab';
-
-const isValidPage = (val: string | null): val is AppPage =>
-  val === 'explorer' || val === 'locations' || val === 'eac-stats';
-
-const getInitialPage = (): AppPage => {
-  if (typeof window !== 'undefined') {
-    const hash = window.location.hash.replace(/^#/, '');
-    if (isValidPage(hash)) return hash;
-    try {
-      const saved = localStorage.getItem(ACTIVE_TAB_STORAGE_KEY);
-      if (isValidPage(saved)) return saved;
-    } catch {
-      // localStorage may be restricted
-    }
-  }
-  return 'explorer';
-};
-
-const App = () => {
-  const [activePage, setActivePage] = useState<AppPage>(getInitialPage);
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.replace(/^#/, '');
-      if (isValidPage(hash)) setActivePage(hash);
-    };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
-
-  const handlePageChange = useCallback((page: AppPage) => {
-    setActivePage(page);
-    try {
-      localStorage.setItem(ACTIVE_TAB_STORAGE_KEY, page);
-      window.location.hash = page;
-    } catch {
-      // ignore storage errors
-    }
-  }, []);
+export default function App() {
+  const { activePage, handlePageChange } = useAppNavigation();
+  const {
+    isDisclaimerOpen,
+    isDonateOpen,
+    openDisclaimer,
+    closeDisclaimer,
+    openDonate,
+    closeDonate,
+  } = useAppModals();
 
   const {
     mobileView,
@@ -80,7 +52,6 @@ const App = () => {
     onlyNearMe,
     filteredStations,
     hasActiveFilters,
-    totalCount,
     setSearch,
     setConnector,
     toggle24Hours,
@@ -92,29 +63,38 @@ const App = () => {
     onRequestLocation: requestUserLocation,
   });
 
+  const overlays = (
+    <>
+      {activePage === 'explorer' && mobileView === 'map' && selectedStation && (
+        <MobileStationDrawer
+          station={selectedStation}
+          distance={distances[selectedStation.id]}
+          onClose={handleDeselectStation}
+          onViewInList={handleViewStationInList}
+        />
+      )}
+      {activePage === 'explorer' && (!selectedStation || mobileView === 'list') && (
+        <MobileViewSwitcher
+          mobileView={mobileView}
+          filteredCount={filteredStations.length}
+          onSelectView={handleSelectView}
+          onlyNearMe={onlyNearMe}
+          isLocating={isLocating}
+          onToggleNearMe={handleToggleNearMe}
+        />
+      )}
+    </>
+  );
+
   return (
-    <div
-      className={`min-h-screen ${
-        activePage === 'explorer' && mobileView === 'map'
-          ? 'h-dvh max-h-dvh overflow-hidden'
-          : ''
-      } lg:h-screen lg:max-h-screen lg:overflow-hidden bg-transparent text-slate-800 flex flex-col relative`}
-    >
-      <EcoBackground />
-
-      <Header
-        totalCount={totalCount}
-        filteredCount={filteredStations.length}
+    <>
+      <StationAppShell
         activePage={activePage}
+        mobileView={mobileView}
         onPageChange={handlePageChange}
-      />
-
-      <main
-        className={`flex-1 min-h-0 max-w-7xl w-full mx-auto px-2.5 sm:px-4 py-2 sm:py-2.5 flex flex-col gap-2 sm:gap-2.5 ${
-          activePage === 'explorer' && mobileView === 'map'
-            ? 'overflow-hidden'
-            : ''
-        } lg:overflow-hidden`}
+        onOpenDonate={openDonate}
+        onOpenDisclaimer={openDisclaimer}
+        overlays={overlays}
       >
         {activePage === 'explorer' && (
           <StationExplorerView
@@ -144,32 +124,14 @@ const App = () => {
         )}
         {activePage === 'locations' && <EacLocationsPage />}
         {activePage === 'eac-stats' && <EacStatsPage />}
-      </main>
+      </StationAppShell>
 
-      <AppFooter />
-
-      {activePage === 'explorer' && mobileView === 'map' && selectedStation && (
-        <MobileStationDrawer
-          station={selectedStation}
-          distance={distances[selectedStation.id]}
-          onClose={handleDeselectStation}
-          onViewInList={handleViewStationInList}
-        />
-      )}
-
-      {activePage === 'explorer' &&
-        (!selectedStation || mobileView === 'list') && (
-          <MobileViewSwitcher
-            mobileView={mobileView}
-            filteredCount={filteredStations.length}
-            onSelectView={handleSelectView}
-            onlyNearMe={onlyNearMe}
-            isLocating={isLocating}
-            onToggleNearMe={handleToggleNearMe}
-          />
-        )}
-    </div>
+      <DisclaimerModal
+        isOpen={isDisclaimerOpen}
+        onClose={closeDisclaimer}
+        datasetUrl={DATASET_URL}
+      />
+      <DonationModal isOpen={isDonateOpen} onClose={closeDonate} />
+    </>
   );
-};
-
-export default App;
+}
