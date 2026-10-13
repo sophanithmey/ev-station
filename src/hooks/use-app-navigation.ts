@@ -2,8 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 
 export type AppPage = 'explorer' | 'locations' | 'eac-stats';
 
-const STORAGE_KEY = 'cambodia_ev_active_tab';
-
 const isValidPage = (val: string | null): val is AppPage =>
   val === 'explorer' || val === 'locations' || val === 'eac-stats';
 
@@ -11,12 +9,6 @@ const getInitialPage = (): AppPage => {
   if (typeof window !== 'undefined') {
     const hash = window.location.hash.replace(/^#/, '');
     if (isValidPage(hash)) return hash;
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (isValidPage(saved)) return saved;
-    } catch {
-      // localStorage may be restricted
-    }
   }
   return 'explorer';
 };
@@ -27,7 +19,11 @@ export function useAppNavigation() {
   useEffect(() => {
     const handleHash = () => {
       const hash = window.location.hash.replace(/^#/, '');
-      if (isValidPage(hash)) setActivePage(hash);
+      if (isValidPage(hash)) {
+        setActivePage(hash);
+      } else if (!hash) {
+        setActivePage('explorer');
+      }
     };
     window.addEventListener('hashchange', handleHash);
     return () => window.removeEventListener('hashchange', handleHash);
@@ -36,10 +32,19 @@ export function useAppNavigation() {
   const handlePageChange = useCallback((page: AppPage) => {
     setActivePage(page);
     try {
-      localStorage.setItem(STORAGE_KEY, page);
-      window.location.hash = page;
+      if (page === 'explorer') {
+        if (window.location.hash) {
+          window.history.pushState(
+            null,
+            '',
+            window.location.pathname + window.location.search,
+          );
+        }
+      } else {
+        window.location.hash = page;
+      }
     } catch {
-      // ignore storage errors
+      // ignore history errors
     }
   }, []);
 

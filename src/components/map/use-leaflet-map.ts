@@ -126,7 +126,6 @@ export function useLeafletMap({
           distances[station.id],
           onSelectStation,
           onDeselectStation,
-          handleFitBounds,
         );
         marker.addTo(layer);
         markerMapRef.current.set(station.id, marker);
@@ -140,7 +139,6 @@ export function useLeafletMap({
     distances,
     onSelectStation,
     onDeselectStation,
-    handleFitBounds,
   ]);
 
   // 3. Pan and open popup when selectedStation changes
@@ -164,13 +162,13 @@ export function useLeafletMap({
         const marker = markerMapRef.current.get(selectedStation.id);
         if (marker) setTimeout(() => marker.openPopup(), 400);
       } else if (prevSelectedStationRef.current && !selectedStation) {
-        handleFitBounds();
+        map.closePopup();
       }
     } catch {
       // Guard against zero-dimension Leaflet calls
     }
     prevSelectedStationRef.current = selectedStation;
-  }, [selectedStation, handleFitBounds]);
+  }, [selectedStation]);
 
   // 4. Update User Location Marker (only fly if map view is active)
   useEffect(() => {

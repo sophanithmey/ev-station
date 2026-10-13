@@ -13,7 +13,6 @@ export function createStationMarker(
   distance: number | undefined,
   onSelect: (station: ChargingStation) => void,
   onDeselect?: () => void,
-  onResetView?: () => void,
 ): L.Marker {
   const iconSize: [number, number] = isSelected ? [42, 50] : [32, 40];
   const iconAnchor: [number, number] = [iconSize[0] / 2, iconSize[1]];
@@ -45,8 +44,8 @@ export function createStationMarker(
       const handleCloseClick = (ev: Event) => {
         ev.preventDefault();
         ev.stopPropagation();
+        marker.closePopup();
         onDeselect?.();
-        onResetView?.();
       };
       closeBtn.addEventListener('click', handleCloseClick, { once: true });
     }
