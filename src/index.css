@@ -108,12 +108,18 @@
 
 /* Hardware-accelerated smooth scrolling across all scrollable containers */
 .overflow-y-auto,
-.overflow-x-auto,
 .overflow-auto,
 main {
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
   overscroll-behavior-y: contain;
+}
+
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: auto;
 }
 
 /* Smooth GPU-Accelerated Eco Highway Animation */

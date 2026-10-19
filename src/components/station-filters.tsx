@@ -21,6 +21,9 @@ const connectors = [
   { id: 'GB-T', label: 'GB-T' },
   { id: 'GB-T/CCS2', label: 'GB-T/CCS2' },
   { id: 'CCS2', label: 'CCS2' },
+  { id: 'CCS/SAE', label: 'CCS/SAE' },
+  { id: 'Type 2', label: 'Type 2' },
+  { id: 'Unknown', label: 'Unknown' },
 ];
 
 const StationFilters = ({

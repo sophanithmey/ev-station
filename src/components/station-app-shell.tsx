@@ -58,7 +58,10 @@ export default function StationAppShell({
           </main>
 
           {/* App Footer at bottom */}
-          <AppFooter />
+          <AppFooter
+            onOpenDisclaimer={onOpenDisclaimer}
+            onOpenDonate={onOpenDonate}
+          />
         </div>
 
         {overlays}

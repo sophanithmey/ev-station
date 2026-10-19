@@ -26,6 +26,11 @@ export const connectorColorMap: Record<
     border: '#6d28d9',
     glow: 'rgba(124, 58, 237, 0.4)',
   },
+  'Type 2': {
+    bg: '#d97706',
+    border: '#b45309',
+    glow: 'rgba(217, 119, 6, 0.4)',
+  },
   Unknown: {
     bg: '#64748b',
     border: '#475569',

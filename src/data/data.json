@@ -1017,6 +1017,22 @@
         "Source": "Cambodia EV Network 2025"
       }
     },
+     {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.75271152497052, 11.372601494812654]
+      },
+      "properties": {
+        "Location Name": "CE EV Station",
+        "Latitude": 11.372601494812654, 
+        "Longitude": 104.75271152497052,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°34'27.0\"N 104°53'08.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
     {
       "type": "Feature",
       "geometry": {
@@ -2221,6 +2237,22 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [104.16964081824733, 10.615893450907182]
+      },
+      "properties": {
+        "Location Name": "EV Station",
+        "Latitude": 10.615893450907182, 
+        "Longitude": 104.16964081824733,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°36'48.1\"N 104°10'20.0\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [104.17994444444444, 10.647361111111111]
       },
       "properties": {
@@ -2461,6 +2493,22 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [104.69935435237774, 11.242325474235495]
+      },
+      "properties": {
+        "Location Name": "EV 82",
+        "Latitude": 11.242325474235495,
+        "Longitude": 104.69935435237774,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°07'52.1\"N 104°41'12.4\"E",
+        "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [104.68677843196362, 11.131143282458686]
       },
       "properties": {
@@ -2541,6 +2589,54 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [102.9881339580261, 11.60551196184808]
+      },
+      "properties": {
+        "Location Name": "De Zee Hotel",
+        "Latitude": 11.60551196184808,
+        "Longitude": 102.9881339580261,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°36'19.8\"N 102°59'17.3\"E",
+        "Source": "PlugShare #1723584"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.97919375308079, 11.613618533102358]
+      },
+      "properties": {
+        "Location Name": "Asian Hotel Koh Kong EV Energy Tech",
+        "Latitude": 11.613618533102358,
+        "Longitude": 102.97919375308079,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°36'49.0\"N 102°58'45.1\"E",
+        "Source": "PlugShare #747157"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.75136777758598, 11.194784027410403]
+      },
+      "properties": {
+        "Location Name": "Kiri Home Stay",
+        "Latitude": 11.194784027410403,
+        "Longitude": 103.75136777758598,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°11'41.2\"N 103°45'04.9\"E",
+        "Source": "PlugShare #1737468"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [103.098, 10.938944444444445]
       },
       "properties": {
@@ -2615,6 +2711,86 @@
         "Operation Time": "24/7",
         "Location": "10°38'04.5\"N 103°32'35.9\"E",
         "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.51783689111471, 10.64167886221314]
+      },
+      "properties": {
+        "Location Name": "EV168 Sihanoukville",
+        "Latitude": 10.64167886221314,
+        "Longitude": 103.51783689111471,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°38'30.0\"N 103°31'04.2\"E",
+        "Source": "PlugShare #1553972"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.52581445127726, 10.64203868670849]
+      },
+      "properties": {
+        "Location Name": "CG EV Sea Port, Kleng Ler",
+        "Latitude": 10.64203868670849,
+        "Longitude": 103.52581445127726,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°38'31.3\"N 103°31'32.9\"E",
+        "Source": "PlugShare #1114601"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.52252379340489, 10.624200843945635]
+      },
+      "properties": {
+        "Location Name": "CAM EV Ekareach Street",
+        "Latitude": 10.624200843945635,
+        "Longitude": 103.52252379340489,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°37'27.1\"N 103°31'21.1\"E",
+        "Source": "PlugShare #782682"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.53477504104376, 10.60433553872307]
+      },
+      "properties": {
+        "Location Name": "CG EV Ochheuteal Beach",
+        "Latitude": 10.60433553872307,
+        "Longitude": 103.53477504104376,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°36'15.6\"N 103°32'05.2\"E",
+        "Source": "PlugShare #1114583"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.94243412990112, 10.623412046787074]
+      },
+      "properties": {
+        "Location Name": "East Resort",
+        "Latitude": 10.623412046787074,
+        "Longitude": 103.94243412990112,
+        "Plug Types": "Type 2",
+        "Operation Time": "24/7",
+        "Location": "10°37'24.3\"N 103°56'32.8\"E",
+        "Source": "PlugShare #578045"
       }
     },
     {
@@ -2760,6 +2936,681 @@
         "Location": "11°32'48.8\"N 104°48'46.1\"E",
         "Source": "Cambodia EV Network 2025"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.02898079646977, 10.568434922893303]
+      },
+      "properties": {
+        "Location Name": "Khmer EV Bokor View Resident",
+        "Latitude": 10.568434922893303,
+        "Longitude": 104.02898079646977,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°34'06.4\"N 104°01'44.3\"E",
+        "Source": "PlugShare #2044673"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.140438, 10.572313]
+      },
+      "properties": {
+        "Location Name": "Khmer EV Tela Boeng Touk",
+        "Latitude": 10.572313,
+        "Longitude": 104.140438,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°34'20.3\"N 104°08'25.6\"E",
+        "Source": "PlugShare #2044639"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.1678637, 10.617919560228719]
+      },
+      "properties": {
+        "Location Name": "Ramo Resort",
+        "Latitude": 10.617919560228719,
+        "Longitude": 104.1678637,
+        "Plug Types": "Type 2",
+        "Operation Time": "24/7",
+        "Location": "10°37'04.5\"N 104°10'04.3\"E",
+        "Source": "PlugShare #578047"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.1668918, 10.629394502980357]
+      },
+      "properties": {
+        "Location Name": "Kampot Riverfront Boutique",
+        "Latitude": 10.629394502980357,
+        "Longitude": 104.1668918,
+        "Plug Types": "Type 2",
+        "Operation Time": "24/7",
+        "Location": "10°37'45.8\"N 104°10'00.8\"E",
+        "Source": "PlugShare #578043"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.18020169999998, 10.613711552975861]
+      },
+      "properties": {
+        "Location Name": "Twin Hotel",
+        "Latitude": 10.613711552975861,
+        "Longitude": 104.18020169999998,
+        "Plug Types": "Type 2",
+        "Operation Time": "24/7",
+        "Location": "10°36'49.4\"N 104°10'48.7\"E",
+        "Source": "PlugShare #578041"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.18395679444075, 10.630069351826858]
+      },
+      "properties": {
+        "Location Name": "EV168 Sokimex ស្ពានព្រះពន្លា",
+        "Latitude": 10.630069351826858,
+        "Longitude": 104.18395679444075,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°37'48.2\"N 104°11'02.2\"E",
+        "Source": "PlugShare #1214904"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.18359369039536, 10.630291120283877]
+      },
+      "properties": {
+        "Location Name": "CAM EV Kampot",
+        "Latitude": 10.630291120283877,
+        "Longitude": 104.18359369039536,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°37'49.0\"N 104°11'00.9\"E",
+        "Source": "PlugShare #1812709"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.18436616659164, 10.633154653941803]
+      },
+      "properties": {
+        "Location Name": "CG EV Kampot",
+        "Latitude": 10.633154653941803,
+        "Longitude": 104.18436616659164,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°37'59.4\"N 104°11'03.7\"E",
+        "Source": "PlugShare #749978"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.20166306197643, 10.659307456450607]
+      },
+      "properties": {
+        "Location Name": "Khmer EV Tela Phnom Sor",
+        "Latitude": 10.659307456450607,
+        "Longitude": 104.20166306197643,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°39'33.5\"N 104°12'06.0\"E",
+        "Source": "PlugShare #1812714"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.28975384682417, 10.551207131275124]
+      },
+      "properties": {
+        "Location Name": "EV168 CE Clean Energies Kep",
+        "Latitude": 10.551207131275124,
+        "Longitude": 104.28975384682417,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°33'04.3\"N 104°17'23.1\"E",
+        "Source": "PlugShare #1812711"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.2892375215888, 10.488934752684427]
+      },
+      "properties": {
+        "Location Name": "CG EV Crab Market",
+        "Latitude": 10.488934752684427,
+        "Longitude": 104.2892375215888,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°29'20.2\"N 104°17'21.3\"E",
+        "Source": "PlugShare #1840398"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.31465212255716, 10.480140911753368]
+      },
+      "properties": {
+        "Location Name": "CG EV Kep",
+        "Latitude": 10.480140911753368,
+        "Longitude": 104.31465212255716,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°28'48.5\"N 104°18'52.7\"E",
+        "Source": "PlugShare #1291479"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.96784452094998, 11.109127065896084]
+      },
+      "properties": {
+        "Location Name": "TotalEnergies (South) Kampong Seila",
+        "Latitude": 11.109127065896084,
+        "Longitude": 103.96784452094998,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°06'32.9\"N 103°58'04.2\"E",
+        "Source": "PlugShare #612167"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.6472916379571, 10.863623180104797]
+      },
+      "properties": {
+        "Location Name": "3E EV Fast Charger Angkor Chey",
+        "Latitude": 10.863623180104797,
+        "Longitude": 104.6472916379571,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°51'49.0\"N 104°38'50.2\"E",
+        "Source": "PlugShare #1872975"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.66021284461021, 10.959486157025927]
+      },
+      "properties": {
+        "Location Name": "Caltex Ang Ta Saom",
+        "Latitude": 10.959486157025927,
+        "Longitude": 104.66021284461021,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "10°57'34.2\"N 104°39'36.8\"E",
+        "Source": "PlugShare #1796432"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.67028249204127, 11.004406817776937]
+      },
+      "properties": {
+        "Location Name": "Khmer EV Ang Ta Saom",
+        "Latitude": 11.004406817776937,
+        "Longitude": 104.67028249204127,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°00'15.9\"N 104°40'13.0\"E",
+        "Source": "PlugShare #738556"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.02804565429688, 11.231573104858398]
+      },
+      "properties": {
+        "Location Name": "អ៉ឹង ហ្គេចឡេង លក់គ្រឿងសំណង់ (Ung Gech Leng)",
+        "Latitude": 11.231573104858398,
+        "Longitude": 105.02804565429688,
+        "Plug Types": "Type 2",
+        "Operation Time": "24/7",
+        "Location": "11°13'53.7\"N 105°01'41.0\"E",
+        "Source": "PlugShare #653427"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.63515961170197, 11.14471832748599]
+      },
+      "properties": {
+        "Location Name": "CG EV Kraol Kou (Road 1)",
+        "Latitude": 11.14471832748599,
+        "Longitude": 105.63515961170197,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°08'41.0\"N 105°38'06.6\"E",
+        "Source": "PlugShare #742947"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.79963736236095, 11.088870482455865]
+      },
+      "properties": {
+        "Location Name": "Sokimex Svay Rieng",
+        "Latitude": 11.088870482455865,
+        "Longitude": 105.79963736236095,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°05'19.9\"N 105°47'58.7\"E",
+        "Source": "PlugShare #1328099"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.41755836457014, 11.599467486288027]
+      },
+      "properties": {
+        "Location Name": "CAM EV ស្វាយអន្ទរ (Svay Antor)",
+        "Latitude": 11.599467486288027,
+        "Longitude": 105.41755836457014,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°35'58.1\"N 105°25'03.2\"E",
+        "Source": "PlugShare #1735983"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.0688125193119, 11.66918748387916]
+      },
+      "properties": {
+        "Location Name": "Family EV Khsach Kandal",
+        "Latitude": 11.66918748387916,
+        "Longitude": 105.0688125193119,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°40'09.1\"N 105°04'07.7\"E",
+        "Source": "PlugShare #1737451"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.96483366936445, 11.7272800138717]
+      },
+      "properties": {
+        "Location Name": "CG EV & BVM Gas Muk Kampoul",
+        "Latitude": 11.7272800138717,
+        "Longitude": 104.96483366936445,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°43'38.2\"N 104°57'53.4\"E",
+        "Source": "PlugShare #742424"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.07500455339664, 12.079277534492]
+      },
+      "properties": {
+        "Location Name": "Future EV Energy Skun",
+        "Latitude": 12.079277534492,
+        "Longitude": 105.07500455339664,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°04'45.4\"N 105°04'30.0\"E",
+        "Source": "PlugShare #2296721"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.46022306514381, 11.989917504076985]
+      },
+      "properties": {
+        "Location Name": "HK EV Station Kampong Cham",
+        "Latitude": 11.989917504076985,
+        "Longitude": 105.46022306514381,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°59'23.7\"N 105°27'36.8\"E",
+        "Source": "PlugShare #2292951"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.45327149503296, 11.999415298609984]
+      },
+      "properties": {
+        "Location Name": "Caltex Tonle Om",
+        "Latitude": 11.999415298609984,
+        "Longitude": 105.45327149503296,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°59'57.9\"N 105°27'11.8\"E",
+        "Source": "PlugShare #741525"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.63122749328613, 11.91422559915958]
+      },
+      "properties": {
+        "Location Name": "CG EV Soung",
+        "Latitude": 11.91422559915958,
+        "Longitude": 105.63122749328613,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°54'51.2\"N 105°37'52.4\"E",
+        "Source": "PlugShare #1094545"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.91498877853155, 11.776897336198243]
+      },
+      "properties": {
+        "Location Name": "CG EV Krek",
+        "Latitude": 11.776897336198243,
+        "Longitude": 105.91498877853155,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°46'36.8\"N 105°54'54.0\"E",
+        "Source": "PlugShare #2174494"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.44294239580631, 12.06284712393544]
+      },
+      "properties": {
+        "Location Name": "EV Station ២ធ្នូ (Snuol, Kratie)",
+        "Latitude": 12.06284712393544,
+        "Longitude": 106.44294239580631,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°03'46.2\"N 106°26'34.6\"E",
+        "Source": "PlugShare #609725"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.57350970804691, 12.304379204401206]
+      },
+      "properties": {
+        "Location Name": "Sokimex Beung Ket",
+        "Latitude": 12.304379204401206,
+        "Longitude": 105.57350970804691,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°18'15.8\"N 105°34'24.6\"E",
+        "Source": "PlugShare #1600476"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.89863071590662, 12.73748922835093]
+      },
+      "properties": {
+        "Location Name": "EV168 CE Station Stueng Saen",
+        "Latitude": 12.73748922835093,
+        "Longitude": 104.89863071590662,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°44'15.0\"N 104°53'55.1\"E",
+        "Source": "PlugShare #1769778"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.90397334098816, 12.755422652554936]
+      },
+      "properties": {
+        "Location Name": "CG EV Kampong Thom",
+        "Latitude": 12.755422652554936,
+        "Longitude": 104.90397334098816,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°45'19.5\"N 104°54'14.3\"E",
+        "Source": "PlugShare #870480"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.99515216355499, 12.622584116946799]
+      },
+      "properties": {
+        "Location Name": "Tela Station Kampong Thom (ហ្គារ៉ាសសាំង តេលា)",
+        "Latitude": 12.622584116946799,
+        "Longitude": 104.99515216355499,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "12°37'21.3\"N 104°59'42.5\"E",
+        "Source": "PlugShare #1308711"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.56309404108471, 13.001084504758829]
+      },
+      "properties": {
+        "Location Name": "Evolt Energy ចម្ការតាខ្នារ",
+        "Latitude": 13.001084504758829,
+        "Longitude": 104.56309404108471,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°00'03.9\"N 104°33'47.1\"E",
+        "Source": "PlugShare #1285335"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.26655112206936, 13.0552041670877]
+      },
+      "properties": {
+        "Location Name": "EV168 Phum Puk Chhma",
+        "Latitude": 13.0552041670877,
+        "Longitude": 103.26655112206936,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°03'18.7\"N 103°15'59.6\"E",
+        "Source": "PlugShare #1526291"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.26509200036526, 13.055127413678216]
+      },
+      "properties": {
+        "Location Name": "CG EV TotalEnergies Veang Krong",
+        "Latitude": 13.055127413678216,
+        "Longitude": 103.26509200036526,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°03'18.5\"N 103°15'54.3\"E",
+        "Source": "PlugShare #1114615"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.20801090449095, 13.09537134063391]
+      },
+      "properties": {
+        "Location Name": "GO EV Fast Charger Battambang",
+        "Latitude": 13.09537134063391,
+        "Longitude": 103.20801090449095,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°05'43.3\"N 103°12'28.8\"E",
+        "Source": "PlugShare #787075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.20940180780714, 13.103325166799792]
+      },
+      "properties": {
+        "Location Name": "CAM EV Battambang",
+        "Latitude": 13.103325166799792,
+        "Longitude": 103.20940180780714,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°06'12.0\"N 103°12'33.8\"E",
+        "Source": "PlugShare #706565"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.01841189997592, 13.402403932198164]
+      },
+      "properties": {
+        "Location Name": "Khmer EV Mongkol Borei",
+        "Latitude": 13.402403932198164,
+        "Longitude": 103.01841189997592,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°24'08.7\"N 103°01'06.3\"E",
+        "Source": "PlugShare #778906"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.10195300728083, 13.632237476535659]
+      },
+      "properties": {
+        "Location Name": "Pol Rithy EV Preah Netr Preah",
+        "Latitude": 13.632237476535659,
+        "Longitude": 103.10195300728083,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°37'56.1\"N 103°06'07.0\"E",
+        "Source": "PlugShare #1737450"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.96900877196005, 13.589419074030392]
+      },
+      "properties": {
+        "Location Name": "PTT / CG EV Sisophon",
+        "Latitude": 13.589419074030392,
+        "Longitude": 102.96900877196005,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°35'21.9\"N 102°58'08.4\"E",
+        "Source": "PlugShare #652828"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.95948929651058, 13.519946736216822]
+      },
+      "properties": {
+        "Location Name": "CG EV Stung Treng",
+        "Latitude": 13.519946736216822,
+        "Longitude": 105.95948929651058,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "13°31'11.8\"N 105°57'34.2\"E",
+        "Source": "PlugShare #1775179"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.97849, 13.79525]
+      },
+      "properties": {
+        "Location Name": "CG EV Preah Vihea",
+        "Latitude": 13.79525,
+        "Longitude": 104.97849,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "13°47'42.9\"N 104°58'42.6\"E",
+        "Source": "PlugShare #2192131"
+      }
     }
   ]
 }
+
+
+

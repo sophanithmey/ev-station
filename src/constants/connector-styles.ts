@@ -22,6 +22,11 @@ export const connectorStyles: Record<
     text: 'text-purple-700',
     border: 'border-purple-200',
   },
+  'Type 2': {
+    bg: 'bg-amber-50',
+    text: 'text-amber-700',
+    border: 'border-amber-200',
+  },
   Unknown: {
     bg: 'bg-slate-50',
     text: 'text-slate-600',
