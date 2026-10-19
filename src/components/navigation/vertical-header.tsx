@@ -9,6 +9,8 @@ type Props = {
   onPageChange: (page: AppPage) => void;
   onOpenDonate: () => void;
   onOpenDisclaimer: () => void;
+  onOpenSuggest?: () => void;
+  onOpenAdmin?: () => void;
 };
 
 export default function VerticalHeader({
@@ -16,6 +18,8 @@ export default function VerticalHeader({
   onPageChange,
   onOpenDonate,
   onOpenDisclaimer,
+  onOpenSuggest,
+  onOpenAdmin,
 }: Props) {
   return (
     <>
@@ -30,6 +34,8 @@ export default function VerticalHeader({
           onPageChange={onPageChange}
           onOpenDonate={onOpenDonate}
           onOpenDisclaimer={onOpenDisclaimer}
+          onOpenSuggest={onOpenSuggest}
+          onOpenAdmin={onOpenAdmin}
         />
       </aside>
 

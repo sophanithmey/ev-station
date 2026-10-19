@@ -17,6 +17,7 @@ export function useStationFilters({
 }: StationFiltersOptions = {}) {
   const [search, setSearch] = useState('');
   const [connector, setConnector] = useState('all');
+  const [speed, setSpeed] = useState('all');
   const [only24Hours, setOnly24Hours] = useState(false);
   const [onlyNearMe, setOnlyNearMe] = useState(false);
 
@@ -26,7 +27,12 @@ export function useStationFilters({
       const matchesSearch =
         q === '' ||
         station.name.toLowerCase().includes(q) ||
+        (station.nameKhmer && station.nameKhmer.toLowerCase().includes(q)) ||
+        (station.nameEn && station.nameEn.toLowerCase().includes(q)) ||
         station.province.toLowerCase().includes(q) ||
+        (station.provinceKhmer &&
+          station.provinceKhmer.toLowerCase().includes(q)) ||
+        (station.address && station.address.toLowerCase().includes(q)) ||
         (station.brand && station.brand.toLowerCase().includes(q));
 
       const matchesConnector =
@@ -35,9 +41,13 @@ export function useStationFilters({
         (connector === 'GB-T' && station.connector.includes('GB-T')) ||
         (connector === 'CCS2' && station.connector.includes('CCS2'));
 
+      const matchesSpeed = speed === 'all' || station.speedCategory === speed;
+
       const matches24Hours = !only24Hours || station.is24Hours;
 
-      return matchesSearch && matchesConnector && matches24Hours;
+      return (
+        matchesSearch && matchesConnector && matchesSpeed && matches24Hours
+      );
     });
 
     if (onlyNearMe && hasUserLocation) {
@@ -49,14 +59,27 @@ export function useStationFilters({
     }
 
     return result;
-  }, [search, connector, only24Hours, onlyNearMe, hasUserLocation, distances]);
+  }, [
+    search,
+    connector,
+    speed,
+    only24Hours,
+    onlyNearMe,
+    hasUserLocation,
+    distances,
+  ]);
 
   const hasActiveFilters =
-    search !== '' || connector !== 'all' || only24Hours || onlyNearMe;
+    search !== '' ||
+    connector !== 'all' ||
+    speed !== 'all' ||
+    only24Hours ||
+    onlyNearMe;
 
   const handleClearFilters = useCallback(() => {
     setSearch('');
     setConnector('all');
+    setSpeed('all');
     setOnly24Hours(false);
     setOnlyNearMe(false);
   }, []);
@@ -75,6 +98,7 @@ export function useStationFilters({
   return {
     search,
     connector,
+    speed,
     only24Hours,
     onlyNearMe,
     filteredStations,
@@ -82,6 +106,7 @@ export function useStationFilters({
     totalCount: chargingStations.length,
     setSearch,
     setConnector,
+    setSpeed,
     toggle24Hours,
     handleToggleNearMe,
     handleClearFilters,

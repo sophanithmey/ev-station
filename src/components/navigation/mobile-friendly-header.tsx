@@ -18,7 +18,11 @@ interface MobileNavTab {
 }
 
 const TABS: MobileNavTab[] = [
-  { id: 'explorer', icon: '⚡', label: 'Explore', badge: '146', desc: 'Live Map & Stations' },
+  { id: 'explorer', icon: '⚡', label: 'Explore', badge: '208', desc: 'Live Map & Stations' },
+  { id: 'trip-planner', icon: '🧭', label: 'Planner', desc: 'Route & Battery Planner' },
+  { id: 'ev-catalog', icon: '🚗', label: 'EVs', desc: 'Cambodia Model Catalog' },
+  { id: 'compare', icon: '⚖️', label: 'Compare', desc: 'Specs Comparison' },
+  { id: 'savings-calculator', icon: '💰', label: 'Savings', desc: 'Fuel vs Electricity TCO' },
   { id: 'locations', icon: '📍', label: 'Locations', badge: '45 QR', desc: 'EAC Official Directory' },
   { id: 'eac-stats', icon: '📊', label: 'Stats', desc: 'National Analytics' },
 ];
@@ -46,19 +50,8 @@ export default function MobileFriendlyHeader({
           className='flex items-center gap-2 cursor-pointer text-left'
           aria-label='Cambodia EV Explore'
         >
-          <div className='relative w-7 h-7 rounded-lg bg-linear-to-br from-emerald-500 via-emerald-600 to-teal-700 rotate-45 flex items-center justify-center shadow-md shrink-0 ml-1'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 24 24'
-              fill='currentColor'
-              className='w-4 h-4 text-amber-300 -rotate-45 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'
-              />
-            </svg>
+          <div className='relative w-7 h-7 rounded-lg bg-emerald-600 flex items-center justify-center shadow-md shrink-0 ml-1 text-amber-300 font-black text-sm'>
+            ⚡
           </div>
           <div className='flex flex-col leading-none ml-1'>
             <span className='font-bold text-sm text-slate-900 font-["Bricolage_Grotesque",sans-serif] flex items-center gap-1.5'>
