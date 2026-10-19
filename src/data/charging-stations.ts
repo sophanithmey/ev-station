@@ -1,28 +1,13 @@
 import rawGeoJson from './data.json';
-import { resolveProvince, type GeoJsonFeature } from './province-resolver';
+import { resolveProvince } from './province-resolver';
+import type {
+  ChargingStation,
+  ConnectorType,
+  GeoJsonFeature,
+  SpeedCategory,
+} from '../types/station';
 
-export type ConnectorType =
-  | 'GB-T'
-  | 'CCS2'
-  | 'GB-T/CCS2'
-  | 'CCS/SAE'
-  | 'Type 2'
-  | 'Unknown';
-
-export type ChargingStation = {
-  id: string;
-  name: string;
-  province: string;
-  connector: ConnectorType;
-  operationTime: string;
-  is24Hours: boolean;
-  latitude: number;
-  longitude: number;
-  dmsLocation?: string;
-  brand?: string;
-};
-
-export type { GeoJsonFeature };
+export type { ChargingStation, ConnectorType, GeoJsonFeature, SpeedCategory };
 
 function detectBrand(name: string): string {
   const n = name.toUpperCase();
@@ -55,7 +40,6 @@ function detectBrand(name: string): string {
     n.includes('RESORT') ||
     n.includes('GUEST HOUSE') ||
     n.includes('HOMESTAY') ||
-    n.includes('HOME STAY') ||
     n.includes('BOUTIQUE')
   )
     return 'Hotel / Resort';
@@ -66,7 +50,12 @@ function detectBrand(name: string): string {
   return 'Charging Hub';
 }
 
-// Convert GeoJSON features to strongly typed ChargingStation list
+function resolveSpeedCategory(plug: ConnectorType): SpeedCategory {
+  if (plug === 'Unknown') return 'unknown';
+  if (plug === 'Type 2') return 'ac_standard';
+  return 'dc_fast';
+}
+
 const features = (rawGeoJson as { features: GeoJsonFeature[] }).features || [];
 
 export const chargingStations: ChargingStation[] = features.map((f, index) => {
@@ -81,31 +70,41 @@ export const chargingStations: ChargingStation[] = features.map((f, index) => {
   const isSwapped = rawLat > 50 && rawLng < 25;
   const latitude = isSwapped ? rawLng : rawLat;
   const longitude = isSwapped ? rawLat : rawLng;
+  const connector = (p['Plug Types'] as ConnectorType) || 'Unknown';
 
   return {
     id: `kh-ev-${index + 1}`,
     name: (p['Location Name'] || `EV Station ${index + 1}`).trim(),
+    nameKhmer: p['Location Name (Khmer)']?.trim() || undefined,
+    nameEn: p['Location Name (English)']?.trim() || undefined,
     province: resolveProvince(f),
-    connector: (p['Plug Types'] as ConnectorType) || 'Unknown',
+    provinceKhmer: p['Province (Khmer)']?.trim() || undefined,
+    connector,
+    speedCategory: resolveSpeedCategory(connector),
     operationTime: opTime,
     is24Hours,
     latitude,
     longitude,
+    address: p.Address?.trim() || undefined,
+    chargersCount: p['Chargers Count'] ?? undefined,
+    phone: p.Phone?.trim() || undefined,
+    source: p.Source || 'MEF Open Data / EAC Cambodia',
+    qrNumber: p['QR Number'] ?? undefined,
     dmsLocation: p.Location,
     brand: detectBrand(p['Location Name'] || ''),
+    verifiedDate: 'Feb 2025 (MEF Dataset)',
+    pricingNotes:
+      'EAC Official Tariff ~1,200–1,500 KHR/kWh (subject to provider)',
   };
 });
 
-/**
- * Haversine formula to compute great-circle distance between two points in km
- */
 export function calculateDistanceKm(
   lat1: number,
   lon1: number,
   lat2: number,
   lon2: number,
 ): number {
-  const R = 6371; // Earth radius in km
+  const R = 6371;
   const dLat = ((lat2 - lat1) * Math.PI) / 180;
   const dLon = ((lon2 - lon1) * Math.PI) / 180;
   const a =

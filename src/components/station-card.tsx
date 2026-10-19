@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { ChargingStation } from '../data/charging-stations';
+import type { ChargingStation } from '../types/station';
 import { connectorStyles } from '../constants/connector-styles';
 import StationCardActions from './station-card-actions';
 
@@ -10,16 +10,15 @@ type Props = {
   onSelectOnMap?: (station: ChargingStation) => void;
 };
 
-const StationCard = ({
+export default function StationCard({
   station,
   distance,
   isSelected = false,
   onSelectOnMap,
-}: Props) => {
+}: Props) {
   const [copied, setCopied] = useState(false);
   const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${station.latitude},${station.longitude}`;
-  const style =
-    connectorStyles[station.connector] || connectorStyles.Unknown;
+  const style = connectorStyles[station.connector] || connectorStyles.Unknown;
 
   const handleCopyCoords = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -33,7 +32,7 @@ const StationCard = ({
   return (
     <article
       onClick={() => onSelectOnMap?.(station)}
-      className={`group relative bg-white rounded-2xl border transition-all duration-200 p-3.5 sm:p-4 flex flex-col gap-2.5 cursor-pointer ${
+      className={`group relative bg-white rounded-2xl border transition-all duration-200 p-3.5 sm:p-4 flex flex-col gap-2 cursor-pointer ${
         isSelected
           ? 'border-emerald-500 shadow-md ring-2 ring-emerald-500/20 bg-emerald-50/20'
           : 'border-slate-200/90 shadow-xs hover:border-emerald-300 hover:shadow-md'
@@ -48,22 +47,18 @@ const StationCard = ({
                 {station.brand}
               </span>
             )}
+            {station.speedCategory === 'dc_fast' && (
+              <span className='text-[10px] font-bold text-amber-700 bg-amber-50 border border-amber-200/70 px-1.5 py-0.5 rounded-md'>
+                ⚡ DC Fast
+              </span>
+            )}
+            {station.chargersCount && (
+              <span className='text-[10px] font-medium text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded-md'>
+                {station.chargersCount} stalls
+              </span>
+            )}
             {distance !== undefined && (
-              <span className='text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-2 py-0.5 rounded-md flex items-center gap-1'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='w-2.5 h-2.5 text-emerald-600 shrink-0'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                  strokeWidth={2.5}
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M13 7h8m0 0v8m0-8l-8 8-4-4-6 6'
-                  />
-                </svg>
+              <span className='text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-2 py-0.5 rounded-md'>
                 {distance} km away
               </span>
             )}
@@ -71,9 +66,13 @@ const StationCard = ({
           <h3 className='font-bold text-slate-900 text-sm leading-snug group-hover:text-emerald-700 transition-colors line-clamp-1'>
             {station.name}
           </h3>
+          {station.nameKhmer && (
+            <p className='text-[11px] text-slate-400 font-["Kantumruy_Pro",sans-serif] line-clamp-1 mt-0.5'>
+              {station.nameKhmer}
+            </p>
+          )}
         </div>
 
-        {/* Connector Badge */}
         <span
           className={`shrink-0 text-xs font-bold px-2.5 py-1 rounded-full border ${style.bg} ${style.text} ${style.border}`}
         >
@@ -84,25 +83,7 @@ const StationCard = ({
       {/* Location & Operating Hours */}
       <div className='flex items-center justify-between gap-2 text-xs text-slate-600 pt-0.5'>
         <div className='flex items-center gap-1 text-slate-600 min-w-0'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='w-3.5 h-3.5 text-slate-400 shrink-0'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
-            />
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
-            />
-          </svg>
+          <span>📍</span>
           <span className='truncate font-medium text-slate-700'>
             {station.province}
           </span>
@@ -117,9 +98,7 @@ const StationCard = ({
         >
           <span
             className={`w-1.5 h-1.5 rounded-full ${
-              station.is24Hours
-                ? 'bg-emerald-500 animate-pulse'
-                : 'bg-slate-400'
+              station.is24Hours ? 'bg-emerald-500 animate-pulse' : 'bg-slate-400'
             }`}
           />
           <span>{station.operationTime}</span>
@@ -135,6 +114,4 @@ const StationCard = ({
       />
     </article>
   );
-};
-
-export default StationCard;
+}

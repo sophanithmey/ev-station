@@ -1,50 +1,64 @@
 import { useState, useEffect, useCallback } from 'react';
 
-export type AppPage = 'explorer' | 'locations' | 'eac-stats';
+export type AppPage =
+  | 'explorer'
+  | 'trip-planner'
+  | 'ev-catalog'
+  | 'compare'
+  | 'savings-calculator'
+  | 'locations'
+  | 'eac-stats';
+
+const VALID_PAGES: AppPage[] = [
+  'explorer',
+  'trip-planner',
+  'ev-catalog',
+  'compare',
+  'savings-calculator',
+  'locations',
+  'eac-stats',
+];
 
 const isValidPage = (val: string | null): val is AppPage =>
-  val === 'explorer' || val === 'locations' || val === 'eac-stats';
+  VALID_PAGES.includes(val as AppPage);
 
-const getInitialPage = (): AppPage => {
+const parseCurrentPage = (): AppPage => {
   if (typeof window !== 'undefined') {
     const hash = window.location.hash.replace(/^#/, '');
     if (isValidPage(hash)) return hash;
+
+    const path = window.location.pathname.replace(/^\//, '');
+    if (isValidPage(path)) return path;
   }
   return 'explorer';
 };
 
 export function useAppNavigation() {
-  const [activePage, setActivePage] = useState<AppPage>(getInitialPage);
+  const [activePage, setActivePage] = useState<AppPage>(parseCurrentPage);
 
   useEffect(() => {
-    const handleHash = () => {
-      const hash = window.location.hash.replace(/^#/, '');
-      if (isValidPage(hash)) {
-        setActivePage(hash);
-      } else if (!hash) {
-        setActivePage('explorer');
-      }
+    const handleUrlChange = () => {
+      setActivePage(parseCurrentPage());
     };
-    window.addEventListener('hashchange', handleHash);
-    return () => window.removeEventListener('hashchange', handleHash);
+
+    window.addEventListener('hashchange', handleUrlChange);
+    window.addEventListener('popstate', handleUrlChange);
+    return () => {
+      window.removeEventListener('hashchange', handleUrlChange);
+      window.removeEventListener('popstate', handleUrlChange);
+    };
   }, []);
 
   const handlePageChange = useCallback((page: AppPage) => {
     setActivePage(page);
     try {
       if (page === 'explorer') {
-        if (window.location.hash) {
-          window.history.pushState(
-            null,
-            '',
-            window.location.pathname + window.location.search,
-          );
-        }
+        window.history.pushState(null, '', '/');
       } else {
-        window.location.hash = page;
+        window.history.pushState(null, '', `/${page}`);
       }
     } catch {
-      // ignore history errors
+      window.location.hash = page;
     }
   }, []);
 

@@ -1,10 +1,11 @@
-import type { ChargingStation } from '../data/charging-stations';
+import type { ChargingStation } from '../types/station';
 import LocationErrorAlert from './location-error-alert';
 import StationFilters from './station-filters';
 import StationListHeader from './station-list-header';
 import StationList from './station-list';
 import OpenMap from './open-map';
 import ErrorBoundary from './error-boundary';
+import StationDetailPanel from './station-explorer/station-detail-panel';
 
 interface Props {
   stations: ChargingStation[];
@@ -17,11 +18,13 @@ interface Props {
   distances: Record<string, number>;
   search: string;
   connector: string;
+  speed: string;
   only24Hours: boolean;
   onlyNearMe: boolean;
   hasActiveFilters: boolean;
   onSearchChange: (search: string) => void;
   onConnectorChange: (connector: string) => void;
+  onSpeedChange: (speed: string) => void;
   onToggle24Hours: () => void;
   onToggleNearMe: () => void;
   onClearFilters: () => void;
@@ -29,6 +32,7 @@ interface Props {
   onSelectStation: (station: ChargingStation) => void;
   onDeselectStation: () => void;
   onRequestUserLocation: () => void;
+  onReportIssue?: (station: ChargingStation) => void;
 }
 
 export default function StationExplorerView({
@@ -42,11 +46,13 @@ export default function StationExplorerView({
   distances,
   search,
   connector,
+  speed,
   only24Hours,
   onlyNearMe,
   hasActiveFilters,
   onSearchChange,
   onConnectorChange,
+  onSpeedChange,
   onToggle24Hours,
   onToggleNearMe,
   onClearFilters,
@@ -54,6 +60,7 @@ export default function StationExplorerView({
   onSelectStation,
   onDeselectStation,
   onRequestUserLocation,
+  onReportIssue,
 }: Props) {
   return (
     <>
@@ -66,6 +73,7 @@ export default function StationExplorerView({
         <StationFilters
           search={search}
           connector={connector}
+          speed={speed}
           only24Hours={only24Hours}
           onlyNearMe={onlyNearMe}
           isLocating={isLocating}
@@ -73,13 +81,14 @@ export default function StationExplorerView({
           stations={stations}
           onSearchChange={onSearchChange}
           onConnectorChange={onConnectorChange}
+          onSpeedChange={onSpeedChange}
           onToggle24Hours={onToggle24Hours}
           onToggleNearMe={onToggleNearMe}
           onClearFilters={onClearFilters}
         />
       </div>
 
-      <div className='flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-stretch'>
+      <div className='flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-stretch relative'>
         <section
           aria-label='Stations list'
           className={`lg:col-span-5 h-full min-h-0 flex flex-col gap-1.5 ${
@@ -108,7 +117,7 @@ export default function StationExplorerView({
 
         <section
           aria-label='Interactive map'
-          className={`lg:col-span-7 flex-1 h-full min-h-0 w-full ${
+          className={`lg:col-span-7 flex-1 h-full min-h-0 w-full relative ${
             mobileView === 'list' ? 'hidden lg:block' : 'flex flex-col'
           }`}
         >
@@ -125,6 +134,18 @@ export default function StationExplorerView({
               mobileView={mobileView}
             />
           </ErrorBoundary>
+
+          {/* Desktop Slideover Detail Panel */}
+          {selectedStation && (
+            <div className='hidden lg:block absolute top-3 right-3 bottom-3 w-84 z-20 shadow-2xl'>
+              <StationDetailPanel
+                station={selectedStation}
+                distance={distances[selectedStation.id]}
+                onClose={onDeselectStation}
+                onReportIssue={onReportIssue}
+              />
+            </div>
+          )}
         </section>
       </div>
     </>

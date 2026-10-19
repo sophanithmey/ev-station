@@ -38,9 +38,7 @@ const StatCard = ({
 
 const StationStats = ({ stations, filteredCount }: Props) => {
   const provinceCount = new Set(stations.map((s) => s.province)).size;
-  const gbtCount = stations.filter(
-    (s) => s.connector === "GB-T" || s.connector === "GB-T/CCS2"
-  ).length;
+  const gbtCount = stations.filter((s) => s.connector === 'GB/T').length;
   const is24hCount = stations.filter((s) => s.is24Hours).length;
 
   return (
