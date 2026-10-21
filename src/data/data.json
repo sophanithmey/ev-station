@@ -1017,7 +1017,7 @@
         "Source": "Cambodia EV Network 2025"
       }
     },
-     {
+    {
       "type": "Feature",
       "geometry": {
         "type": "Point",
@@ -1025,7 +1025,7 @@
       },
       "properties": {
         "Location Name": "CE EV Station",
-        "Latitude": 11.372601494812654, 
+        "Latitude": 11.372601494812654,
         "Longitude": 104.75271152497052,
         "Plug Types": "GB-T/CCS2",
         "Operation Time": "24/7",
@@ -1079,6 +1079,25 @@
         "Operation Time": "24/7",
         "Location": "11°29'15.0\"N 104°48'58.0\"E",
         "Source": "Cambodia EV Network 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.84103166457402, 11.586365423459098]
+      },
+      "properties": {
+        "Location Name": "ChargeNGo EV Station",
+        "Latitude": 11.586365423459098,
+        "Longitude": 104.84103166457402,
+        "Plug Types": "GB-T/CCS2",
+        "Address": "02 Street 15K, Phnom Penh 120807, Cambodia",
+        "Operation Time": "24/7",
+        "Location": "11°35'11.0\"N 104°50'28.0\"E",
+        "Source": "Google Map",
+        "Chargers Count": 4,
+        "Phone": "+85577258585"
       }
     },
     {
@@ -2241,7 +2260,7 @@
       },
       "properties": {
         "Location Name": "EV Station",
-        "Latitude": 10.615893450907182, 
+        "Latitude": 10.615893450907182,
         "Longitude": 104.16964081824733,
         "Plug Types": "GB-T/CCS2",
         "Operation Time": "24/7",
@@ -2883,10 +2902,13 @@
         "Location Name": "CG EV Energy Charging Station",
         "Latitude": 11.579359791028416,
         "Longitude": 104.80275094829003,
-        "Plug Types": "GB-T/CCS2",
+        "Plug Types": "CCS2",
         "Operation Time": "24/7",
         "Location": "11°32'48.8\"N 104°48'46.1\"E",
-        "Source": "Cambodia EV Network 2025"
+        "Source": "Google Map",
+        "Address": "HRH2+GQ, Phnom Penh 120905, Cambodia",
+        "Chargers Count": 2,
+        "Phone": "+855887573456"
       }
     },
     {
@@ -2899,10 +2921,12 @@
         "Location Name": "Evolt Charging Station",
         "Latitude": 11.5773851742183,
         "Longitude": 104.83585659401987,
-        "Plug Types": "GB-T/CCS2",
+        "Plug Types": "CCS2",
         "Operation Time": "24/7",
         "Location": "11°32'48.8\"N 104°48'46.1\"E",
-        "Source": "Cambodia EV Network 2025"
+        "Source": "Google Map",
+        "Address": "C-75, Street C Vimean Trung Village, C-75, Street C, Sangkat, Phnom Penh, Cambodia",
+        "Chargers Count": 2
       }
     },
     {
@@ -3608,9 +3632,50 @@
         "Location": "13°47'42.9\"N 104°58'42.6\"E",
         "Source": "PlugShare #2192131"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.84070874750614, 11.586985269921403]
+      },
+      "properties": {
+        "Location Name": "EV168",
+        "Location Name (English)": "EV168",
+        "Location Name (Khmer)": "EV168",
+        "Latitude": 11.586985269921403,
+        "Longitude": 104.84070874750614,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "រាជធានីភ្នំពេញ",
+        "Address": "HRPR+MC4, Khan Sen Sok, Phnom Penh, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°35'13.1\"N 104°50'26.6\"E",
+        "Source": "PlugShare #1840831"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.843598034395, 11.587262070056822]
+      },
+      "properties": {
+        "Location Name": "Pumi EV Station",
+        "Location Name (English)": "Pumi EV Station",
+        "Location Name (Khmer)": "Pumi EV Station",
+        "Latitude": 11.587262070056822,
+        "Longitude": 104.843598034395,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "រាជធានីភ្នំពេញ",
+        "Address": "HRPV+RJ7, Phnom Penh, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°35'14.1\"N 104°50'36.9\"E",
+        "Source": "Google Map"
+      }
     }
   ]
 }
-
-
-

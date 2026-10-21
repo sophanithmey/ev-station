@@ -1,5 +1,5 @@
 import type { AppPage } from '../../hooks/use-app-navigation';
-import HeaderQuickJump from '../header-quick-jump';
+// import HeaderQuickJump from '../header-quick-jump';
 
 type Props = {
   onPageChange: (page: AppPage) => void;
@@ -10,7 +10,7 @@ type Props = {
 };
 
 export default function VerticalNavActions({
-  onPageChange,
+  // onPageChange,
   onOpenDonate,
   onOpenDisclaimer,
   onOpenSuggest,
@@ -19,7 +19,7 @@ export default function VerticalNavActions({
   return (
     <div className='flex flex-col items-center gap-2 pb-2'>
       {/* ⌘K Command Palette Quick Jump */}
-      <HeaderQuickJump onPageChange={onPageChange} />
+      {/* <HeaderQuickJump onPageChange={onPageChange} /> */}
 
       {/* Suggest New Station */}
       {onOpenSuggest && (

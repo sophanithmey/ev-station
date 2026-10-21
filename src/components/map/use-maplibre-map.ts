@@ -20,6 +20,7 @@ type Props = {
   origin?: TripWaypoint | null;
   destination?: TripWaypoint | null;
   onSelectStation: (station: ChargingStation) => void;
+  onUserMove?: () => void;
 };
 
 export function useMaplibreMap({
@@ -31,8 +32,13 @@ export function useMaplibreMap({
   origin,
   destination,
   onSelectStation,
+  onUserMove,
 }: Props) {
   const mapRef = useRef<maplibregl.Map | null>(null);
+  const onUserMoveRef = useRef(onUserMove);
+  useEffect(() => {
+    onUserMoveRef.current = onUserMove;
+  }, [onUserMove]);
   const markersRef = useRef<Map<string, maplibregl.Marker>>(new Map());
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
   const originMarkerRef = useRef<maplibregl.Marker | null>(null);
@@ -53,6 +59,7 @@ export function useMaplibreMap({
 
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
     map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
+    map.on('dragstart', () => onUserMoveRef.current?.());
     mapRef.current = map;
 
     map.on('load', () => map.resize());
@@ -152,6 +159,17 @@ export function useMaplibreMap({
     }
   }, [routeGeometry, origin, destination]);
 
+  const flyToUserLocation = useCallback(() => {
+    const map = mapRef.current;
+    if (!map || !userLocation) return;
+    map.flyTo({
+      center: [userLocation.lng, userLocation.lat],
+      zoom: 14,
+      essential: true,
+      duration: 800,
+    });
+  }, [userLocation]);
+
   const fitBoundsToStations = useCallback(() => {
     const map = mapRef.current;
     if (!map || stations.length === 0) return;
@@ -160,5 +178,5 @@ export function useMaplibreMap({
     map.fitBounds(bounds, { padding: 40, maxZoom: 13, duration: 800 });
   }, [stations]);
 
-  return { mapRef, fitBoundsToStations };
+  return { mapRef, fitBoundsToStations, flyToUserLocation };
 }
