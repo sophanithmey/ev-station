@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 import type { ChargingStation } from '../../types/station';
 import type { TripWaypoint } from '../../types/trip';
 import { useMaplibreMap } from './use-maplibre-map';
@@ -29,8 +29,14 @@ export default function MaplibreStationMap({
   isLocating,
 }: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const [isNearMeActive, setIsNearMeActive] = useState(false);
+  const shouldFlyToUserRef = useRef(false);
 
-  const { mapRef, fitBoundsToStations } = useMaplibreMap({
+  const handleUserMove = useCallback(() => {
+    setIsNearMeActive(false);
+  }, []);
+
+  const { fitBoundsToStations, flyToUserLocation } = useMaplibreMap({
     containerRef,
     stations,
     selectedStation,
@@ -39,19 +45,45 @@ export default function MaplibreStationMap({
     origin,
     destination,
     onSelectStation,
+    onUserMove: handleUserMove,
   });
 
-  const handleLocateClick = () => {
-    if (userLocation && mapRef.current) {
-      mapRef.current.flyTo({
-        center: [userLocation.lng, userLocation.lat],
-        zoom: 14,
-        essential: true,
-      });
+  // Automatically fly to user location on first click as soon as coordinates are obtained
+  useEffect(() => {
+    if (userLocation && shouldFlyToUserRef.current) {
+      shouldFlyToUserRef.current = false;
+      setIsNearMeActive(true);
+      flyToUserLocation();
+    }
+  }, [userLocation, flyToUserLocation]);
+
+  // Clean up pending flag if locating fails or is cancelled
+  useEffect(() => {
+    if (!isLocating && !userLocation) {
+      shouldFlyToUserRef.current = false;
+    }
+  }, [isLocating, userLocation]);
+
+  const handleLocateClick = useCallback(() => {
+    if (userLocation) {
+      if (isNearMeActive) {
+        setIsNearMeActive(false);
+        fitBoundsToStations();
+      } else {
+        setIsNearMeActive(true);
+        flyToUserLocation();
+      }
       return;
     }
+
+    shouldFlyToUserRef.current = true;
     onRequestUserLocation();
-  };
+  }, [userLocation, isNearMeActive, fitBoundsToStations, flyToUserLocation, onRequestUserLocation]);
+
+  const handleResetView = useCallback(() => {
+    setIsNearMeActive(false);
+    fitBoundsToStations();
+  }, [fitBoundsToStations]);
 
   return (
     <div className='relative w-full h-full min-h-0 flex-1 bg-slate-100 rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs'>
@@ -61,7 +93,7 @@ export default function MaplibreStationMap({
       {/* Map Controls */}
       <MapControls
         isLocating={isLocating}
-        isNearMeActive={Boolean(userLocation)}
+        isNearMeActive={isNearMeActive}
         hasUserLocation={Boolean(userLocation)}
         onLocateClick={handleLocateClick}
       />
@@ -70,7 +102,7 @@ export default function MaplibreStationMap({
       <div className='absolute top-3.5 right-14 z-10'>
         <button
           type='button'
-          onClick={fitBoundsToStations}
+          onClick={handleResetView}
           className='px-3 py-1.5 rounded-xl bg-white/95 hover:bg-white text-slate-800 border border-slate-200 text-xs font-semibold shadow-xs backdrop-blur-md transition-all cursor-pointer'
           title='Reset Map View'
         >
