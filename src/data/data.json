@@ -3676,6 +3676,160 @@
         "Location": "11°35'14.1\"N 104°50'36.9\"E",
         "Source": "Google Map"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.88464525292349, 11.442613643916363]
+      },
+      "properties": {
+        "Location Name": "BVM កួរស្រូវ",
+        "Location Name (English)": "BVM Kour Srov",
+        "Location Name (Khmer)": "BVM កួរស្រូវ",
+        "Latitude": 11.442613643916363,
+        "Longitude": 104.88464525292349,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "រាជធានីភ្នំពេញ",
+        "Address": "CVVM+3R9, Phnom Penh, Cambodia",
+        "Chargers Count": 2,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°26'33.4\"N 104°53'04.7\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.8400474471074, 11.284223232480652]
+      },
+      "properties": {
+        "Location Name": "C.C EV Phnom Tamao",
+        "Location Name (English)": "C.C EV Phnom Tamao",
+        "Location Name (Khmer)": "C.C EV Phnom Tamao",
+        "Latitude": 11.284223232480652,
+        "Longitude": 104.8400474471074,
+        "Province": "Takeo",
+        "Province (Khmer)": "តាកែវ",
+        "Address": "NR2, 120001, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°17'03.2\"N 104°50'24.2\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.19491161280956, 11.430317103570305]
+      },
+      "properties": {
+        "Location Name": "Belle EV- charging Station",
+        "Location Name (English)": "Belle EV- charging Station",
+        "Location Name (Khmer)": "Belle EV- charging Station",
+        "Latitude": 11.430317103570305,
+        "Longitude": 105.19491161280956,
+        "Province": "Kandal",
+        "Province (Khmer)": "កណ្ដាល",
+        "Address": "ភោជនីយដ្ឋានសួនម្ហូប National Road 1, Kandal, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°25'51.1\"N 105°11'39.7\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.29333497384124, 11.26355079546047]
+      },
+      "properties": {
+        "Location Name": "EV Charging Station Neak Loeung",
+        "Location Name (English)": "EV Charging Station Neak Loeung",
+        "Location Name (Khmer)": "EV Charging Station Neak Loeung",
+        "Latitude": 11.26355079546047,
+        "Longitude": 105.29333497384124,
+        "Province": "Prey Veng",
+        "Province (Khmer)": "ព្រៃវែង",
+        "Address": "NR1, Neak Loeung, Cambodia",
+        "Chargers Count": 2,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°35'45.4\"N 105°31'54.7\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.3971283639961, 11.179957668996066]
+      },
+      "properties": {
+        "Location Name": "Electric Vehicle Charging Station",
+        "Location Name (English)": "Electric Vehicle Charging Station",
+        "Location Name (Khmer)": "ស្ថានីយសាកថ្មរថយន្តអគ្គិសនី",
+        "Latitude": 11.179957668996066,
+        "Longitude": 105.3971283639961,
+        "Province": "Prey Veng",
+        "Province (Khmer)": "ព្រៃវែង",
+        "Address": "NR1, ក្បែរផ្សារព្រៃល្វា, Cambodia",
+        "Chargers Count": 6,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°10'47.8\"N 105°23'57.7\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.4929743080911, 11.1436496475722]
+      },
+      "properties": {
+        "Location Name": "Vireak Buntham Phum Sokharavy",
+        "Location Name (English)": "Vireak Buntham Phum Sokharavy",
+        "Location Name (Khmer)": "Vireak Buntham Phum Sokharavy",
+        "Latitude": 11.1436496475722,
+        "Longitude": 105.4929743080911,
+        "Province": "Prey Veng",
+        "Province (Khmer)": "ព្រៃវែង",
+        "Address": "NR1, Phum Sokharavy, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°10'47.8\"N 105°23'57.7\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.66655483685878, 11.133902895861675]
+      },
+      "properties": {
+        "Location Name": "Auto Home Hua Tou",
+        "Location Name (English)": "Auto Home Hua Tou",
+        "Location Name (Khmer)": "Auto Home Hua Tou",
+        "Latitude": 11.133902895861675,
+        "Longitude": 105.66655483685878,
+        "Province": "Prey Veng",
+        "Province (Khmer)": "ព្រៃវែង",
+        "Address": "5M66+97V, Kraol Kou, Cambodia",
+        "Chargers Count": 2,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°08'02.3\"N 105°39'59.8\"E",
+        "Source": "Google Map"
+      }
     }
   ]
 }
