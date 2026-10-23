@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import type { ConnectorType } from '../../types/station';
 import type { NewStationSubmission } from '../../types/community';
+import ConnectorMultiSelect from './connector-multi-select';
+import { formatConnectorStandards } from '../../lib/connector-standards';
 
 type Props = {
   onClose: () => void;
@@ -12,7 +14,9 @@ export default function SuggestStationModal({ onClose, onSubmit }: Props) {
   const [province, setProvince] = useState('Phnom Penh');
   const [lat, setLat] = useState('11.5564');
   const [lng, setLng] = useState('104.9282');
-  const [connector, setConnector] = useState<ConnectorType>('GB/T');
+  const [selectedConnectors, setSelectedConnectors] = useState<string[]>([
+    'GB-T', 'CCS2',
+  ]);
   const [chargersCount, setChargersCount] = useState('2');
   const [operationTime, setOperationTime] = useState('24/7');
   const [accessNotes, setAccessNotes] = useState('');
@@ -23,6 +27,8 @@ export default function SuggestStationModal({ onClose, onSubmit }: Props) {
     const latitude = parseFloat(lat);
     const longitude = parseFloat(lng);
     if (!name.trim() || isNaN(latitude) || isNaN(longitude)) return;
+
+    const connector = formatConnectorStandards(selectedConnectors) as ConnectorType;
 
     onSubmit({
       name: name.trim(),
@@ -52,7 +58,7 @@ export default function SuggestStationModal({ onClose, onSubmit }: Props) {
               <span>Suggest New Charging Location</span>
             </h2>
             <p className='text-xs text-slate-500 mt-0.5'>
-              Help expand Cambodia's open EV charging directory.
+              Help expand Cambodia's open EV directory. New submissions remain pending review.
             </p>
           </div>
           <button type='button' onClick={onClose} className='p-1.5 text-slate-400 hover:text-slate-700 cursor-pointer'>
@@ -76,34 +82,24 @@ export default function SuggestStationModal({ onClose, onSubmit }: Props) {
             />
           </div>
 
-          <div className='grid grid-cols-2 gap-2.5'>
-            <div>
-              <label htmlFor='sug-prov' className='block text-slate-600 mb-1 font-medium'>Province</label>
-              <input
-                id='sug-prov'
-                type='text'
-                required
-                value={province}
-                onChange={(e) => setProvince(e.target.value)}
-                className='w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-slate-800 focus:outline-hidden focus:border-emerald-500'
-              />
-            </div>
-
-            <div>
-              <label htmlFor='sug-plug' className='block text-slate-600 mb-1 font-medium'>Connector Standard</label>
-              <select
-                id='sug-plug'
-                value={connector}
-                onChange={(e) => setConnector(e.target.value as ConnectorType)}
-                className='w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-slate-800 focus:outline-hidden focus:border-emerald-500'
-              >
-                <option value='GB/T'>GB/T (Chinese Standard)</option>
-                <option value='CCS2'>CCS2 (European Standard)</option>
-                <option value='Type 2'>Type 2 (AC Slow)</option>
-                <option value='Unknown'>Unknown</option>
-              </select>
-            </div>
+          <div>
+            <label htmlFor='sug-prov' className='block text-slate-600 mb-1 font-medium'>
+              Province *
+            </label>
+            <input
+              id='sug-prov'
+              type='text'
+              required
+              value={province}
+              onChange={(e) => setProvince(e.target.value)}
+              className='w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-slate-800 focus:outline-hidden focus:border-emerald-500'
+            />
           </div>
+
+          <ConnectorMultiSelect
+            selected={selectedConnectors}
+            onChange={setSelectedConnectors}
+          />
 
           <div className='grid grid-cols-2 gap-2.5'>
             <div>

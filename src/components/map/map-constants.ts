@@ -15,7 +15,13 @@ export const connectorColorMap: Record<
   { bg: string; border: string; glow: string }
 > = {
   'GB-T': { bg: '#059669', border: '#047857', glow: 'rgba(5, 150, 105, 0.4)' },
+  'GB/T': { bg: '#059669', border: '#047857', glow: 'rgba(5, 150, 105, 0.4)' },
   'GB-T/CCS2': {
+    bg: '#0d9488',
+    border: '#0f766e',
+    glow: 'rgba(13, 148, 136, 0.4)',
+  },
+  'GB/T / CCS2': {
     bg: '#0d9488',
     border: '#0f766e',
     glow: 'rgba(13, 148, 136, 0.4)',
@@ -38,8 +44,28 @@ export const connectorColorMap: Record<
   },
 };
 
+export function resolveConnectorColors(connector: string) {
+  if (connectorColorMap[connector]) {
+    return connectorColorMap[connector];
+  }
+  const upper = (connector || '').toUpperCase();
+  if (upper.includes('GB') && upper.includes('CCS')) {
+    return connectorColorMap['GB-T/CCS2'];
+  }
+  if (upper.includes('GB')) {
+    return connectorColorMap['GB-T'];
+  }
+  if (upper.includes('CCS')) {
+    return connectorColorMap.CCS2;
+  }
+  if (upper.includes('TYPE 2')) {
+    return connectorColorMap['Type 2'];
+  }
+  return connectorColorMap.Unknown;
+}
+
 export function createPinSvg(connector: string, isSelected: boolean): string {
-  const colors = connectorColorMap[connector] || connectorColorMap.Unknown;
+  const colors = resolveConnectorColors(connector);
   const size = isSelected ? 42 : 32;
   const height = isSelected ? 50 : 40;
 

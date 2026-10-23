@@ -1,5 +1,5 @@
 import type { StyleSpecification } from 'maplibre-gl';
-import { connectorColorMap } from './map-constants';
+import { resolveConnectorColors } from './map-constants';
 
 export const CAMBODIA_CENTER_LNG_LAT: [number, number] = [104.991, 12.5657];
 export const CAMBODIA_DEFAULT_ZOOM = 7;
@@ -47,7 +47,7 @@ export function createMapLibrePinElement(
   connector: string,
   isSelected: boolean,
 ): HTMLElement {
-  const colors = connectorColorMap[connector] || connectorColorMap.Unknown;
+  const colors = resolveConnectorColors(connector);
   const el = document.createElement('div');
   el.className = 'cursor-pointer transition-transform duration-200 select-none';
   el.style.transform = isSelected ? 'scale(1.15)' : 'scale(1)';

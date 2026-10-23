@@ -1446,6 +1446,8 @@
         "Location Name": "Domrey Park 598",
         "Latitude": 11.630777777777778,
         "Longitude": 104.88486111111112,
+        "Address": "598, Phnom Penh, Cambodia",
+        "Chargers Count": 8,
         "Plug Types": "GB-T/CCS2",
         "Operation Time": "24/7",
         "Location": "11°37'50.8\"N 104°53'05.5\"E",
@@ -3828,6 +3830,322 @@
         "Plug Types": "GB-T",
         "Operation Time": "24/7",
         "Location": "11°08'02.3\"N 105°39'59.8\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.03094248726023, 11.673284577267578]
+      },
+      "properties": {
+        "Location Name": "AVATAR MART",
+        "Location Name (English)": "AVATAR MART",
+        "Location Name (Khmer)": "AVATAR MART", 
+        "Latitude": 11.673284577267578,
+        "Longitude": 105.03094248726023,
+        "Province": "Kandal",
+        "Province (Khmer)": "កណ្តាល",
+        "Address": "M2FJ+79, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°40'23.8\"N 105°01'51.4\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.93171539602939, 11.697369924644153]
+      },
+      "properties": {
+        "Location Name": "SN EV Station 6A",
+        "Location Name (English)": "SN EV Station 6A",
+        "Location Name (Khmer)": "SN EV Station 6A", 
+        "Latitude": 11.697369924644153,
+        "Longitude": 104.93171539602939,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "Near Bridge 9, In Khan Chroy Changvar, Phnom Penh Pnhom penh, city 12110, Cambodia",
+        "Chargers Count": 6,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°40'23.8\"N 105°01'51.4\"E",
+        "Source": "Google Map",
+        "Phone": "017274433"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.99400136666038, 11.749935811134447]
+      },
+      "properties": {
+        "Location Name": "ភូមិ​ក្រយា​ - Kraya Park",
+        "Location Name (English)": "Kraya Park",
+        "Location Name (Khmer)": "ភូមិ​ក្រយា​", 
+        "Latitude": 11.749935811134447,
+        "Longitude": 104.99400136666038,
+        "Province": "Kandal",
+        "Province (Khmer)": "កណ្ដាល",
+        "Address": "National Road 6A, Mukh Kampul, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°40'23.8\"N 105°01'51.4\"E",
+        "Source": "Google Map",
+        "Phone": "078555288"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.90758262486305, 11.582298109356687]
+      },
+      "properties": {
+        "Location Name": "One More Restaurant Boeung Kak 2",
+        "Location Name (English)": "One More Restaurant Boeung Kak 2",
+        "Location Name (Khmer)": "One More Restaurant Boeung Kak 2", 
+        "Latitude": 11.582298109356687,
+        "Longitude": 104.90758262486305,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "63 Street R11, Phnom Penh 120210, Cambodia",
+        "Chargers Count": 2,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°34'58.3\"N 104°54'27.3\"E",
+        "Source": "Google Map",
+        "Phone": "023888222"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.91304999937597, 11.59492656143205]
+      },
+      "properties": {
+        "Location Name": "Lim Long Toul Sanke",
+        "Location Name (English)": "Lim Long Toul Sanke",
+        "Location Name (Khmer)": "Lim Long Toul Sanke", 
+        "Latitude": 11.59492656143205,
+        "Longitude": 104.91304999937597,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "HWV7+X65, Street 99, Phnom Penh, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°34'58.3\"N 104°54'27.3\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.8953750230081, 11.612840018768134]
+      },
+      "properties": {
+        "Location Name": "NHR Energy Charging Station",
+        "Location Name (English)": "NHR Energy Charging Station",
+        "Location Name (Khmer)": "ស្ថានីយសាកអាគុយ NHR Energy", 
+        "Latitude": 11.612840018768134,
+        "Longitude": 104.8953750230081,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "2 Street 598, Phnom Penh, Cambodia",
+        "Chargers Count": 2,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°36'46.2\"N 104°53'43.3\"E",
+        "Source": "Google Map",
+        "Phone": "0969223366"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.89483600614008, 11.614618583715158]
+      },
+      "properties": {
+        "Location Name": "NEV station 598",
+        "Location Name (English)": "NEV station 598",
+        "Location Name (Khmer)": "ស្ថានីយសាកអាគុយ NEV 598", 
+        "Latitude": 11.614618583715158,
+        "Longitude": 104.89483600614008,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "JV7V+QX3, Street 598, Phnom Penh, Cambodia",
+        "Chargers Count": 6,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°36'49.3\"N 104°53'41.5\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.89271713345906, 11.61226774283222]
+      },
+      "properties": {
+        "Location Name": "HIDDEN 123 COFFEE (Russey Keo)",
+        "Location Name (English)": "HIDDEN 123 COFFEE (Russey Keo)",
+        "Location Name (Khmer)": "HIDDEN 123 COFFEE (Russey Keo)", 
+        "Latitude": 11.61226774283222,
+        "Longitude": 104.89271713345906,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "No 53 st 1812, Phnom Penh 12380, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°34'58.3\"N 104°54'27.3\"E",
+        "Source": "Google Map",
+        "Phone": "093919167"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.88748457475334, 11.606986991789931]
+      },
+      "properties": {
+        "Location Name": "TotalEnergies Angkor Phnom Penh",
+        "Location Name (English)": "TotalEnergies Angkor Phnom Penh",
+        "Location Name (Khmer)": "TotalEnergies Angkor Phnom Penh", 
+        "Latitude": 11.606986991789931,
+        "Longitude": 104.88748457475334,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "Angkor Cross, Angkor Boulevard 1003 Street, Street 1003, 12000, Cambodia",
+        "Chargers Count": 2,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°34'58.3\"N 104°54'27.3\"E",
+        "Source": "Google Map",
+        "Phone": "1800203333"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.88638759352543, 11.627606635753494]
+      },
+      "properties": {
+        "Location Name": "EVPower 66 (EV66)",
+        "Location Name (English)": "EVPower 66 (EV66)",
+        "Location Name (Khmer)": "EVPower 66 (EV66)", 
+        "Latitude": 11.627606635753494,
+        "Longitude": 104.88638759352543,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "598, Phnom Penh, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°38'11.4\"N 104°53'09.0\"E",
+        "Source": "Google Map",
+        "Phone": "0885444707"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.8866206114376, 11.627910625414751]
+      },
+      "properties": {
+        "Location Name": "TotalEnergies 598",
+        "Location Name (English)": "TotalEnergies 598",
+        "Location Name (Khmer)": "ស្ថានីយ​ប្រេង​ឥន្ធនៈ​តូតាល់ ផ្លូវ​៥៩៨", 
+        "Latitude": 11.627910625414751,
+        "Longitude": 104.8866206114376,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "598, Phnom Penh, Cambodia",
+        "Chargers Count": 2,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°38'11.4\"N 104°53'09.0\"E",
+        "Source": "Google Map",
+        "Phone": "1800203333"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.88170588225684, 11.634506757819803]
+      },
+      "properties": {
+        "Location Name": "EV Lika9999",
+        "Location Name (English)": "EV Lika9999",
+        "Location Name (Khmer)": "EV Lika9999", 
+        "Latitude": 11.634506757819803,
+        "Longitude": 104.88170588225684,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "598, Phnom Penh, Cambodia",
+        "Chargers Count": 4,
+        "Plug Types": "GB-T",
+        "Operation Time": "24/7",
+        "Location": "11°38'11.4\"N 104°53'09.0\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.89409644861597, 11.624550837158038]
+      },
+      "properties": {
+        "Location Name": "O Plus Car Wash",
+        "Location Name (English)": "O Plus Car Wash",
+        "Location Name (Khmer)": "O Plus Car Wash", 
+        "Latitude": 11.624550837158038,
+        "Longitude": 104.89409644861597,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "JVFV+RM2, Phnom Penh, Cambodia",
+        "Chargers Count": 2,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°38'11.4\"N 104°53'09.0\"E",
+        "Source": "Google Map"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.89409644861597, 11.624550837158038]
+      },
+      "properties": {
+        "Location Name": "Car4You",
+        "Location Name (English)": "Car4You",
+        "Location Name (Khmer)": "Car4You", 
+        "Latitude": 11.609591901491383,
+        "Longitude": 104.8701374234073,
+        "Province": "Phnom Penh",
+        "Province (Khmer)": "ភ្នំពេញ",
+        "Address": "JV5C+R5M, 11 Phnom Penh Hanoi Friendship Blvd (1019), Phnom Penh, Cambodia",
+        "Chargers Count": 2,
+        "Plug Types": "GB-T/CCS2",
+        "Operation Time": "24/7",
+        "Location": "11°38'11.4\"N 104°53'09.0\"E",
         "Source": "Google Map"
       }
     }

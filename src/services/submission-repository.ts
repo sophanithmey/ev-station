@@ -69,6 +69,7 @@ export class LocalStationSubmissionRepository
   async updateSubmissionStatus(
     id: string,
     status: SubmissionStatus,
+    _passkey?: string | null,
   ): Promise<void> {
     const existing = await this.getSubmissions();
     const updated = existing.map((s) => (s.id === id ? { ...s, status } : s));

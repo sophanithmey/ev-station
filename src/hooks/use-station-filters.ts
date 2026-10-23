@@ -1,8 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
-import {
-  chargingStations,
-  type ChargingStation,
-} from '../data/charging-stations';
+import type { ChargingStation } from '../types/station';
+import { useStations } from './use-stations';
 
 type StationFiltersOptions = {
   distances?: Record<string, number>;
@@ -15,6 +13,7 @@ export function useStationFilters({
   hasUserLocation = false,
   onRequestLocation,
 }: StationFiltersOptions = {}) {
+  const { stations } = useStations();
   const [search, setSearch] = useState('');
   const [connector, setConnector] = useState('all');
   const [speed, setSpeed] = useState('all');
@@ -23,7 +22,11 @@ export function useStationFilters({
 
   const filteredStations = useMemo(() => {
     const q = search.toLowerCase().trim();
-    const result = chargingStations.filter((station: ChargingStation) => {
+    const result = stations.filter((station: ChargingStation) => {
+      if (station.status === 'rejected' || station.status === 'pending') {
+        return false;
+      }
+
       const matchesSearch =
         q === '' ||
         station.name.toLowerCase().includes(q) ||
@@ -38,8 +41,14 @@ export function useStationFilters({
       const matchesConnector =
         connector === 'all' ||
         station.connector === connector ||
-        (connector === 'GB-T' && station.connector.includes('GB-T')) ||
-        (connector === 'CCS2' && station.connector.includes('CCS2'));
+        (connector === 'GB-T' &&
+          (station.connector.includes('GB-T') ||
+            station.connector.includes('GB/T'))) ||
+        (connector === 'CCS2' && station.connector.includes('CCS2')) ||
+        (connector === 'Type 2' && station.connector.includes('Type 2')) ||
+        (connector === 'GB-T/CCS2' &&
+          station.connector.includes('GB') &&
+          station.connector.includes('CCS'));
 
       const matchesSpeed = speed === 'all' || station.speedCategory === speed;
 
@@ -60,6 +69,7 @@ export function useStationFilters({
 
     return result;
   }, [
+    stations,
     search,
     connector,
     speed,
@@ -103,7 +113,8 @@ export function useStationFilters({
     onlyNearMe,
     filteredStations,
     hasActiveFilters,
-    totalCount: chargingStations.length,
+    allStations: stations,
+    totalCount: stations.length,
     setSearch,
     setConnector,
     setSpeed,

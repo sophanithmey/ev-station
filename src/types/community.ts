@@ -22,6 +22,7 @@ export type SubmissionStatus = 'pending' | 'approved' | 'rejected';
 
 export interface NewStationSubmission {
   id: string;
+  stationSlug?: string;
   name: string;
   province: string;
   latitude: number;
@@ -48,6 +49,7 @@ export interface StationSubmissionRepository {
   updateSubmissionStatus(
     id: string,
     status: SubmissionStatus,
+    passkey?: string | null,
   ): Promise<void>;
   exportJson(): Promise<string>;
 }

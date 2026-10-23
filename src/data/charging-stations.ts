@@ -1,5 +1,12 @@
 import rawGeoJson from './data.json';
 import { resolveProvince } from './province-resolver';
+import {
+  DEFAULT_PRICING_NOTES,
+  detectBrand,
+  isOpen24Hours,
+  normalizeLatLng,
+  resolveSpeedCategory,
+} from '../lib/station-normalizers';
 import type {
   ChargingStation,
   ConnectorType,
@@ -9,67 +16,16 @@ import type {
 
 export type { ChargingStation, ConnectorType, GeoJsonFeature, SpeedCategory };
 
-function detectBrand(name: string): string {
-  const n = name.toUpperCase();
-  if (n.includes('CAM EV') || n.includes('CAMEV')) return 'CAM EV';
-  if (n.includes('EV168') || n.includes('EV 168')) return 'EV168';
-  if (n.includes('KHMER EV') || n.includes('KHMEREV')) return 'Khmer EV';
-  if (n.includes('FAMILY EV')) return 'Family EV';
-  if (n.includes('FUTURE EV')) return 'Future EV';
-  if (n.includes('HK EV')) return 'HK EV';
-  if (n.includes('EVOLT')) return 'Evolt Energy';
-  if (n.includes('GO EV')) return 'GO EV';
-  if (n.includes('POL RITHY')) return 'Pol Rithy EV';
-  if (n.includes('PTT')) return 'PTT Station';
-  if (n.includes('TOTAL')) return 'TotalEnergies';
-  if (n.includes('LIM LONG')) return 'Lim Long';
-  if (n.includes('SOKIMEX')) return 'Sokimex';
-  if (n.includes('TELA') || n.includes('តេលា')) return 'Tela';
-  if (n.includes('CALTEX')) return 'Caltex';
-  if (n.includes('3E EV') || n.includes('3E ')) return '3E EV';
-  if (
-    n.includes('EV ENERGY TECH') ||
-    n.includes('EV ENERGY') ||
-    n.includes('CG EV')
-  )
-    return 'EV Energy Tech';
-  if (n.includes('BYD')) return 'BYD';
-  if (n.includes('ZEEKR')) return 'ZEEKR';
-  if (
-    n.includes('HOTEL') ||
-    n.includes('RESORT') ||
-    n.includes('GUEST HOUSE') ||
-    n.includes('HOMESTAY') ||
-    n.includes('BOUTIQUE')
-  )
-    return 'Hotel / Resort';
-  if (n.includes('MALL') || n.includes('MARKET') || n.includes('CENTRAL'))
-    return 'Mall & Retail';
-  if (n.includes('COFFEE') || n.includes('CAFÉ') || n.includes('CAFE'))
-    return 'Café';
-  return 'Charging Hub';
-}
-
-function resolveSpeedCategory(plug: ConnectorType): SpeedCategory {
-  if (plug === 'Unknown') return 'unknown';
-  if (plug === 'Type 2') return 'ac_standard';
-  return 'dc_fast';
-}
-
 const features = (rawGeoJson as { features: GeoJsonFeature[] }).features || [];
 
+/**
+ * Bundled offline dataset. Used as the initial snapshot and as a fallback
+ * when the Supabase API is not configured or unreachable.
+ */
 export const chargingStations: ChargingStation[] = features.map((f, index) => {
   const p = f.properties;
   const opTime = p['Operation Time'] ? p['Operation Time'].trim() : '24/7';
-  const opLower = opTime.toLowerCase();
-  const is24Hours =
-    opLower.includes('24') || opLower === '24/7' || opLower === '24hrs';
-
-  const rawLat = p.Latitude;
-  const rawLng = p.Longitude;
-  const isSwapped = rawLat > 50 && rawLng < 25;
-  const latitude = isSwapped ? rawLng : rawLat;
-  const longitude = isSwapped ? rawLat : rawLng;
+  const [latitude, longitude] = normalizeLatLng(p.Latitude, p.Longitude);
   const connector = (p['Plug Types'] as ConnectorType) || 'Unknown';
 
   return {
@@ -82,19 +38,18 @@ export const chargingStations: ChargingStation[] = features.map((f, index) => {
     connector,
     speedCategory: resolveSpeedCategory(connector),
     operationTime: opTime,
-    is24Hours,
+    is24Hours: isOpen24Hours(opTime),
     latitude,
     longitude,
     address: p.Address?.trim() || undefined,
     chargersCount: p['Chargers Count'] ?? undefined,
     phone: p.Phone?.trim() || undefined,
-    source: p.Source,
+    source: p.Source ?? '',
     qrNumber: p['QR Number'] ?? undefined,
     dmsLocation: p.Location,
     brand: detectBrand(p['Location Name'] || ''),
     verifiedDate: 'Feb 2025 (MEF Dataset)',
-    pricingNotes:
-      'EAC Official Tariff ~1,200–1,500 KHR/kWh (subject to provider)',
+    pricingNotes: DEFAULT_PRICING_NOTES,
   };
 });
 

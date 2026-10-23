@@ -1,4 +1,3 @@
-import { chargingStations } from './data/charging-stations';
 import { useUserLocation } from './hooks/use-user-location';
 import { useStationFilters } from './hooks/use-station-filters';
 import { useMobileNavigation } from './hooks/use-mobile-navigation';
@@ -27,30 +26,19 @@ const DATASET_URL =
 export default function App() {
   const { activePage, handlePageChange } = useAppNavigation();
   const {
-    isDisclaimerOpen,
-    isDonateOpen,
-    openDisclaimer,
-    closeDisclaimer,
-    openDonate,
-    closeDonate,
+    isDisclaimerOpen, isDonateOpen,
+    openDisclaimer, closeDisclaimer,
+    openDonate, closeDonate,
   } = useAppModals();
 
   const {
-    reportingStation,
-    isSuggestOpen,
-    isAdminDrawerOpen,
-    reports,
-    submissions,
-    openSuggest,
-    closeSuggest,
-    openAdminDrawer,
-    closeAdminDrawer,
-    handleReportStation,
-    handleCloseReport,
-    handleSubmitReport,
-    handleSubmitNewStation,
-    handleUpdateStatus,
-    handleExportJson,
+    reportingStation, isSuggestOpen, isAdminDrawerOpen,
+    reports, submissions, adminAuth,
+    openSuggest, closeSuggest,
+    openAdminDrawer, closeAdminDrawer,
+    handleReportStation, handleCloseReport,
+    handleSubmitReport, handleSubmitNewStation,
+    handleUpdateStatus, handleExportJson,
   } = useCommunitySubmissions();
 
   const {
@@ -78,6 +66,7 @@ export default function App() {
     only24Hours,
     onlyNearMe,
     filteredStations,
+    allStations,
     hasActiveFilters,
     setSearch,
     setConnector,
@@ -128,7 +117,7 @@ export default function App() {
       >
         {activePage === 'explorer' && (
           <StationExplorerView
-            stations={chargingStations}
+            stations={allStations}
             filteredStations={filteredStations}
             selectedStation={selectedStation}
             mobileView={mobileView}
@@ -189,6 +178,7 @@ export default function App() {
         isOpen={isAdminDrawerOpen}
         reports={reports}
         submissions={submissions}
+        adminAuth={adminAuth}
         onClose={closeAdminDrawer}
         onUpdateStatus={handleUpdateStatus}
         onExportJson={handleExportJson}

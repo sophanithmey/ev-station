@@ -1,4 +1,13 @@
-export type ConnectorType = 'GB/T' | 'CCS2' | 'Type 2' | 'Unknown';
+export type ConnectorType =
+  | 'GB/T'
+  | 'CCS2'
+  | 'Type 2'
+  | 'GB-T'
+  | 'GB-T/CCS2'
+  | 'GB/T / CCS2'
+  | 'Unknown'
+  | (string & {});
+
 
 export type SpeedCategory = 'dc_fast' | 'ac_standard' | 'unknown';
 
@@ -49,6 +58,7 @@ export interface ChargingStation {
   brand?: string;
   verifiedDate: string;
   pricingNotes?: string;
+  status?: 'pending' | 'approved' | 'rejected';
 }
 
 export interface StationFilterState {

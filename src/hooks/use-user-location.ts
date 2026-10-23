@@ -1,10 +1,9 @@
 import { useState, useMemo, useCallback } from 'react';
-import {
-  chargingStations,
-  calculateDistanceKm,
-} from '../data/charging-stations';
+import { calculateDistanceKm } from '../data/charging-stations';
+import { useStations } from './use-stations';
 
 export function useUserLocation() {
+  const { stations } = useStations();
   const [userLocation, setUserLocation] = useState<{
     lat: number;
     lng: number;
@@ -50,7 +49,7 @@ export function useUserLocation() {
   const distances = useMemo<Record<string, number>>(() => {
     if (!userLocation) return {};
     const map: Record<string, number> = {};
-    chargingStations.forEach((s) => {
+    stations.forEach((s) => {
       map[s.id] = calculateDistanceKm(
         userLocation.lat,
         userLocation.lng,
@@ -59,7 +58,7 @@ export function useUserLocation() {
       );
     });
     return map;
-  }, [userLocation]);
+  }, [userLocation, stations]);
 
   return {
     userLocation,

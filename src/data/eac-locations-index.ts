@@ -2,7 +2,7 @@ import type { EACProvinceDirectory, EACStationLocation } from './eac-location-ty
 import { PURSAT_LOCATIONS } from './eac-locations-pursat';
 import { SIEMREAP_LOCATIONS } from './eac-locations-siemreap';
 import { EAC_PROVINCE_STATS } from './eac-province-stats';
-import { chargingStations } from './charging-stations';
+import type { ChargingStation } from '../types/station';
 
 export * from './eac-location-types';
 export { PURSAT_LOCATIONS } from './eac-locations-pursat';
@@ -13,7 +13,10 @@ const VERIFIED_PROVINCES: Record<string, EACProvinceDirectory> = {
   'siem-reap': SIEMREAP_LOCATIONS,
 };
 
-function generateFallbackProvinceDirectory(provinceId: string): EACProvinceDirectory {
+function generateFallbackProvinceDirectory(
+  provinceId: string,
+  allStations: ChargingStation[],
+): EACProvinceDirectory {
   const stat = EAC_PROVINCE_STATS.find((p) => p.id === provinceId) || {
     id: provinceId,
     nameKh: 'ខេត្ត',
@@ -22,7 +25,7 @@ function generateFallbackProvinceDirectory(provinceId: string): EACProvinceDirec
     chargers: 0,
   };
 
-  const matched = chargingStations.filter(
+  const matched = allStations.filter(
     (s) => s.province.toLowerCase().replace(/\s+/g, '-') === provinceId ||
            s.province.toLowerCase() === stat.nameEn.toLowerCase()
   );
@@ -54,11 +57,14 @@ function generateFallbackProvinceDirectory(provinceId: string): EACProvinceDirec
   };
 }
 
-export function getProvinceDirectory(provinceId: string): EACProvinceDirectory {
+export function getProvinceDirectory(
+  provinceId: string,
+  allStations: ChargingStation[],
+): EACProvinceDirectory {
   if (VERIFIED_PROVINCES[provinceId]) {
     return VERIFIED_PROVINCES[provinceId];
   }
-  return generateFallbackProvinceDirectory(provinceId);
+  return generateFallbackProvinceDirectory(provinceId, allStations);
 }
 
 export interface ProvinceOption {

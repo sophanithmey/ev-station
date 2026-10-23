@@ -1,9 +1,13 @@
 import type { NewStationSubmission, StationReport } from '../../types/community';
+import type { useAdminAuth } from '../../hooks/use-admin-auth';
+import AdminAuthBar from './admin-auth-bar';
+import SubmissionCard from './submission-card';
 
 type Props = {
   isOpen: boolean;
   reports: StationReport[];
   submissions: NewStationSubmission[];
+  adminAuth: ReturnType<typeof useAdminAuth>;
   onClose: () => void;
   onUpdateStatus: (id: string, status: 'approved' | 'rejected') => void;
   onExportJson: () => void;
@@ -13,6 +17,7 @@ export default function CommunitySubmissionsDrawer({
   isOpen,
   reports,
   submissions,
+  adminAuth,
   onClose,
   onUpdateStatus,
   onExportJson,
@@ -31,7 +36,7 @@ export default function CommunitySubmissionsDrawer({
         <div className='flex items-center justify-between p-4 border-b border-slate-100 bg-slate-50/80'>
           <div>
             <h2 id='admin-drawer-title' className='font-bold text-slate-900 text-sm'>
-              Community Contributions Review
+              Community Contributions
             </h2>
             <p className='text-[11px] text-slate-500'>
               {reports.length} report(s) • {submissions.length} station suggestion(s)
@@ -40,10 +45,16 @@ export default function CommunitySubmissionsDrawer({
           <button
             type='button'
             onClick={onClose}
+            aria-label='Close drawer'
             className='p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 cursor-pointer'
           >
             ✕
           </button>
+        </div>
+
+        {/* Admin Authentication Status & Passkey Bar */}
+        <div className='px-4 pt-3'>
+          <AdminAuthBar adminAuth={adminAuth} />
         </div>
 
         {/* Content Tabs / List */}
@@ -89,49 +100,12 @@ export default function CommunitySubmissionsDrawer({
             ) : (
               <div className='space-y-2'>
                 {submissions.map((s) => (
-                  <div key={s.id} className='bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1.5'>
-                    <div className='flex justify-between items-start'>
-                      <div>
-                        <span className='font-bold text-slate-900 block'>{s.name}</span>
-                        <span className='text-[10px] text-slate-500'>{s.province} • {s.connector}</span>
-                      </div>
-                      <span
-                        className={`text-[10px] px-1.5 py-0.5 rounded font-bold ${
-                          s.status === 'approved'
-                            ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
-                            : s.status === 'rejected'
-                              ? 'bg-rose-50 text-rose-700 border border-rose-200'
-                              : 'bg-amber-50 text-amber-800 border border-amber-200'
-                        }`}
-                      >
-                        {s.status}
-                      </span>
-                    </div>
-                    <div className='font-mono text-[10px] text-slate-500'>
-                      GPS: {s.latitude.toFixed(5)}, {s.longitude.toFixed(5)}
-                    </div>
-                    {s.accessNotes && (
-                      <p className='text-slate-700 text-[11px]'>{s.accessNotes}</p>
-                    )}
-                    {s.status === 'pending' && (
-                      <div className='flex gap-2 pt-1'>
-                        <button
-                          type='button'
-                          onClick={() => onUpdateStatus(s.id, 'approved')}
-                          className='px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] cursor-pointer'
-                        >
-                          Approve
-                        </button>
-                        <button
-                          type='button'
-                          onClick={() => onUpdateStatus(s.id, 'rejected')}
-                          className='px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-rose-600 border border-slate-200 text-[10px] cursor-pointer'
-                        >
-                          Reject
-                        </button>
-                      </div>
-                    )}
-                  </div>
+                  <SubmissionCard
+                    key={s.id}
+                    submission={s}
+                    isAdmin={adminAuth.isAdmin}
+                    onUpdateStatus={onUpdateStatus}
+                  />
                 ))}
               </div>
             )}

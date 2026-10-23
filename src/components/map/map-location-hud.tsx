@@ -16,7 +16,7 @@ export default function MapLocationHud({
       role='status'
       aria-live='polite'
       onClick={onHudClick}
-      className='absolute top-14 sm:top-3 left-1/2 -translate-x-1/2 z-400 max-w-[calc(100%-24px)] flex items-center gap-2 bg-slate-900/90 hover:bg-slate-900 active:scale-[0.98] backdrop-blur-xl text-white pl-3 pr-2 py-1.5 rounded-full shadow-xl shadow-slate-950/25 border border-slate-700/80 text-xs font-medium whitespace-nowrap cursor-pointer transition-all animate-in fade-in slide-in-from-top-2 duration-200'
+      className='absolute top-14 sm:top-3 left-1/2 -translate-x-1/2 z-10 max-w-[calc(100%-24px)] flex items-center gap-2 bg-slate-900/90 hover:bg-slate-900 active:scale-[0.98] backdrop-blur-xl text-white pl-3 pr-2 py-1.5 rounded-full shadow-xl shadow-slate-950/25 border border-slate-700/80 text-xs font-medium whitespace-nowrap cursor-pointer transition-all animate-in fade-in slide-in-from-top-2 duration-200'
       title='Tap to re-center on your location'
     >
       {/* Animated Radar Pulse */}

@@ -6,11 +6,12 @@ import type {
 } from '../types/trip';
 import { CAMBODIA_CITIES } from '../data/cambodia-cities';
 import { ALL_EV_MODELS } from '../data/ev-models';
-import { chargingStations } from '../data/charging-stations';
+import { useStations } from './use-stations';
 import { fetchRoadRoute } from '../services/routing-service';
 import { planTrip } from '../services/trip-calculator';
 
 export function useTripPlanner() {
+  const { stations } = useStations();
   const [originId, setOriginId] = useState('phnom-penh');
   const [destinationId, setDestinationId] = useState('sihanoukville');
   const [vehicleId, setVehicleId] = useState('byd-atto-2-standard');
@@ -78,7 +79,7 @@ export function useTripPlanner() {
         startSoc,
         reserveSoc,
         preferredConnector,
-        chargingStations,
+        stations,
         assumptions,
       );
 
@@ -89,6 +90,7 @@ export function useTripPlanner() {
       setIsCalculating(false);
     }
   }, [
+    stations,
     originId,
     destinationId,
     getVehicleSpec,
@@ -118,7 +120,7 @@ export function useTripPlanner() {
           startSoc,
           reserveSoc,
           preferredConnector,
-          chargingStations,
+          stations,
           assumptions,
         );
         setPlanResult(result);
@@ -131,6 +133,7 @@ export function useTripPlanner() {
       isMounted = false;
     };
   }, [
+    stations,
     getVehicleSpec,
     startSoc,
     reserveSoc,

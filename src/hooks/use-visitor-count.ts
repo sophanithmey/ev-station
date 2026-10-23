@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { queryKeys } from '../lib/query-client';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
@@ -22,32 +23,26 @@ function parseSvgCount(svgText: string): string | null {
   return Math.max(...nums).toLocaleString();
 }
 
+async function fetchVisitorCount(): Promise<string | null> {
+  const res = await fetch(HITS_SVG_URL);
+  if (!res.ok) throw new Error('Failed to fetch visitor count');
+  const svg = await res.text();
+  return parseSvgCount(svg);
+}
+
 export function useVisitorCount(): Result {
-  const [count, setCount] = useState<string | null>(null);
-  const [status, setStatus] = useState<Status>('loading');
+  const { data, status } = useQuery({
+    queryKey: queryKeys.visitor.count,
+    queryFn: fetchVisitorCount,
+    staleTime: 5 * 60 * 1000,
+  });
 
-  useEffect(() => {
-    let cancelled = false;
+  let mappedStatus: Status = 'loading';
+  if (status === 'success') mappedStatus = 'success';
+  else if (status === 'error') mappedStatus = 'error';
 
-    fetch(HITS_SVG_URL)
-      .then((res) => {
-        if (!res.ok) throw new Error('Failed to fetch');
-        return res.text();
-      })
-      .then((svg) => {
-        if (cancelled) return;
-        const parsed = parseSvgCount(svg);
-        setCount(parsed);
-        setStatus('success');
-      })
-      .catch(() => {
-        if (!cancelled) setStatus('error');
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  return { count, status };
+  return {
+    count: data ?? null,
+    status: mappedStatus,
+  };
 }

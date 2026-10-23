@@ -1,13 +1,18 @@
 import { useState, useMemo, useCallback } from 'react';
 import type { EACStationLocation } from '../data/eac-location-types';
 import { getProvinceDirectory, PROVINCE_DIRECTORY_OPTIONS } from '../data/eac-locations-index';
+import { useStations } from './use-stations';
 
 export function useEacLocations(initialProvinceId: string = 'pursat') {
+  const { stations } = useStations();
   const [provinceId, setProvinceId] = useState<string>(initialProvinceId);
   const [search, setSearch] = useState<string>('');
   const [selectedStationForQr, setSelectedStationForQr] = useState<EACStationLocation | null>(null);
 
-  const directory = useMemo(() => getProvinceDirectory(provinceId), [provinceId]);
+  const directory = useMemo(
+    () => getProvinceDirectory(provinceId, stations),
+    [provinceId, stations],
+  );
 
   const filteredStations = useMemo(() => {
     if (!search.trim()) return directory.stations;

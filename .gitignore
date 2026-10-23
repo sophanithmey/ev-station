@@ -48,3 +48,6 @@ Thumbs.db
 # Vite / bundler temporary files
 .vite/
 *.tsbuildinfo
+
+supabase
+src/__tests__/*

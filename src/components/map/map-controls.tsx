@@ -12,7 +12,7 @@ export default function MapControls({
   onLocateClick,
 }: Props) {
   return (
-    <div className='absolute top-3 left-3 z-[400] flex items-center gap-2'>
+    <div className='absolute top-3 left-3 z-10 flex items-center gap-2'>
       <button
         type='button'
         onClick={onLocateClick}
